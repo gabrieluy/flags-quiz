@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'fq-root',
+  template: `
+    <router-outlet></router-outlet>
+    <p-toast position="top-left" key="tl"></p-toast>
+  `,
 })
 export class AppComponent {
   title = 'flags-quiz';

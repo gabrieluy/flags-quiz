@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: var(--cyan-50);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+}
