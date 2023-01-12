@@ -8,8 +8,8 @@ export class GameManager {
   private _points = 0;
   private _num_options = 8;
   private _selectionResult: SelectionResult = { correctAnswer: false };
-  private _countries: Country[] = countries_json;
-  private _remainCountries: Country[] = countries_json;
+  private _countries: Country[] = [];
+  private _remainCountries: Country[] = [];
   private _remainingFlags = this._remainCountries.length;
   private _countryOptions: Country[] = [];
   private _selectedCountry: Country = { flag: '', name: '', code: '', translations: {} };
@@ -19,8 +19,8 @@ export class GameManager {
 
   public start(): GameStatus {
     this._selectionResult = { correctAnswer: false };
-    this._countries = countries_json;
-    this._remainCountries = countries_json;
+    this._countries = Object.assign([], countries_json);
+    this._remainCountries = Object.assign([], countries_json);
     this._remainingFlags = this._remainCountries.length;
     this._countryOptions = [];
     this._selectedCountry = { flag: '', name: '', code: '', translations: {} };
@@ -36,10 +36,10 @@ export class GameManager {
     if (country.code === this._selectedCountry.code) {
       this._points += 1;
       this._selectionResult = { correctAnswer: true };
-      this._correctAnswers.push(this._selectedCountry);
+      this._correctAnswers = [this._selectedCountry, ...this._correctAnswers];
     } else {
       this._selectionResult = { correctAnswer: false };
-      this._incorrectAnswers.push(this._selectedCountry);
+      this._incorrectAnswers = [this._selectedCountry, ...this._incorrectAnswers];
     }
 
     this._remainingFlags--;

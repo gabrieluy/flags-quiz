@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TooltipModule } from 'primeng/tooltip';
 import { Country } from 'src/app/core/game_manager/interfaces/country.interface';
 import { AnimateModule } from 'primeng/animate';
@@ -8,6 +8,7 @@ import { FieldsetModule } from 'primeng/fieldset';
   selector: 'fq-flag-grid',
   standalone: true,
   imports: [CommonModule, AnimateModule, TooltipModule, FieldsetModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <p-fieldset [legend]="dividerText" [toggleable]="true" [styleClass]="styleClass">
       <div class="flex justify-content-evenly flex-wrap gap-2">
