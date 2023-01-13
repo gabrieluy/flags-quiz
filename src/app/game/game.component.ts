@@ -9,13 +9,13 @@ import { GameStatus } from '../core/game_manager/interfaces/game-status.interfac
   template: `
     <div class="m-5">
       <div class="flex flex-row flex-wrap justify-content-center gap-2">
-        <p-message severity="info" [text]="'Puntos: ' + status.points"></p-message>
-        <p-message severity="info" [text]="'Banderas restantes: ' + status.remainingFlags"></p-message>
-        <p-message severity="info" [text]="'Porcentaje Acierto: ' + status.successRate + ' %'"></p-message>
+        <fq-info-btn [label]="status.points" icon="pi pi-star"></fq-info-btn>
+        <fq-info-btn [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-btn>
+        <fq-info-btn [label]="status.successRate" icon="pi pi-percentage"></fq-info-btn>
       </div>
       <div class="flex flex-row flex-wrap justify-content-center">
         <div class="p-3 m-3">
-          <img class="h-15rem border-round shadow-6" [src]="status.selectedCountry.flag" alt="" />
+          <img class="h-13rem border-round shadow-6" [src]="status.selectedCountry.flag" alt="" />
         </div>
       </div>
       <div class="flex flex-row flex-wrap justify-content-center gap-2">
