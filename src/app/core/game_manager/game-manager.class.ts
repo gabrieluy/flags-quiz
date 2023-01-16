@@ -38,6 +38,7 @@ export class GameManager {
       this._selectionResult = { correctAnswer: true };
       this._correctAnswers = [this._selectedCountry, ...this._correctAnswers];
     } else {
+      this._points -= 1;
       this._selectionResult = { correctAnswer: false };
       this._incorrectAnswers = [this._selectedCountry, ...this._incorrectAnswers];
     }

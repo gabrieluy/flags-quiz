@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from 'primeng/api';
 import { Country } from '../core/game_manager/interfaces/country.interface';
 import { GameManager } from '../core/game_manager/game-manager.class';
 import { GameStatus } from '../core/game_manager/interfaces/game-status.interface';
@@ -8,10 +7,10 @@ import { GameStatus } from '../core/game_manager/interfaces/game-status.interfac
   selector: 'fq-game',
   template: `
     <div class="m-5">
-      <div class="flex flex-row flex-wrap justify-content-center gap-2">
-        <fq-info-btn [label]="status.points" icon="pi pi-star"></fq-info-btn>
-        <fq-info-btn [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-btn>
-        <fq-info-btn [label]="status.successRate" icon="pi pi-percentage"></fq-info-btn>
+      <div class="flex flex-row flex-wrap justify-content-center gap-3">
+        <fq-points-chip [points]="status.points"></fq-points-chip>
+        <fq-info-chip [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-chip>
+        <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
       </div>
       <div class="flex flex-row flex-wrap justify-content-center">
         <div class="p-3 m-3">
@@ -48,29 +47,16 @@ export class GameComponent implements OnInit {
     selectionResult: { correctAnswer: false },
   };
 
-  constructor(private messageService: MessageService) {}
-
   ngOnInit(): void {
     this.status = this.gameManager.start();
   }
 
   public checkSelection(country: Country): void {
     this.status = this.gameManager.checkSelection(country);
-    this._showMessage();
     if (this.status.isGameFinished) {
       alert('viva!!');
       this.status = this.gameManager.start();
       return;
     }
-  }
-
-  private _showMessage() {
-    const { correctAnswer } = this.status.selectionResult;
-    this.messageService.clear();
-    this.messageService.add({
-      key: 'tl',
-      severity: correctAnswer ? 'success' : 'error',
-      summary: correctAnswer ? 'Correcto!' : 'Error!',
-    });
   }
 }
