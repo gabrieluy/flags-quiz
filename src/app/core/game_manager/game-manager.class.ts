@@ -22,6 +22,7 @@ export class GameManager {
     this._countries = Object.assign([], countries_json);
     this._remainCountries = Object.assign([], countries_json);
     this._remainingFlags = this._remainCountries.length;
+    this._points = 0;
     this._countryOptions = [];
     this._selectedCountry = { flag: '', name: '', code: '', translations: {} };
 
