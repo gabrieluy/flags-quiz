@@ -6,8 +6,8 @@ import { MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
 import { FlagGridComponent } from '../ui/flag-grid/flag-grid.component';
 import { TagModule } from 'primeng/tag';
-import { PointsChipComponent } from '../ui/points-chip/points-chip';
-import { InfoChipComponent } from '../ui/info-chips/info-chips';
+import { PointsChipComponent } from '../ui/chips/points-chip/points-chip';
+import { InfoChipComponent } from '../ui/chips/info-chip/info-chip';
 @NgModule({
   declarations: [GameComponent],
   exports: [GameComponent],

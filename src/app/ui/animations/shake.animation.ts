@@ -1,10 +1,10 @@
 import { animation, style, animate, keyframes } from '@angular/animations';
 
-export const errorAnimation = animation([
+export const shakeAnimation = animation([
   animate(
     '{{ time }}',
     keyframes([
-      style({ background: '#ff4032', transform: 'translate(2px, 1px) rotate(0deg)', offset: 0 }),
+      style({ background: '{{ background }}', transform: 'translate(2px, 1px) rotate(0deg)', offset: 0 }),
       style({ transform: `translate(-1px, -2px) rotate(-2deg)`, offset: 0.1 }),
       style({ transform: `translate(-3px, 0) rotate(3deg)`, offset: 0.2 }),
       style({ transform: `translate(0, 2px) rotate(0deg)`, offset: 0.3 }),

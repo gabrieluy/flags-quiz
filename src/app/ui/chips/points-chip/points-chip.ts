@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { animateChild, group, query, transition, trigger, useAnimation } from '@angular/animations';
-import { errorAnimation } from './animations/error.animation';
-import { successAnimation } from './animations/success.animation';
-import { jumpAnimation } from './animations/jump.animation';
-import { dropAnimation } from './animations/drop.animation';
+import { shakeAnimation } from '../../animations/shake.animation';
+import { scaleAnimation } from '../../animations/scale.animation';
+import { jumpAnimation } from '../../animations/jump.animation';
+import { dropAnimation } from '../../animations/drop.animation';
 
 @Component({
   selector: 'fq-points-chip',
@@ -15,9 +15,10 @@ import { dropAnimation } from './animations/drop.animation';
     trigger('pointsAnimation', [
       transition(':decrement', [
         group([
-          useAnimation(errorAnimation, {
+          useAnimation(shakeAnimation, {
             params: {
               time: '1s',
+              background: 'var(--red-500)',
             },
           }),
           query('@iconAnimation', animateChild()),
@@ -25,9 +26,10 @@ import { dropAnimation } from './animations/drop.animation';
       ]),
       transition(':increment', [
         group([
-          useAnimation(successAnimation, {
+          useAnimation(scaleAnimation, {
             params: {
               time: '1s',
+              background: 'var(--green-500)',
             },
           }),
           query('@iconAnimation', animateChild()),
@@ -39,6 +41,7 @@ import { dropAnimation } from './animations/drop.animation';
         useAnimation(jumpAnimation, {
           params: {
             time: '1s',
+            color: 'var(--yellow-500)',
           },
         }),
       ]),
@@ -59,7 +62,7 @@ import { dropAnimation } from './animations/drop.animation';
   styles: [
     `
       div {
-        background: #a855f7;
+        background: var(--purple-600);
       }
     `,
   ],
