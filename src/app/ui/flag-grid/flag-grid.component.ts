@@ -11,11 +11,11 @@ import { FieldsetModule } from 'primeng/fieldset';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <p-fieldset [legend]="dividerText" [toggleable]="true" [styleClass]="styleClass">
-      <div class="flex justify-content-evenly flex-wrap gap-2">
+      <div class="flex flex-wrap gap-2">
         <ng-container *ngFor="let country of countryList">
           <img
             class="h-4rem border-round shadow-4"
-            [src]="country.flag"
+            [src]="'assets/flags/1x1/' + country.flag"
             [alt]="country.translations['spa'].common"
             [pTooltip]="country.translations['spa'].common" />
         </ng-container>

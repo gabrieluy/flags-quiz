@@ -12,10 +12,8 @@ import { GameStatus } from '../core/game_manager/interfaces/game-status.interfac
         <fq-info-chip [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-chip>
         <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
       </div>
-      <div class="flex flex-row flex-wrap justify-content-center">
-        <div class="p-3 m-3">
-          <img class="h-13rem border-round shadow-6" [src]="status.selectedCountry.flag" alt="" />
-        </div>
+      <div class="flex justify-content-center p-3 m-3 ">
+        <img class="h-13rem border-round shadow-6" [src]="'assets/flags/4x3/' + status.selectedCountry.flag" alt="" />
       </div>
       <div class="flex flex-row flex-wrap justify-content-center gap-2">
         <p-button *ngFor="let country of status.countryOptions" (click)="checkSelection(country)">

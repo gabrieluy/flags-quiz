@@ -102,7 +102,7 @@ export const countries_json: Country[] = [
         common: '格林纳达',
       },
     },
-    flag: 'https://flagcdn.com/gd.svg',
+    flag: 'gd.svg',
   },
   {
     code: 'MY',
@@ -205,7 +205,7 @@ export const countries_json: Country[] = [
         common: '马来西亚',
       },
     },
-    flag: 'https://flagcdn.com/my.svg',
+    flag: 'my.svg',
   },
   {
     code: 'GF',
@@ -308,7 +308,7 @@ export const countries_json: Country[] = [
         common: '法属圭亚那',
       },
     },
-    flag: 'https://flagcdn.com/gf.svg',
+    flag: 'gf.svg',
   },
   {
     code: 'ES',
@@ -411,7 +411,7 @@ export const countries_json: Country[] = [
         common: '西班牙',
       },
     },
-    flag: 'https://flagcdn.com/es.svg',
+    flag: 'es.svg',
   },
   {
     code: 'CK',
@@ -514,7 +514,7 @@ export const countries_json: Country[] = [
         common: '库克群岛',
       },
     },
-    flag: 'https://flagcdn.com/ck.svg',
+    flag: 'ck.svg',
   },
   {
     code: 'ML',
@@ -617,7 +617,7 @@ export const countries_json: Country[] = [
         common: '马里',
       },
     },
-    flag: 'https://flagcdn.com/ml.svg',
+    flag: 'ml.svg',
   },
   {
     code: 'LY',
@@ -720,7 +720,7 @@ export const countries_json: Country[] = [
         common: '利比亚',
       },
     },
-    flag: 'https://flagcdn.com/ly.svg',
+    flag: 'ly.svg',
   },
   {
     code: 'EH',
@@ -823,7 +823,7 @@ export const countries_json: Country[] = [
         common: '西撒哈拉',
       },
     },
-    flag: 'https://flagcdn.com/eh.svg',
+    flag: 'eh.svg',
   },
   {
     code: 'SB',
@@ -926,7 +926,7 @@ export const countries_json: Country[] = [
         common: '所罗门群岛',
       },
     },
-    flag: 'https://flagcdn.com/sb.svg',
+    flag: 'sb.svg',
   },
   {
     code: 'TN',
@@ -1029,7 +1029,7 @@ export const countries_json: Country[] = [
         common: '突尼斯',
       },
     },
-    flag: 'https://flagcdn.com/tn.svg',
+    flag: 'tn.svg',
   },
   {
     code: 'GG',
@@ -1132,7 +1132,7 @@ export const countries_json: Country[] = [
         common: '根西岛',
       },
     },
-    flag: 'https://flagcdn.com/gg.svg',
+    flag: 'gg.svg',
   },
   {
     code: 'SC',
@@ -1235,7 +1235,7 @@ export const countries_json: Country[] = [
         common: '塞舌尔',
       },
     },
-    flag: 'https://flagcdn.com/sc.svg',
+    flag: 'sc.svg',
   },
   {
     code: 'VG',
@@ -1338,7 +1338,7 @@ export const countries_json: Country[] = [
         common: '英属维尔京群岛',
       },
     },
-    flag: 'https://flagcdn.com/vg.svg',
+    flag: 'vg.svg',
   },
   {
     code: 'GE',
@@ -1441,7 +1441,7 @@ export const countries_json: Country[] = [
         common: '格鲁吉亚',
       },
     },
-    flag: 'https://flagcdn.com/ge.svg',
+    flag: 'ge.svg',
   },
   {
     code: 'GP',
@@ -1544,7 +1544,7 @@ export const countries_json: Country[] = [
         common: '瓜德罗普岛',
       },
     },
-    flag: 'https://flagcdn.com/gp.svg',
+    flag: 'gp.svg',
   },
   {
     code: 'SY',
@@ -1647,7 +1647,7 @@ export const countries_json: Country[] = [
         common: '叙利亚',
       },
     },
-    flag: 'https://flagcdn.com/sy.svg',
+    flag: 'sy.svg',
   },
   {
     code: 'NO',
@@ -1750,7 +1750,7 @@ export const countries_json: Country[] = [
         common: '挪威',
       },
     },
-    flag: 'https://flagcdn.com/no.svg',
+    flag: 'no.svg',
   },
   {
     code: 'PH',
@@ -1853,7 +1853,7 @@ export const countries_json: Country[] = [
         common: '菲律宾',
       },
     },
-    flag: 'https://flagcdn.com/ph.svg',
+    flag: 'ph.svg',
   },
   {
     code: 'IS',
@@ -1956,7 +1956,7 @@ export const countries_json: Country[] = [
         common: '冰岛',
       },
     },
-    flag: 'https://flagcdn.com/is.svg',
+    flag: 'is.svg',
   },
   {
     code: 'MZ',
@@ -2059,7 +2059,7 @@ export const countries_json: Country[] = [
         common: '莫桑比克',
       },
     },
-    flag: 'https://flagcdn.com/mz.svg',
+    flag: 'mz.svg',
   },
   {
     code: 'PW',
@@ -2162,7 +2162,7 @@ export const countries_json: Country[] = [
         common: '帕劳',
       },
     },
-    flag: 'https://flagcdn.com/pw.svg',
+    flag: 'pw.svg',
   },
   {
     code: 'AF',
@@ -2265,7 +2265,7 @@ export const countries_json: Country[] = [
         common: '阿富汗',
       },
     },
-    flag: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg',
+    flag: 'af.svg',
   },
   {
     code: 'DJ',
@@ -2368,7 +2368,7 @@ export const countries_json: Country[] = [
         common: '吉布提',
       },
     },
-    flag: 'https://flagcdn.com/dj.svg',
+    flag: 'dj.svg',
   },
   {
     code: 'PE',
@@ -2471,7 +2471,7 @@ export const countries_json: Country[] = [
         common: '秘鲁',
       },
     },
-    flag: 'https://flagcdn.com/pe.svg',
+    flag: 'pe.svg',
   },
   {
     code: 'LU',
@@ -2574,7 +2574,7 @@ export const countries_json: Country[] = [
         common: '卢森堡',
       },
     },
-    flag: 'https://flagcdn.com/lu.svg',
+    flag: 'lu.svg',
   },
   {
     code: 'BI',
@@ -2677,7 +2677,7 @@ export const countries_json: Country[] = [
         common: '布隆迪',
       },
     },
-    flag: 'https://flagcdn.com/bi.svg',
+    flag: 'bi.svg',
   },
   {
     code: 'GY',
@@ -2780,7 +2780,7 @@ export const countries_json: Country[] = [
         common: '圭亚那',
       },
     },
-    flag: 'https://flagcdn.com/gy.svg',
+    flag: 'gy.svg',
   },
   {
     code: 'GB',
@@ -2883,7 +2883,7 @@ export const countries_json: Country[] = [
         common: '英国',
       },
     },
-    flag: 'https://flagcdn.com/gb.svg',
+    flag: 'gb.svg',
   },
   {
     code: 'CC',
@@ -2986,7 +2986,7 @@ export const countries_json: Country[] = [
         common: '科科斯',
       },
     },
-    flag: 'https://flagcdn.com/cc.svg',
+    flag: 'cc.svg',
   },
   {
     code: 'PS',
@@ -3089,7 +3089,7 @@ export const countries_json: Country[] = [
         common: '巴勒斯坦',
       },
     },
-    flag: 'https://flagcdn.com/ps.svg',
+    flag: 'ps.svg',
   },
   {
     code: 'PN',
@@ -3192,7 +3192,7 @@ export const countries_json: Country[] = [
         common: '皮特凯恩群岛',
       },
     },
-    flag: 'https://flagcdn.com/pn.svg',
+    flag: 'pn.svg',
   },
   {
     code: 'BB',
@@ -3295,7 +3295,7 @@ export const countries_json: Country[] = [
         common: '巴巴多斯',
       },
     },
-    flag: 'https://flagcdn.com/bb.svg',
+    flag: 'bb.svg',
   },
   {
     code: 'KI',
@@ -3398,7 +3398,7 @@ export const countries_json: Country[] = [
         common: '基里巴斯',
       },
     },
-    flag: 'https://flagcdn.com/ki.svg',
+    flag: 'ki.svg',
   },
   {
     code: 'ZA',
@@ -3501,7 +3501,7 @@ export const countries_json: Country[] = [
         common: '南非',
       },
     },
-    flag: 'https://flagcdn.com/za.svg',
+    flag: 'za.svg',
   },
   {
     code: 'MN',
@@ -3604,7 +3604,7 @@ export const countries_json: Country[] = [
         common: '蒙古',
       },
     },
-    flag: 'https://flagcdn.com/mn.svg',
+    flag: 'mn.svg',
   },
   {
     code: 'CY',
@@ -3707,7 +3707,7 @@ export const countries_json: Country[] = [
         common: '塞浦路斯',
       },
     },
-    flag: 'https://flagcdn.com/cy.svg',
+    flag: 'cy.svg',
   },
   {
     code: 'MU',
@@ -3810,7 +3810,7 @@ export const countries_json: Country[] = [
         common: '毛里求斯',
       },
     },
-    flag: 'https://flagcdn.com/mu.svg',
+    flag: 'mu.svg',
   },
   {
     code: 'AG',
@@ -3913,7 +3913,7 @@ export const countries_json: Country[] = [
         common: '安提瓜和巴布达',
       },
     },
-    flag: 'https://flagcdn.com/ag.svg',
+    flag: 'ag.svg',
   },
   {
     code: 'MF',
@@ -4016,7 +4016,7 @@ export const countries_json: Country[] = [
         common: '圣马丁',
       },
     },
-    flag: 'https://flagcdn.com/mf.svg',
+    flag: 'mf.svg',
   },
   {
     code: 'RE',
@@ -4119,7 +4119,7 @@ export const countries_json: Country[] = [
         common: '留尼旺岛',
       },
     },
-    flag: 'https://flagcdn.com/re.svg',
+    flag: 're.svg',
   },
   {
     code: 'BM',
@@ -4222,7 +4222,7 @@ export const countries_json: Country[] = [
         common: '百慕大',
       },
     },
-    flag: 'https://flagcdn.com/bm.svg',
+    flag: 'bm.svg',
   },
   {
     code: 'MC',
@@ -4325,7 +4325,7 @@ export const countries_json: Country[] = [
         common: '摩纳哥',
       },
     },
-    flag: 'https://flagcdn.com/mc.svg',
+    flag: 'mc.svg',
   },
   {
     code: 'CW',
@@ -4420,7 +4420,7 @@ export const countries_json: Country[] = [
         common: '库拉索',
       },
     },
-    flag: 'https://flagcdn.com/cw.svg',
+    flag: 'cw.svg',
   },
   {
     code: 'JE',
@@ -4523,7 +4523,7 @@ export const countries_json: Country[] = [
         common: '泽西岛',
       },
     },
-    flag: 'https://flagcdn.com/je.svg',
+    flag: 'je.svg',
   },
   {
     code: 'KH',
@@ -4626,7 +4626,7 @@ export const countries_json: Country[] = [
         common: '柬埔寨',
       },
     },
-    flag: 'https://flagcdn.com/kh.svg',
+    flag: 'kh.svg',
   },
   {
     code: 'SD',
@@ -4729,7 +4729,7 @@ export const countries_json: Country[] = [
         common: '苏丹',
       },
     },
-    flag: 'https://flagcdn.com/sd.svg',
+    flag: 'sd.svg',
   },
   {
     code: 'GN',
@@ -4832,7 +4832,7 @@ export const countries_json: Country[] = [
         common: '几内亚',
       },
     },
-    flag: 'https://flagcdn.com/gn.svg',
+    flag: 'gn.svg',
   },
   {
     code: 'TC',
@@ -4935,7 +4935,7 @@ export const countries_json: Country[] = [
         common: '特克斯和凯科斯群岛',
       },
     },
-    flag: 'https://flagcdn.com/tc.svg',
+    flag: 'tc.svg',
   },
   {
     code: 'MQ',
@@ -5038,7 +5038,7 @@ export const countries_json: Country[] = [
         common: '马提尼克',
       },
     },
-    flag: 'https://flagcdn.com/mq.svg',
+    flag: 'mq.svg',
   },
   {
     code: 'SI',
@@ -5141,7 +5141,7 @@ export const countries_json: Country[] = [
         common: '斯洛文尼亚',
       },
     },
-    flag: 'https://flagcdn.com/si.svg',
+    flag: 'si.svg',
   },
   {
     code: 'IR',
@@ -5240,7 +5240,7 @@ export const countries_json: Country[] = [
         common: '伊朗',
       },
     },
-    flag: 'https://flagcdn.com/ir.svg',
+    flag: 'ir.svg',
   },
   {
     code: 'SE',
@@ -5343,7 +5343,7 @@ export const countries_json: Country[] = [
         common: '瑞典',
       },
     },
-    flag: 'https://flagcdn.com/se.svg',
+    flag: 'se.svg',
   },
   {
     code: 'BD',
@@ -5446,7 +5446,7 @@ export const countries_json: Country[] = [
         common: '孟加拉国',
       },
     },
-    flag: 'https://flagcdn.com/bd.svg',
+    flag: 'bd.svg',
   },
   {
     code: 'GS',
@@ -5549,7 +5549,7 @@ export const countries_json: Country[] = [
         common: '南乔治亚',
       },
     },
-    flag: 'https://flagcdn.com/gs.svg',
+    flag: 'gs.svg',
   },
   {
     code: 'VI',
@@ -5652,7 +5652,7 @@ export const countries_json: Country[] = [
         common: '美属维尔京群岛',
       },
     },
-    flag: 'https://flagcdn.com/vi.svg',
+    flag: 'vi.svg',
   },
   {
     code: 'TF',
@@ -5755,7 +5755,7 @@ export const countries_json: Country[] = [
         common: '法国南部和南极土地',
       },
     },
-    flag: 'https://flagcdn.com/tf.svg',
+    flag: 'tf.svg',
   },
   {
     code: 'MV',
@@ -5858,7 +5858,7 @@ export const countries_json: Country[] = [
         common: '马尔代夫',
       },
     },
-    flag: 'https://flagcdn.com/mv.svg',
+    flag: 'mv.svg',
   },
   {
     code: 'GR',
@@ -5961,7 +5961,7 @@ export const countries_json: Country[] = [
         common: '希腊',
       },
     },
-    flag: 'https://flagcdn.com/gr.svg',
+    flag: 'gr.svg',
   },
   {
     code: 'EE',
@@ -6064,7 +6064,7 @@ export const countries_json: Country[] = [
         common: '爱沙尼亚',
       },
     },
-    flag: 'https://flagcdn.com/ee.svg',
+    flag: 'ee.svg',
   },
   {
     code: 'MT',
@@ -6167,7 +6167,7 @@ export const countries_json: Country[] = [
         common: '马耳他',
       },
     },
-    flag: 'https://flagcdn.com/mt.svg',
+    flag: 'mt.svg',
   },
   {
     code: 'PF',
@@ -6270,7 +6270,7 @@ export const countries_json: Country[] = [
         common: '法属波利尼西亚',
       },
     },
-    flag: 'https://flagcdn.com/pf.svg',
+    flag: 'pf.svg',
   },
   {
     code: 'LC',
@@ -6373,7 +6373,7 @@ export const countries_json: Country[] = [
         common: '圣卢西亚',
       },
     },
-    flag: 'https://flagcdn.com/lc.svg',
+    flag: 'lc.svg',
   },
   {
     code: 'RW',
@@ -6476,7 +6476,7 @@ export const countries_json: Country[] = [
         common: '卢旺达',
       },
     },
-    flag: 'https://flagcdn.com/rw.svg',
+    flag: 'rw.svg',
   },
   {
     code: 'RU',
@@ -6579,7 +6579,7 @@ export const countries_json: Country[] = [
         common: '俄罗斯',
       },
     },
-    flag: 'https://flagcdn.com/ru.svg',
+    flag: 'ru.svg',
   },
   {
     code: 'BY',
@@ -6682,7 +6682,7 @@ export const countries_json: Country[] = [
         common: '白俄罗斯',
       },
     },
-    flag: 'https://flagcdn.com/by.svg',
+    flag: 'by.svg',
   },
   {
     code: 'HR',
@@ -6785,7 +6785,7 @@ export const countries_json: Country[] = [
         common: '克罗地亚',
       },
     },
-    flag: 'https://flagcdn.com/hr.svg',
+    flag: 'hr.svg',
   },
   {
     code: 'BL',
@@ -6888,7 +6888,7 @@ export const countries_json: Country[] = [
         common: '圣巴泰勒米',
       },
     },
-    flag: 'https://flagcdn.com/bl.svg',
+    flag: 'bl.svg',
   },
   {
     code: 'GI',
@@ -6991,7 +6991,7 @@ export const countries_json: Country[] = [
         common: '直布罗陀',
       },
     },
-    flag: 'https://flagcdn.com/gi.svg',
+    flag: 'gi.svg',
   },
   {
     code: 'HM',
@@ -7094,7 +7094,7 @@ export const countries_json: Country[] = [
         common: '赫德岛和麦当劳群岛',
       },
     },
-    flag: 'https://flagcdn.com/hm.svg',
+    flag: 'hm.svg',
   },
   {
     code: 'CL',
@@ -7197,7 +7197,7 @@ export const countries_json: Country[] = [
         common: '智利',
       },
     },
-    flag: 'https://flagcdn.com/cl.svg',
+    flag: 'cl.svg',
   },
   {
     code: 'AM',
@@ -7300,7 +7300,7 @@ export const countries_json: Country[] = [
         common: '亚美尼亚',
       },
     },
-    flag: 'https://flagcdn.com/am.svg',
+    flag: 'am.svg',
   },
   {
     code: 'HT',
@@ -7403,7 +7403,7 @@ export const countries_json: Country[] = [
         common: '海地',
       },
     },
-    flag: 'https://flagcdn.com/ht.svg',
+    flag: 'ht.svg',
   },
   {
     code: 'CD',
@@ -7506,7 +7506,7 @@ export const countries_json: Country[] = [
         common: '民主刚果',
       },
     },
-    flag: 'https://flagcdn.com/cd.svg',
+    flag: 'cd.svg',
   },
   {
     code: 'GU',
@@ -7609,7 +7609,7 @@ export const countries_json: Country[] = [
         common: '关岛',
       },
     },
-    flag: 'https://flagcdn.com/gu.svg',
+    flag: 'gu.svg',
   },
   {
     code: 'AX',
@@ -7712,7 +7712,7 @@ export const countries_json: Country[] = [
         common: '奥兰群岛',
       },
     },
-    flag: 'https://flagcdn.com/ax.svg',
+    flag: 'ax.svg',
   },
   {
     code: 'IQ',
@@ -7815,7 +7815,7 @@ export const countries_json: Country[] = [
         common: '伊拉克',
       },
     },
-    flag: 'https://flagcdn.com/iq.svg',
+    flag: 'iq.svg',
   },
   {
     code: 'DK',
@@ -7918,7 +7918,7 @@ export const countries_json: Country[] = [
         common: '丹麦',
       },
     },
-    flag: 'https://flagcdn.com/dk.svg',
+    flag: 'dk.svg',
   },
   {
     code: 'NG',
@@ -8021,7 +8021,7 @@ export const countries_json: Country[] = [
         common: '尼日利亚',
       },
     },
-    flag: 'https://flagcdn.com/ng.svg',
+    flag: 'ng.svg',
   },
   {
     code: 'MW',
@@ -8124,7 +8124,7 @@ export const countries_json: Country[] = [
         common: '马拉维',
       },
     },
-    flag: 'https://flagcdn.com/mw.svg',
+    flag: 'mw.svg',
   },
   {
     code: 'CO',
@@ -8227,7 +8227,7 @@ export const countries_json: Country[] = [
         common: '哥伦比亚',
       },
     },
-    flag: 'https://flagcdn.com/co.svg',
+    flag: 'co.svg',
   },
   {
     code: 'GT',
@@ -8330,7 +8330,7 @@ export const countries_json: Country[] = [
         common: '危地马拉',
       },
     },
-    flag: 'https://flagcdn.com/gt.svg',
+    flag: 'gt.svg',
   },
   {
     code: 'FK',
@@ -8433,7 +8433,7 @@ export const countries_json: Country[] = [
         common: '福克兰群岛',
       },
     },
-    flag: 'https://flagcdn.com/fk.svg',
+    flag: 'fk.svg',
   },
   {
     code: 'TT',
@@ -8536,7 +8536,7 @@ export const countries_json: Country[] = [
         common: '特立尼达和多巴哥',
       },
     },
-    flag: 'https://flagcdn.com/tt.svg',
+    flag: 'tt.svg',
   },
   {
     code: 'KP',
@@ -8639,7 +8639,7 @@ export const countries_json: Country[] = [
         common: '朝鲜',
       },
     },
-    flag: 'https://flagcdn.com/kp.svg',
+    flag: 'kp.svg',
   },
   {
     code: 'TV',
@@ -8742,7 +8742,7 @@ export const countries_json: Country[] = [
         common: '图瓦卢',
       },
     },
-    flag: 'https://flagcdn.com/tv.svg',
+    flag: 'tv.svg',
   },
   {
     code: 'ID',
@@ -8845,7 +8845,7 @@ export const countries_json: Country[] = [
         common: '印度尼西亚',
       },
     },
-    flag: 'https://flagcdn.com/id.svg',
+    flag: 'id.svg',
   },
   {
     code: 'ET',
@@ -8948,7 +8948,7 @@ export const countries_json: Country[] = [
         common: '埃塞俄比亚',
       },
     },
-    flag: 'https://flagcdn.com/et.svg',
+    flag: 'et.svg',
   },
   {
     code: 'BO',
@@ -9051,7 +9051,7 @@ export const countries_json: Country[] = [
         common: '玻利维亚',
       },
     },
-    flag: 'https://flagcdn.com/bo.svg',
+    flag: 'bo.svg',
   },
   {
     code: 'SL',
@@ -9154,7 +9154,7 @@ export const countries_json: Country[] = [
         common: '塞拉利昂',
       },
     },
-    flag: 'https://flagcdn.com/sl.svg',
+    flag: 'sl.svg',
   },
   {
     code: 'ME',
@@ -9257,7 +9257,7 @@ export const countries_json: Country[] = [
         common: '黑山',
       },
     },
-    flag: 'https://flagcdn.com/me.svg',
+    flag: 'me.svg',
   },
   {
     code: 'AU',
@@ -9360,7 +9360,7 @@ export const countries_json: Country[] = [
         common: '澳大利亚',
       },
     },
-    flag: 'https://flagcdn.com/au.svg',
+    flag: 'au.svg',
   },
   {
     code: 'CG',
@@ -9463,7 +9463,7 @@ export const countries_json: Country[] = [
         common: '刚果',
       },
     },
-    flag: 'https://flagcdn.com/cg.svg',
+    flag: 'cg.svg',
   },
   {
     code: 'BF',
@@ -9566,7 +9566,7 @@ export const countries_json: Country[] = [
         common: '布基纳法索',
       },
     },
-    flag: 'https://flagcdn.com/bf.svg',
+    flag: 'bf.svg',
   },
   {
     code: 'IL',
@@ -9669,7 +9669,7 @@ export const countries_json: Country[] = [
         common: '以色列',
       },
     },
-    flag: 'https://flagcdn.com/il.svg',
+    flag: 'il.svg',
   },
   {
     code: 'UY',
@@ -9772,7 +9772,7 @@ export const countries_json: Country[] = [
         common: '乌拉圭',
       },
     },
-    flag: 'https://flagcdn.com/uy.svg',
+    flag: 'uy.svg',
   },
   {
     code: 'IE',
@@ -9875,7 +9875,7 @@ export const countries_json: Country[] = [
         common: '爱尔兰',
       },
     },
-    flag: 'https://flagcdn.com/ie.svg',
+    flag: 'ie.svg',
   },
   {
     code: 'CX',
@@ -9978,7 +9978,7 @@ export const countries_json: Country[] = [
         common: '圣诞岛',
       },
     },
-    flag: 'https://flagcdn.com/cx.svg',
+    flag: 'cx.svg',
   },
   {
     code: 'BQ',
@@ -10081,7 +10081,7 @@ export const countries_json: Country[] = [
         common: '荷蘭加勒比區',
       },
     },
-    flag: 'https://flagcdn.com/bq.svg',
+    flag: 'bq.svg',
   },
   {
     code: 'TW',
@@ -10180,7 +10180,7 @@ export const countries_json: Country[] = [
         common: 'تائیوان',
       },
     },
-    flag: 'https://flagcdn.com/tw.svg',
+    flag: 'tw.svg',
   },
   {
     code: 'BW',
@@ -10283,7 +10283,7 @@ export const countries_json: Country[] = [
         common: '博茨瓦纳',
       },
     },
-    flag: 'https://flagcdn.com/bw.svg',
+    flag: 'bw.svg',
   },
   {
     code: 'ZM',
@@ -10386,7 +10386,7 @@ export const countries_json: Country[] = [
         common: '赞比亚',
       },
     },
-    flag: 'https://flagcdn.com/zm.svg',
+    flag: 'zm.svg',
   },
   {
     code: 'GA',
@@ -10489,7 +10489,7 @@ export const countries_json: Country[] = [
         common: '加蓬',
       },
     },
-    flag: 'https://flagcdn.com/ga.svg',
+    flag: 'ga.svg',
   },
   {
     code: 'FI',
@@ -10592,7 +10592,7 @@ export const countries_json: Country[] = [
         common: '芬兰',
       },
     },
-    flag: 'https://flagcdn.com/fi.svg',
+    flag: 'fi.svg',
   },
   {
     code: 'MO',
@@ -10691,7 +10691,7 @@ export const countries_json: Country[] = [
         common: 'مکاؤ',
       },
     },
-    flag: 'https://flagcdn.com/mo.svg',
+    flag: 'mo.svg',
   },
   {
     code: 'AQ',
@@ -10794,7 +10794,7 @@ export const countries_json: Country[] = [
         common: '南极洲',
       },
     },
-    flag: 'https://flagcdn.com/aq.svg',
+    flag: 'aq.svg',
   },
   {
     code: 'SV',
@@ -10897,7 +10897,7 @@ export const countries_json: Country[] = [
         common: '萨尔瓦多',
       },
     },
-    flag: 'https://flagcdn.com/sv.svg',
+    flag: 'sv.svg',
   },
   {
     code: 'US',
@@ -11000,7 +11000,7 @@ export const countries_json: Country[] = [
         common: '美国',
       },
     },
-    flag: 'https://flagcdn.com/us.svg',
+    flag: 'us.svg',
   },
   {
     code: 'MH',
@@ -11103,7 +11103,7 @@ export const countries_json: Country[] = [
         common: '马绍尔群岛',
       },
     },
-    flag: 'https://flagcdn.com/mh.svg',
+    flag: 'mh.svg',
   },
   {
     code: 'FJ',
@@ -11206,7 +11206,7 @@ export const countries_json: Country[] = [
         common: '斐济',
       },
     },
-    flag: 'https://flagcdn.com/fj.svg',
+    flag: 'fj.svg',
   },
   {
     code: 'DE',
@@ -11309,7 +11309,7 @@ export const countries_json: Country[] = [
         common: '德国',
       },
     },
-    flag: 'https://flagcdn.com/de.svg',
+    flag: 'de.svg',
   },
   {
     code: 'BZ',
@@ -11412,7 +11412,7 @@ export const countries_json: Country[] = [
         common: '伯利兹',
       },
     },
-    flag: 'https://flagcdn.com/bz.svg',
+    flag: 'bz.svg',
   },
   {
     code: 'ZW',
@@ -11515,7 +11515,7 @@ export const countries_json: Country[] = [
         common: '津巴布韦',
       },
     },
-    flag: 'https://flagcdn.com/zw.svg',
+    flag: 'zw.svg',
   },
   {
     code: 'QA',
@@ -11618,7 +11618,7 @@ export const countries_json: Country[] = [
         common: '卡塔尔',
       },
     },
-    flag: 'https://flagcdn.com/qa.svg',
+    flag: 'qa.svg',
   },
   {
     code: 'AI',
@@ -11721,7 +11721,7 @@ export const countries_json: Country[] = [
         common: '安圭拉',
       },
     },
-    flag: 'https://flagcdn.com/ai.svg',
+    flag: 'ai.svg',
   },
   {
     code: 'AO',
@@ -11824,7 +11824,7 @@ export const countries_json: Country[] = [
         common: '安哥拉',
       },
     },
-    flag: 'https://flagcdn.com/ao.svg',
+    flag: 'ao.svg',
   },
   {
     code: 'IT',
@@ -11927,7 +11927,7 @@ export const countries_json: Country[] = [
         common: '意大利',
       },
     },
-    flag: 'https://flagcdn.com/it.svg',
+    flag: 'it.svg',
   },
   {
     code: 'TG',
@@ -12030,7 +12030,7 @@ export const countries_json: Country[] = [
         common: '多哥',
       },
     },
-    flag: 'https://flagcdn.com/tg.svg',
+    flag: 'tg.svg',
   },
   {
     code: 'MP',
@@ -12133,7 +12133,7 @@ export const countries_json: Country[] = [
         common: '北马里亚纳群岛',
       },
     },
-    flag: 'https://flagcdn.com/mp.svg',
+    flag: 'mp.svg',
   },
   {
     code: 'NZ',
@@ -12236,7 +12236,7 @@ export const countries_json: Country[] = [
         common: '新西兰',
       },
     },
-    flag: 'https://flagcdn.com/nz.svg',
+    flag: 'nz.svg',
   },
   {
     code: 'MM',
@@ -12339,7 +12339,7 @@ export const countries_json: Country[] = [
         common: '缅甸',
       },
     },
-    flag: 'https://flagcdn.com/mm.svg',
+    flag: 'mm.svg',
   },
   {
     code: 'OM',
@@ -12442,7 +12442,7 @@ export const countries_json: Country[] = [
         common: '阿曼',
       },
     },
-    flag: 'https://flagcdn.com/om.svg',
+    flag: 'om.svg',
   },
   {
     code: 'WS',
@@ -12545,7 +12545,7 @@ export const countries_json: Country[] = [
         common: '萨摩亚',
       },
     },
-    flag: 'https://flagcdn.com/ws.svg',
+    flag: 'ws.svg',
   },
   {
     code: 'BJ',
@@ -12648,7 +12648,7 @@ export const countries_json: Country[] = [
         common: '贝宁',
       },
     },
-    flag: 'https://flagcdn.com/bj.svg',
+    flag: 'bj.svg',
   },
   {
     code: 'KN',
@@ -12751,7 +12751,7 @@ export const countries_json: Country[] = [
         common: '圣基茨和尼维斯',
       },
     },
-    flag: 'https://flagcdn.com/kn.svg',
+    flag: 'kn.svg',
   },
   {
     code: 'MR',
@@ -12854,7 +12854,7 @@ export const countries_json: Country[] = [
         common: '毛里塔尼亚',
       },
     },
-    flag: 'https://flagcdn.com/mr.svg',
+    flag: 'mr.svg',
   },
   {
     code: 'UM',
@@ -12957,7 +12957,7 @@ export const countries_json: Country[] = [
         common: '美国本土外小岛屿',
       },
     },
-    flag: 'https://flagcdn.com/um.svg',
+    flag: 'um.svg',
   },
   {
     code: 'GL',
@@ -13060,7 +13060,7 @@ export const countries_json: Country[] = [
         common: '格陵兰',
       },
     },
-    flag: 'https://flagcdn.com/gl.svg',
+    flag: 'gl.svg',
   },
   {
     code: 'BA',
@@ -13163,7 +13163,7 @@ export const countries_json: Country[] = [
         common: '波斯尼亚和黑塞哥维那',
       },
     },
-    flag: 'https://flagcdn.com/ba.svg',
+    flag: 'ba.svg',
   },
   {
     code: 'SZ',
@@ -13266,7 +13266,7 @@ export const countries_json: Country[] = [
         common: '斯威士兰',
       },
     },
-    flag: 'https://flagcdn.com/sz.svg',
+    flag: 'sz.svg',
   },
   {
     code: 'VA',
@@ -13369,7 +13369,7 @@ export const countries_json: Country[] = [
         common: '梵蒂冈',
       },
     },
-    flag: 'https://flagcdn.com/va.svg',
+    flag: 'va.svg',
   },
   {
     code: 'FR',
@@ -13472,7 +13472,7 @@ export const countries_json: Country[] = [
         common: '法国',
       },
     },
-    flag: 'https://flagcdn.com/fr.svg',
+    flag: 'fr.svg',
   },
   {
     code: 'PL',
@@ -13575,7 +13575,7 @@ export const countries_json: Country[] = [
         common: '波兰',
       },
     },
-    flag: 'https://flagcdn.com/pl.svg',
+    flag: 'pl.svg',
   },
   {
     code: 'KM',
@@ -13678,7 +13678,7 @@ export const countries_json: Country[] = [
         common: '科摩罗',
       },
     },
-    flag: 'https://flagcdn.com/km.svg',
+    flag: 'km.svg',
   },
   {
     code: 'PG',
@@ -13781,7 +13781,7 @@ export const countries_json: Country[] = [
         common: '巴布亚新几内亚',
       },
     },
-    flag: 'https://flagcdn.com/pg.svg',
+    flag: 'pg.svg',
   },
   {
     code: 'KE',
@@ -13884,7 +13884,7 @@ export const countries_json: Country[] = [
         common: '肯尼亚',
       },
     },
-    flag: 'https://flagcdn.com/ke.svg',
+    flag: 'ke.svg',
   },
   {
     code: 'VN',
@@ -13987,7 +13987,7 @@ export const countries_json: Country[] = [
         common: '越南',
       },
     },
-    flag: 'https://flagcdn.com/vn.svg',
+    flag: 'vn.svg',
   },
   {
     code: 'VU',
@@ -14090,7 +14090,7 @@ export const countries_json: Country[] = [
         common: '瓦努阿图',
       },
     },
-    flag: 'https://flagcdn.com/vu.svg',
+    flag: 'vu.svg',
   },
   {
     code: 'GW',
@@ -14193,7 +14193,7 @@ export const countries_json: Country[] = [
         common: '几内亚比绍',
       },
     },
-    flag: 'https://flagcdn.com/gw.svg',
+    flag: 'gw.svg',
   },
   {
     code: 'PM',
@@ -14296,7 +14296,7 @@ export const countries_json: Country[] = [
         common: '圣皮埃尔和密克隆',
       },
     },
-    flag: 'https://flagcdn.com/pm.svg',
+    flag: 'pm.svg',
   },
   {
     code: 'SH',
@@ -14399,7 +14399,7 @@ export const countries_json: Country[] = [
         common: '圣赫勒拿、阿森松和特里斯坦-达库尼亚',
       },
     },
-    flag: 'https://flagcdn.com/sh.svg',
+    flag: 'sh.svg',
   },
   {
     code: 'UG',
@@ -14502,7 +14502,7 @@ export const countries_json: Country[] = [
         common: '乌干达',
       },
     },
-    flag: 'https://flagcdn.com/ug.svg',
+    flag: 'ug.svg',
   },
   {
     code: 'UZ',
@@ -14605,7 +14605,7 @@ export const countries_json: Country[] = [
         common: '乌兹别克斯坦',
       },
     },
-    flag: 'https://flagcdn.com/uz.svg',
+    flag: 'uz.svg',
   },
   {
     code: 'NC',
@@ -14708,7 +14708,7 @@ export const countries_json: Country[] = [
         common: '新喀里多尼亚',
       },
     },
-    flag: 'https://flagcdn.com/nc.svg',
+    flag: 'nc.svg',
   },
   {
     code: 'PY',
@@ -14811,7 +14811,7 @@ export const countries_json: Country[] = [
         common: '巴拉圭',
       },
     },
-    flag: 'https://flagcdn.com/py.svg',
+    flag: 'py.svg',
   },
   {
     code: 'CA',
@@ -14914,7 +14914,7 @@ export const countries_json: Country[] = [
         common: '加拿大',
       },
     },
-    flag: 'https://flagcdn.com/ca.svg',
+    flag: 'ca.svg',
   },
   {
     code: 'NU',
@@ -15017,7 +15017,7 @@ export const countries_json: Country[] = [
         common: '纽埃',
       },
     },
-    flag: 'https://flagcdn.com/nu.svg',
+    flag: 'nu.svg',
   },
   {
     code: 'TH',
@@ -15120,7 +15120,7 @@ export const countries_json: Country[] = [
         common: '泰国',
       },
     },
-    flag: 'https://flagcdn.com/th.svg',
+    flag: 'th.svg',
   },
   {
     code: 'AT',
@@ -15223,7 +15223,7 @@ export const countries_json: Country[] = [
         common: '奥地利',
       },
     },
-    flag: 'https://flagcdn.com/at.svg',
+    flag: 'at.svg',
   },
   {
     code: 'BH',
@@ -15326,7 +15326,7 @@ export const countries_json: Country[] = [
         common: '巴林',
       },
     },
-    flag: 'https://flagcdn.com/bh.svg',
+    flag: 'bh.svg',
   },
   {
     code: 'NP',
@@ -15429,7 +15429,7 @@ export const countries_json: Country[] = [
         common: '尼泊尔',
       },
     },
-    flag: 'https://flagcdn.com/np.svg',
+    flag: 'np.svg',
   },
   {
     code: 'DZ',
@@ -15532,7 +15532,7 @@ export const countries_json: Country[] = [
         common: '阿尔及利亚',
       },
     },
-    flag: 'https://flagcdn.com/dz.svg',
+    flag: 'dz.svg',
   },
   {
     code: 'KZ',
@@ -15635,7 +15635,7 @@ export const countries_json: Country[] = [
         common: '哈萨克斯坦',
       },
     },
-    flag: 'https://flagcdn.com/kz.svg',
+    flag: 'kz.svg',
   },
   {
     code: 'LA',
@@ -15738,7 +15738,7 @@ export const countries_json: Country[] = [
         common: '老挝',
       },
     },
-    flag: 'https://flagcdn.com/la.svg',
+    flag: 'la.svg',
   },
   {
     code: 'XK',
@@ -15837,7 +15837,7 @@ export const countries_json: Country[] = [
         common: '科索沃',
       },
     },
-    flag: 'https://flagcdn.com/xk.svg',
+    flag: 'xk.svg',
   },
   {
     code: 'CI',
@@ -15940,7 +15940,7 @@ export const countries_json: Country[] = [
         common: '科特迪瓦',
       },
     },
-    flag: 'https://flagcdn.com/ci.svg',
+    flag: 'ci.svg',
   },
   {
     code: 'KY',
@@ -16043,7 +16043,7 @@ export const countries_json: Country[] = [
         common: '开曼群岛',
       },
     },
-    flag: 'https://flagcdn.com/ky.svg',
+    flag: 'ky.svg',
   },
   {
     code: 'TD',
@@ -16146,7 +16146,7 @@ export const countries_json: Country[] = [
         common: '乍得',
       },
     },
-    flag: 'https://flagcdn.com/td.svg',
+    flag: 'td.svg',
   },
   {
     code: 'TM',
@@ -16249,7 +16249,7 @@ export const countries_json: Country[] = [
         common: '土库曼斯坦',
       },
     },
-    flag: 'https://flagcdn.com/tm.svg',
+    flag: 'tm.svg',
   },
   {
     code: 'PR',
@@ -16352,7 +16352,7 @@ export const countries_json: Country[] = [
         common: '波多黎各',
       },
     },
-    flag: 'https://flagcdn.com/pr.svg',
+    flag: 'pr.svg',
   },
   {
     code: 'BR',
@@ -16455,7 +16455,7 @@ export const countries_json: Country[] = [
         common: '巴西',
       },
     },
-    flag: 'https://flagcdn.com/br.svg',
+    flag: 'br.svg',
   },
   {
     code: 'RO',
@@ -16558,7 +16558,7 @@ export const countries_json: Country[] = [
         common: '罗马尼亚',
       },
     },
-    flag: 'https://flagcdn.com/ro.svg',
+    flag: 'ro.svg',
   },
   {
     code: 'SX',
@@ -16661,7 +16661,7 @@ export const countries_json: Country[] = [
         common: '圣马丁岛',
       },
     },
-    flag: 'https://flagcdn.com/sx.svg',
+    flag: 'sx.svg',
   },
   {
     code: 'CH',
@@ -16764,7 +16764,7 @@ export const countries_json: Country[] = [
         common: '瑞士',
       },
     },
-    flag: 'https://flagcdn.com/ch.svg',
+    flag: 'ch.svg',
   },
   {
     code: 'ST',
@@ -16867,7 +16867,7 @@ export const countries_json: Country[] = [
         common: '圣多美和普林西比',
       },
     },
-    flag: 'https://flagcdn.com/st.svg',
+    flag: 'st.svg',
   },
   {
     code: 'PK',
@@ -16970,7 +16970,7 @@ export const countries_json: Country[] = [
         common: '巴基斯坦',
       },
     },
-    flag: 'https://flagcdn.com/pk.svg',
+    flag: 'pk.svg',
   },
   {
     code: 'TR',
@@ -17073,7 +17073,7 @@ export const countries_json: Country[] = [
         common: '土耳其',
       },
     },
-    flag: 'https://flagcdn.com/tr.svg',
+    flag: 'tr.svg',
   },
   {
     code: 'SR',
@@ -17176,7 +17176,7 @@ export const countries_json: Country[] = [
         common: '苏里南',
       },
     },
-    flag: 'https://flagcdn.com/sr.svg',
+    flag: 'sr.svg',
   },
   {
     code: 'NF',
@@ -17279,7 +17279,7 @@ export const countries_json: Country[] = [
         common: '诺福克岛',
       },
     },
-    flag: 'https://flagcdn.com/nf.svg',
+    flag: 'nf.svg',
   },
   {
     code: 'SG',
@@ -17378,7 +17378,7 @@ export const countries_json: Country[] = [
         common: 'سنگاپور',
       },
     },
-    flag: 'https://flagcdn.com/sg.svg',
+    flag: 'sg.svg',
   },
   {
     code: 'TZ',
@@ -17481,7 +17481,7 @@ export const countries_json: Country[] = [
         common: '坦桑尼亚',
       },
     },
-    flag: 'https://flagcdn.com/tz.svg',
+    flag: 'tz.svg',
   },
   {
     code: 'FM',
@@ -17584,7 +17584,7 @@ export const countries_json: Country[] = [
         common: '密克罗尼西亚',
       },
     },
-    flag: 'https://flagcdn.com/fm.svg',
+    flag: 'fm.svg',
   },
   {
     code: 'SK',
@@ -17687,7 +17687,7 @@ export const countries_json: Country[] = [
         common: '斯洛伐克',
       },
     },
-    flag: 'https://flagcdn.com/sk.svg',
+    flag: 'sk.svg',
   },
   {
     code: 'HK',
@@ -17786,7 +17786,7 @@ export const countries_json: Country[] = [
         common: 'ہانگ کانگ',
       },
     },
-    flag: 'https://flagcdn.com/hk.svg',
+    flag: 'hk.svg',
   },
   {
     code: 'AL',
@@ -17889,7 +17889,7 @@ export const countries_json: Country[] = [
         common: '阿尔巴尼亚',
       },
     },
-    flag: 'https://flagcdn.com/al.svg',
+    flag: 'al.svg',
   },
   {
     code: 'IN',
@@ -17992,7 +17992,7 @@ export const countries_json: Country[] = [
         common: '印度',
       },
     },
-    flag: 'https://flagcdn.com/in.svg',
+    flag: 'in.svg',
   },
   {
     code: 'NI',
@@ -18095,7 +18095,7 @@ export const countries_json: Country[] = [
         common: '尼加拉瓜',
       },
     },
-    flag: 'https://flagcdn.com/ni.svg',
+    flag: 'ni.svg',
   },
   {
     code: 'JP',
@@ -18198,7 +18198,7 @@ export const countries_json: Country[] = [
         common: '日本',
       },
     },
-    flag: 'https://flagcdn.com/jp.svg',
+    flag: 'jp.svg',
   },
   {
     code: 'AR',
@@ -18301,7 +18301,7 @@ export const countries_json: Country[] = [
         common: '阿根廷',
       },
     },
-    flag: 'https://flagcdn.com/ar.svg',
+    flag: 'ar.svg',
   },
   {
     code: 'CV',
@@ -18404,7 +18404,7 @@ export const countries_json: Country[] = [
         common: '佛得角',
       },
     },
-    flag: 'https://flagcdn.com/cv.svg',
+    flag: 'cv.svg',
   },
   {
     code: 'MD',
@@ -18507,7 +18507,7 @@ export const countries_json: Country[] = [
         common: '摩尔多瓦',
       },
     },
-    flag: 'https://flagcdn.com/md.svg',
+    flag: 'md.svg',
   },
   {
     code: 'PA',
@@ -18610,7 +18610,7 @@ export const countries_json: Country[] = [
         common: '巴拿马',
       },
     },
-    flag: 'https://flagcdn.com/pa.svg',
+    flag: 'pa.svg',
   },
   {
     code: 'SJ',
@@ -18713,7 +18713,7 @@ export const countries_json: Country[] = [
         common: '斯瓦尔巴特',
       },
     },
-    flag: 'https://flagcdn.com/sj.svg',
+    flag: 'sj.svg',
   },
   {
     code: 'TO',
@@ -18816,7 +18816,7 @@ export const countries_json: Country[] = [
         common: '汤加',
       },
     },
-    flag: 'https://flagcdn.com/to.svg',
+    flag: 'to.svg',
   },
   {
     code: 'VC',
@@ -18919,7 +18919,7 @@ export const countries_json: Country[] = [
         common: '圣文森特和格林纳丁斯',
       },
     },
-    flag: 'https://flagcdn.com/vc.svg',
+    flag: 'vc.svg',
   },
   {
     code: 'CZ',
@@ -19022,7 +19022,7 @@ export const countries_json: Country[] = [
         common: '捷克',
       },
     },
-    flag: 'https://flagcdn.com/cz.svg',
+    flag: 'cz.svg',
   },
   {
     code: 'MG',
@@ -19125,7 +19125,7 @@ export const countries_json: Country[] = [
         common: '马达加斯加',
       },
     },
-    flag: 'https://flagcdn.com/mg.svg',
+    flag: 'mg.svg',
   },
   {
     code: 'BE',
@@ -19228,7 +19228,7 @@ export const countries_json: Country[] = [
         common: '比利时',
       },
     },
-    flag: 'https://flagcdn.com/be.svg',
+    flag: 'be.svg',
   },
   {
     code: 'HU',
@@ -19331,7 +19331,7 @@ export const countries_json: Country[] = [
         common: '匈牙利',
       },
     },
-    flag: 'https://flagcdn.com/hu.svg',
+    flag: 'hu.svg',
   },
   {
     code: 'DO',
@@ -19434,7 +19434,7 @@ export const countries_json: Country[] = [
         common: '多明尼加',
       },
     },
-    flag: 'https://flagcdn.com/do.svg',
+    flag: 'do.svg',
   },
   {
     code: 'EG',
@@ -19537,7 +19537,7 @@ export const countries_json: Country[] = [
         common: '埃及',
       },
     },
-    flag: 'https://flagcdn.com/eg.svg',
+    flag: 'eg.svg',
   },
   {
     code: 'NR',
@@ -19640,7 +19640,7 @@ export const countries_json: Country[] = [
         common: '瑙鲁',
       },
     },
-    flag: 'https://flagcdn.com/nr.svg',
+    flag: 'nr.svg',
   },
   {
     code: 'CM',
@@ -19743,7 +19743,7 @@ export const countries_json: Country[] = [
         common: '喀麦隆',
       },
     },
-    flag: 'https://flagcdn.com/cm.svg',
+    flag: 'cm.svg',
   },
   {
     code: 'JM',
@@ -19846,7 +19846,7 @@ export const countries_json: Country[] = [
         common: '牙买加',
       },
     },
-    flag: 'https://flagcdn.com/jm.svg',
+    flag: 'jm.svg',
   },
   {
     code: 'BV',
@@ -19949,7 +19949,7 @@ export const countries_json: Country[] = [
         common: '布维岛',
       },
     },
-    flag: 'https://flagcdn.com/bv.svg',
+    flag: 'bv.svg',
   },
   {
     code: 'SA',
@@ -20052,7 +20052,7 @@ export const countries_json: Country[] = [
         common: '沙特阿拉伯',
       },
     },
-    flag: 'https://flagcdn.com/sa.svg',
+    flag: 'sa.svg',
   },
   {
     code: 'AZ',
@@ -20155,7 +20155,7 @@ export const countries_json: Country[] = [
         common: '阿塞拜疆',
       },
     },
-    flag: 'https://flagcdn.com/az.svg',
+    flag: 'az.svg',
   },
   {
     code: 'JO',
@@ -20258,7 +20258,7 @@ export const countries_json: Country[] = [
         common: '约旦',
       },
     },
-    flag: 'https://flagcdn.com/jo.svg',
+    flag: 'jo.svg',
   },
   {
     code: 'LT',
@@ -20361,7 +20361,7 @@ export const countries_json: Country[] = [
         common: '立陶宛',
       },
     },
-    flag: 'https://flagcdn.com/lt.svg',
+    flag: 'lt.svg',
   },
   {
     code: 'IM',
@@ -20464,7 +20464,7 @@ export const countries_json: Country[] = [
         common: '马恩岛',
       },
     },
-    flag: 'https://flagcdn.com/im.svg',
+    flag: 'im.svg',
   },
   {
     code: 'GQ',
@@ -20567,7 +20567,7 @@ export const countries_json: Country[] = [
         common: '赤道几内亚',
       },
     },
-    flag: 'https://flagcdn.com/gq.svg',
+    flag: 'gq.svg',
   },
   {
     code: 'CR',
@@ -20670,7 +20670,7 @@ export const countries_json: Country[] = [
         common: '哥斯达黎加',
       },
     },
-    flag: 'https://flagcdn.com/cr.svg',
+    flag: 'cr.svg',
   },
   {
     code: 'CU',
@@ -20773,7 +20773,7 @@ export const countries_json: Country[] = [
         common: '古巴',
       },
     },
-    flag: 'https://flagcdn.com/cu.svg',
+    flag: 'cu.svg',
   },
   {
     code: 'DM',
@@ -20876,7 +20876,7 @@ export const countries_json: Country[] = [
         common: '多米尼加',
       },
     },
-    flag: 'https://flagcdn.com/dm.svg',
+    flag: 'dm.svg',
   },
   {
     code: 'CF',
@@ -20979,7 +20979,7 @@ export const countries_json: Country[] = [
         common: '中非共和国',
       },
     },
-    flag: 'https://flagcdn.com/cf.svg',
+    flag: 'cf.svg',
   },
   {
     code: 'NA',
@@ -21082,7 +21082,7 @@ export const countries_json: Country[] = [
         common: '纳米比亚',
       },
     },
-    flag: 'https://flagcdn.com/na.svg',
+    flag: 'na.svg',
   },
   {
     code: 'TK',
@@ -21185,7 +21185,7 @@ export const countries_json: Country[] = [
         common: '托克劳',
       },
     },
-    flag: 'https://flagcdn.com/tk.svg',
+    flag: 'tk.svg',
   },
   {
     code: 'MS',
@@ -21288,7 +21288,7 @@ export const countries_json: Country[] = [
         common: '蒙特塞拉特',
       },
     },
-    flag: 'https://flagcdn.com/ms.svg',
+    flag: 'ms.svg',
   },
   {
     code: 'RS',
@@ -21391,7 +21391,7 @@ export const countries_json: Country[] = [
         common: '塞尔维亚',
       },
     },
-    flag: 'https://flagcdn.com/rs.svg',
+    flag: 'rs.svg',
   },
   {
     code: 'KW',
@@ -21494,7 +21494,7 @@ export const countries_json: Country[] = [
         common: '科威特',
       },
     },
-    flag: 'https://flagcdn.com/kw.svg',
+    flag: 'kw.svg',
   },
   {
     code: 'NE',
@@ -21597,7 +21597,7 @@ export const countries_json: Country[] = [
         common: '尼日尔',
       },
     },
-    flag: 'https://flagcdn.com/ne.svg',
+    flag: 'ne.svg',
   },
   {
     code: 'SM',
@@ -21700,7 +21700,7 @@ export const countries_json: Country[] = [
         common: '圣马力诺',
       },
     },
-    flag: 'https://flagcdn.com/sm.svg',
+    flag: 'sm.svg',
   },
   {
     code: 'UA',
@@ -21803,7 +21803,7 @@ export const countries_json: Country[] = [
         common: '乌克兰',
       },
     },
-    flag: 'https://flagcdn.com/ua.svg',
+    flag: 'ua.svg',
   },
   {
     code: 'BT',
@@ -21906,7 +21906,7 @@ export const countries_json: Country[] = [
         common: '不丹',
       },
     },
-    flag: 'https://flagcdn.com/bt.svg',
+    flag: 'bt.svg',
   },
   {
     code: 'YE',
@@ -22009,7 +22009,7 @@ export const countries_json: Country[] = [
         common: '也门',
       },
     },
-    flag: 'https://flagcdn.com/ye.svg',
+    flag: 'ye.svg',
   },
   {
     code: 'VE',
@@ -22112,7 +22112,7 @@ export const countries_json: Country[] = [
         common: '委内瑞拉',
       },
     },
-    flag: 'https://flagcdn.com/ve.svg',
+    flag: 've.svg',
   },
   {
     code: 'MA',
@@ -22215,7 +22215,7 @@ export const countries_json: Country[] = [
         common: '摩洛哥',
       },
     },
-    flag: 'https://flagcdn.com/ma.svg',
+    flag: 'ma.svg',
   },
   {
     code: 'BN',
@@ -22318,7 +22318,7 @@ export const countries_json: Country[] = [
         common: '文莱',
       },
     },
-    flag: 'https://flagcdn.com/bn.svg',
+    flag: 'bn.svg',
   },
   {
     code: 'SN',
@@ -22421,7 +22421,7 @@ export const countries_json: Country[] = [
         common: '塞内加尔',
       },
     },
-    flag: 'https://flagcdn.com/sn.svg',
+    flag: 'sn.svg',
   },
   {
     code: 'SS',
@@ -22524,7 +22524,7 @@ export const countries_json: Country[] = [
         common: '南苏丹',
       },
     },
-    flag: 'https://flagcdn.com/ss.svg',
+    flag: 'ss.svg',
   },
   {
     code: 'NL',
@@ -22627,7 +22627,7 @@ export const countries_json: Country[] = [
         common: '荷兰',
       },
     },
-    flag: 'https://flagcdn.com/nl.svg',
+    flag: 'nl.svg',
   },
   {
     code: 'LI',
@@ -22730,7 +22730,7 @@ export const countries_json: Country[] = [
         common: '列支敦士登',
       },
     },
-    flag: 'https://flagcdn.com/li.svg',
+    flag: 'li.svg',
   },
   {
     code: 'AD',
@@ -22833,7 +22833,7 @@ export const countries_json: Country[] = [
         common: '安道尔',
       },
     },
-    flag: 'https://flagcdn.com/ad.svg',
+    flag: 'ad.svg',
   },
   {
     code: 'LB',
@@ -22936,7 +22936,7 @@ export const countries_json: Country[] = [
         common: '黎巴嫩',
       },
     },
-    flag: 'https://flagcdn.com/lb.svg',
+    flag: 'lb.svg',
   },
   {
     code: 'LV',
@@ -23039,7 +23039,7 @@ export const countries_json: Country[] = [
         common: '拉脱维亚',
       },
     },
-    flag: 'https://flagcdn.com/lv.svg',
+    flag: 'lv.svg',
   },
   {
     code: 'MK',
@@ -23142,7 +23142,7 @@ export const countries_json: Country[] = [
         common: '北馬其頓',
       },
     },
-    flag: 'https://flagcdn.com/mk.svg',
+    flag: 'mk.svg',
   },
   {
     code: 'PT',
@@ -23245,7 +23245,7 @@ export const countries_json: Country[] = [
         common: '葡萄牙',
       },
     },
-    flag: 'https://flagcdn.com/pt.svg',
+    flag: 'pt.svg',
   },
   {
     code: 'MX',
@@ -23348,7 +23348,7 @@ export const countries_json: Country[] = [
         common: '墨西哥',
       },
     },
-    flag: 'https://flagcdn.com/mx.svg',
+    flag: 'mx.svg',
   },
   {
     code: 'BS',
@@ -23451,7 +23451,7 @@ export const countries_json: Country[] = [
         common: '巴哈马',
       },
     },
-    flag: 'https://flagcdn.com/bs.svg',
+    flag: 'bs.svg',
   },
   {
     code: 'YT',
@@ -23554,7 +23554,7 @@ export const countries_json: Country[] = [
         common: '马约特',
       },
     },
-    flag: 'https://flagcdn.com/yt.svg',
+    flag: 'yt.svg',
   },
   {
     code: 'CN',
@@ -23653,7 +23653,7 @@ export const countries_json: Country[] = [
         common: 'چین',
       },
     },
-    flag: 'https://flagcdn.com/cn.svg',
+    flag: 'cn.svg',
   },
   {
     code: 'KG',
@@ -23756,7 +23756,7 @@ export const countries_json: Country[] = [
         common: '吉尔吉斯斯坦',
       },
     },
-    flag: 'https://flagcdn.com/kg.svg',
+    flag: 'kg.svg',
   },
   {
     code: 'WF',
@@ -23859,7 +23859,7 @@ export const countries_json: Country[] = [
         common: '瓦利斯和富图纳群岛',
       },
     },
-    flag: 'https://flagcdn.com/wf.svg',
+    flag: 'wf.svg',
   },
   {
     code: 'GM',
@@ -23962,7 +23962,7 @@ export const countries_json: Country[] = [
         common: '冈比亚',
       },
     },
-    flag: 'https://flagcdn.com/gm.svg',
+    flag: 'gm.svg',
   },
   {
     code: 'TL',
@@ -24065,7 +24065,7 @@ export const countries_json: Country[] = [
         common: '东帝汶',
       },
     },
-    flag: 'https://flagcdn.com/tl.svg',
+    flag: 'tl.svg',
   },
   {
     code: 'ER',
@@ -24168,7 +24168,7 @@ export const countries_json: Country[] = [
         common: '厄立特里亚',
       },
     },
-    flag: 'https://flagcdn.com/er.svg',
+    flag: 'er.svg',
   },
   {
     code: 'TJ',
@@ -24271,7 +24271,7 @@ export const countries_json: Country[] = [
         common: '塔吉克斯坦',
       },
     },
-    flag: 'https://flagcdn.com/tj.svg',
+    flag: 'tj.svg',
   },
   {
     code: 'LK',
@@ -24374,7 +24374,7 @@ export const countries_json: Country[] = [
         common: '斯里兰卡',
       },
     },
-    flag: 'https://flagcdn.com/lk.svg',
+    flag: 'lk.svg',
   },
   {
     code: 'BG',
@@ -24477,7 +24477,7 @@ export const countries_json: Country[] = [
         common: '保加利亚',
       },
     },
-    flag: 'https://flagcdn.com/bg.svg',
+    flag: 'bg.svg',
   },
   {
     code: 'LS',
@@ -24580,7 +24580,7 @@ export const countries_json: Country[] = [
         common: '莱索托',
       },
     },
-    flag: 'https://flagcdn.com/ls.svg',
+    flag: 'ls.svg',
   },
   {
     code: 'IO',
@@ -24683,7 +24683,7 @@ export const countries_json: Country[] = [
         common: '英属印度洋领地',
       },
     },
-    flag: 'https://flagcdn.com/io.svg',
+    flag: 'io.svg',
   },
   {
     code: 'KR',
@@ -24786,7 +24786,7 @@ export const countries_json: Country[] = [
         common: '韩国',
       },
     },
-    flag: 'https://flagcdn.com/kr.svg',
+    flag: 'kr.svg',
   },
   {
     code: 'SO',
@@ -24889,7 +24889,7 @@ export const countries_json: Country[] = [
         common: '索马里',
       },
     },
-    flag: 'https://flagcdn.com/so.svg',
+    flag: 'so.svg',
   },
   {
     code: 'GH',
@@ -24992,7 +24992,7 @@ export const countries_json: Country[] = [
         common: '加纳',
       },
     },
-    flag: 'https://flagcdn.com/gh.svg',
+    flag: 'gh.svg',
   },
   {
     code: 'AS',
@@ -25095,7 +25095,7 @@ export const countries_json: Country[] = [
         common: '美属萨摩亚',
       },
     },
-    flag: 'https://flagcdn.com/as.svg',
+    flag: 'as.svg',
   },
   {
     code: 'LR',
@@ -25198,7 +25198,7 @@ export const countries_json: Country[] = [
         common: '利比里亚',
       },
     },
-    flag: 'https://flagcdn.com/lr.svg',
+    flag: 'lr.svg',
   },
   {
     code: 'FO',
@@ -25301,7 +25301,7 @@ export const countries_json: Country[] = [
         common: '法罗群岛',
       },
     },
-    flag: 'https://flagcdn.com/fo.svg',
+    flag: 'fo.svg',
   },
   {
     code: 'AE',
@@ -25404,7 +25404,7 @@ export const countries_json: Country[] = [
         common: '阿拉伯联合酋长国',
       },
     },
-    flag: 'https://flagcdn.com/ae.svg',
+    flag: 'ae.svg',
   },
   {
     code: 'HN',
@@ -25507,7 +25507,7 @@ export const countries_json: Country[] = [
         common: '洪都拉斯',
       },
     },
-    flag: 'https://flagcdn.com/hn.svg',
+    flag: 'hn.svg',
   },
   {
     code: 'EC',
@@ -25610,7 +25610,7 @@ export const countries_json: Country[] = [
         common: '厄瓜多尔',
       },
     },
-    flag: 'https://flagcdn.com/ec.svg',
+    flag: 'ec.svg',
   },
   {
     code: 'AW',
@@ -25713,6 +25713,6 @@ export const countries_json: Country[] = [
         common: '阿鲁巴',
       },
     },
-    flag: 'https://flagcdn.com/aw.svg',
+    flag: 'aw.svg',
   },
 ];
