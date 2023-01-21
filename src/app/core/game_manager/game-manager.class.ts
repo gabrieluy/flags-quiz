@@ -1,24 +1,26 @@
 import { Country } from './interfaces/country.interface';
 import { countries_json } from './data/filtered_countries';
-import { GameStatus, SelectionResult } from './interfaces/game-status.interface';
+import { Answer, GameStatus } from './interfaces/game-status.interface';
 import { getRandomItem, popRandomItem } from '../utils/random-item';
 import { getPercentage } from '../utils/get-percentage';
 
 export class GameManager {
   private _points = 0;
-  private _num_options = 8;
-  private _selectionResult: SelectionResult = { correctAnswer: false };
+  private _num_options = 6;
+  private _correctAnswers = 0;
+  private _incorrectAnswers = 0;
+
+  private _lastAnswer: Answer = { correct: false, country: {} as Country };
   private _countries: Country[] = [];
   private _remainCountries: Country[] = [];
   private _remainingFlags = this._remainCountries.length;
   private _countryOptions: Country[] = [];
   private _selectedCountry: Country = { flag: '', name: '', code: '', translations: {} };
 
-  private _correctAnswers: Country[] = [];
-  private _incorrectAnswers: Country[] = [];
+  private answerHistory: Answer[] = [];
 
   public start(): GameStatus {
-    this._selectionResult = { correctAnswer: false };
+    this._lastAnswer = { correct: false, country: {} as Country };
     this._countries = Object.assign([], countries_json);
     this._remainCountries = Object.assign([], countries_json);
     this._remainingFlags = this._remainCountries.length;
@@ -26,8 +28,7 @@ export class GameManager {
     this._countryOptions = [];
     this._selectedCountry = { flag: '', name: '', code: '', translations: {} };
 
-    this._correctAnswers = [];
-    this._incorrectAnswers = [];
+    this.answerHistory = [];
 
     this._selectRandomCountries();
     return this._getGameStatus();
@@ -36,12 +37,14 @@ export class GameManager {
   public checkSelection(country: Country): GameStatus {
     if (country.code === this._selectedCountry.code) {
       this._points += 1;
-      this._selectionResult = { correctAnswer: true };
-      this._correctAnswers = [this._selectedCountry, ...this._correctAnswers];
+      this._correctAnswers += 1;
+      this._lastAnswer = { correct: true, country: this._selectedCountry };
+      this.answerHistory = [this._lastAnswer, ...this.answerHistory];
     } else {
       this._points -= 1;
-      this._selectionResult = { correctAnswer: false };
-      this._incorrectAnswers = [this._selectedCountry, ...this._incorrectAnswers];
+      this._incorrectAnswers += 1;
+      this._lastAnswer = { correct: false, country: this._selectedCountry };
+      this.answerHistory = [this._lastAnswer, ...this.answerHistory];
     }
 
     this._remainingFlags--;
@@ -57,15 +60,11 @@ export class GameManager {
       isGameFinished: this._remainingFlags === 0,
       points: this._points,
       remainingFlags: this._remainingFlags,
-      successRate: getPercentage(
-        this._correctAnswers.length,
-        this._correctAnswers.length + this._incorrectAnswers.length
-      ),
-      correctAnswers: this._correctAnswers,
-      incorrectAnswers: this._incorrectAnswers,
+      successRate: getPercentage(this._correctAnswers, this._correctAnswers + this._incorrectAnswers),
+      answerHistory: this.answerHistory,
       countryOptions: this._countryOptions,
       selectedCountry: this._selectedCountry,
-      selectionResult: this._selectionResult,
+      lastAnswer: this._lastAnswer,
     };
   }
 

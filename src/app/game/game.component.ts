@@ -13,21 +13,19 @@ import { GameStatus } from '../core/game_manager/interfaces/game-status.interfac
         <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
       </div>
       <div class="flex justify-content-center p-3 m-3 ">
-        <img class="h-13rem border-round shadow-6" [src]="'assets/flags/4x3/' + status.selectedCountry.flag" alt="" />
+        <fq-country-flag [country]="status.selectedCountry" class="h-13rem"></fq-country-flag>
       </div>
-      <div class="flex flex-row flex-wrap justify-content-center gap-2">
-        <p-button *ngFor="let country of status.countryOptions" (click)="checkSelection(country)">
-          {{ country.translations['spa'].common }}
-        </p-button>
+      <div class="grid">
+        <div *ngFor="let country of status.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
+          <button pButton (click)="checkSelection(country)" class="w-full">
+            {{ country.translations['spa'].common }}
+          </button>
+        </div>
       </div>
-      <fq-flag-grid
-        [countryList]="status.correctAnswers"
-        dividerText="RESPUESTAS CORRECTAS"
-        styleClass="bg-green-100 mt-5"></fq-flag-grid>
-      <fq-flag-grid
-        [countryList]="status.incorrectAnswers"
-        dividerText="RESPUESTAS INCORRECTAS"
-        styleClass="text-red-500 bg-red-100 mt-5"></fq-flag-grid>
+
+      <div class="mt-5">
+        <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
+      </div>
     </div>
   `,
 })
@@ -38,11 +36,10 @@ export class GameComponent implements OnInit {
     points: 0,
     remainingFlags: 0,
     successRate: 0,
-    correctAnswers: [],
-    incorrectAnswers: [],
+    answerHistory: [],
     countryOptions: [],
+    lastAnswer: { correct: false, country: {} as Country },
     selectedCountry: { flag: '', name: '', code: '', translations: {} },
-    selectionResult: { correctAnswer: false },
   };
 
   ngOnInit(): void {
