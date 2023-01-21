@@ -4,10 +4,11 @@ import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
 import { MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
-import { FlagGridComponent } from '../ui/flag-grid/flag-grid.component';
+import { AnswerHistoryComponent } from './ui/answer-history/answer-history.component';
 import { TagModule } from 'primeng/tag';
 import { PointsChipComponent } from '../ui/chips/points-chip/points-chip';
 import { InfoChipComponent } from '../ui/chips/info-chip/info-chip';
+import { CountryFlagComponent } from '../ui/country-flag/country-flag.component';
 @NgModule({
   declarations: [GameComponent],
   exports: [GameComponent],
@@ -16,10 +17,11 @@ import { InfoChipComponent } from '../ui/chips/info-chip/info-chip';
     CommonModule,
     ButtonModule,
     MessageModule,
-    FlagGridComponent,
+    AnswerHistoryComponent,
     TagModule,
     PointsChipComponent,
     InfoChipComponent,
+    CountryFlagComponent,
   ],
 })
 export class GameModule {}

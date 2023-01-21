@@ -5,14 +5,13 @@ export interface GameStatus {
   points: number;
   remainingFlags: number;
   successRate: number;
-  correctAnswers: Country[];
-  incorrectAnswers: Country[];
+  answerHistory: Answer[];
   countryOptions: Country[];
+  lastAnswer: Answer;
   selectedCountry: Country;
-  selectionResult: SelectionResult;
 }
 
-export interface SelectionResult {
-  correctAnswer: boolean;
-  nameCorrectAnswer?: string;
+export interface Answer {
+  country: Country;
+  correct: boolean;
 }
