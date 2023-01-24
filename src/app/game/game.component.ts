@@ -1,57 +1,46 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { GameManagerService } from '../core/game_manager/game-manager.service';
 import { Country } from '../core/game_manager/interfaces/country.interface';
-import { GameManager } from '../core/game_manager/game-manager.class';
 import { GameStatus } from '../core/game_manager/interfaces/game-status.interface';
 
 @Component({
   selector: 'fq-game',
+  providers: [GameManagerService],
   template: `
-    <div class="m-5">
-      <div class="flex flex-row flex-wrap justify-content-center gap-3">
-        <fq-points-chip [points]="status.points"></fq-points-chip>
-        <fq-info-chip [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-chip>
-        <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
-      </div>
-      <div class="flex justify-content-center p-3 m-3 ">
-        <fq-country-flag [country]="status.selectedCountry" class="h-13rem"></fq-country-flag>
-      </div>
-      <div class="grid">
-        <div *ngFor="let country of status.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
-          <button pButton (click)="checkSelection(country)" class="w-full">
-            {{ country.translations['spa'].common }}
-          </button>
-        </div>
-      </div>
-
+    <div class="m-4" *ngIf="status$ | async as status; else loading">
+      <ng-container *ngTemplateOutlet="!status.isGameFinished ? playGame : summary; context: { status: status }">
+      </ng-container>
       <div class="mt-5">
         <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
       </div>
     </div>
+
+    <ng-template #playGame let-status="status">
+      <fq-game-play-status [status]="status" (selectCountry)="checkSelection($event)"></fq-game-play-status>
+    </ng-template>
+
+    <ng-template #summary let-status="status">
+      <fq-game-summary [status]="status" (resetClick)="resetGame()"></fq-game-summary>
+    </ng-template>
+
+    <ng-template #loading>
+      {{ 'Loading ...' }}
+    </ng-template>
   `,
 })
-export class GameComponent implements OnInit {
-  gameManager: GameManager = new GameManager();
-  status: GameStatus = {
-    isGameFinished: false,
-    points: 0,
-    remainingFlags: 0,
-    successRate: 0,
-    answerHistory: [],
-    countryOptions: [],
-    lastAnswer: { correct: false, country: {} as Country },
-    selectedCountry: { flag: '', name: '', code: '', translations: {} },
-  };
+export class GameComponent {
+  public status$: Observable<GameStatus>;
 
-  ngOnInit(): void {
-    this.status = this.gameManager.start();
+  constructor(private gameManager: GameManagerService) {
+    this.status$ = this.gameManager.getStatus();
   }
 
   public checkSelection(country: Country): void {
-    this.status = this.gameManager.checkSelection(country);
-    if (this.status.isGameFinished) {
-      alert('viva!!');
-      this.status = this.gameManager.start();
-      return;
-    }
+    this.gameManager.checkSelection(country);
+  }
+
+  public resetGame(): void {
+    this.gameManager.reset();
   }
 }
