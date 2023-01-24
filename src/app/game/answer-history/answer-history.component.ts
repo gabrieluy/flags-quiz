@@ -1,12 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Answer } from 'src/app/core/game_manager/interfaces/game-status.interface';
-import { CountryFlagComponent } from '../../../ui/country-flag/country-flag.component';
-import { CorrectAnswerChipComponent } from '../correct-answer-chip/correct-answer-chip.component';
 
 @Component({
   selector: 'fq-answer-history',
-  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div *ngIf="history.length > 0" class="mb-5 font-bold text-3xl">
@@ -25,9 +21,7 @@ import { CorrectAnswerChipComponent } from '../correct-answer-chip/correct-answe
       </div>
     </div>
   `,
-  imports: [CommonModule, CountryFlagComponent, CorrectAnswerChipComponent],
 })
 export class AnswerHistoryComponent {
-  @Input() dividerText = '';
   @Input() history: Answer[] = [];
 }
