@@ -1,6 +1,6 @@
 import { animation, style, animate, keyframes } from '@angular/animations';
 
-export const shakeAnimation = animation([
+export const shake = animation([
   animate(
     '{{ time }}',
     keyframes([

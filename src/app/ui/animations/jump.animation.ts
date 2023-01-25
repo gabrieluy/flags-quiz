@@ -1,6 +1,6 @@
 import { animation, style, animate, keyframes } from '@angular/animations';
 
-export const jumpAnimation = animation([
+export const jump = animation([
   animate(
     '{{ time }}',
     keyframes([

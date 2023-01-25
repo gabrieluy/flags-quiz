@@ -1,6 +1,6 @@
 import { animation, style, animate, keyframes } from '@angular/animations';
 
-export const dropAnimation = animation([
+export const drop = animation([
   animate(
     '{{ time }}',
     keyframes([
