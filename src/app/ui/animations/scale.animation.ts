@@ -1,6 +1,6 @@
 import { animation, style, animate, keyframes } from '@angular/animations';
 
-export const scaleAnimation = animation([
+export const scale = animation([
   animate(
     '{{ time }}',
     keyframes([

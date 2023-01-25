@@ -1,14 +1,14 @@
 import { animateChild, group, query, transition, trigger, useAnimation } from '@angular/animations';
-import { dropAnimation } from 'src/app/ui/animations/drop.animation';
-import { jumpAnimation } from 'src/app/ui/animations/jump.animation';
-import { scaleAnimation } from 'src/app/ui/animations/scale.animation';
-import { shakeAnimation } from 'src/app/ui/animations/shake.animation';
+import { drop } from 'src/app/ui/animations/drop.animation';
+import { jump } from 'src/app/ui/animations/jump.animation';
+import { scale } from 'src/app/ui/animations/scale.animation';
+import { shake } from 'src/app/ui/animations/shake.animation';
 
 export const pointChipAnimations = [
   trigger('pointsAnimation', [
     transition(':decrement', [
       group([
-        useAnimation(shakeAnimation, {
+        useAnimation(shake, {
           params: {
             time: '1s',
             background: 'var(--red-500)',
@@ -19,7 +19,7 @@ export const pointChipAnimations = [
     ]),
     transition(':increment', [
       group([
-        useAnimation(scaleAnimation, {
+        useAnimation(scale, {
           params: {
             time: '1s',
             background: 'var(--green-500)',
@@ -31,7 +31,7 @@ export const pointChipAnimations = [
   ]),
   trigger('iconAnimation', [
     transition(':increment', [
-      useAnimation(jumpAnimation, {
+      useAnimation(jump, {
         params: {
           time: '1s',
           color: 'var(--yellow-500)',
@@ -39,7 +39,7 @@ export const pointChipAnimations = [
       }),
     ]),
     transition(':decrement', [
-      useAnimation(dropAnimation, {
+      useAnimation(drop, {
         params: {
           time: '1s',
         },

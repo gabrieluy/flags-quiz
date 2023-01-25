@@ -1,17 +1,23 @@
+import { transition, trigger, useAnimation } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Country } from 'src/app/core/game_manager/interfaces/country.interface';
 import { GameStatus } from 'src/app/core/game_manager/interfaces/game-status.interface';
+import { fadeIn } from 'src/app/ui/animations/fadeIn.animation';
 
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '0.5s' } })])])],
   template: ` <div *ngIf="status" class="flex flex-row flex-wrap justify-content-center gap-3">
       <fq-points-chip [points]="status.points"></fq-points-chip>
       <fq-info-chip [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-chip>
       <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
     </div>
     <div class="flex justify-content-center p-3 m-3 ">
-      <fq-country-flag [country]="status.selectedCountry" class="h-13rem"></fq-country-flag>
+      <fq-country-flag
+        [@fadeIn]="status.selectedCountry"
+        [country]="status.selectedCountry"
+        class="h-13rem"></fq-country-flag>
     </div>
     <div class="grid">
       <div *ngFor="let country of status?.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
