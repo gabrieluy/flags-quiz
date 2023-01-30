@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { TagModule } from 'primeng/tag';
 import { PointsChipComponent } from '../ui/chips/points-chip/points-chip';
 import { InfoChipComponent } from '../ui/chips/info-chip/info-chip';
-import { CountryFlagComponent } from '../ui/country-flag/country-flag.component';
+import { FlagImgComponent } from '../ui/flag-img/flag-img.component';
 import { GameSummaryComponent } from './game-summary/game-summary.component';
 import { GamePlayStatusComponent } from './game-play-status/game-play-status.component';
 import { CorrectAnswerChipComponent } from './ui/correct-answer-chip/correct-answer-chip.component';
@@ -23,7 +23,7 @@ import { AnswerHistoryComponent } from './answer-history/answer-history.componen
     TagModule,
     PointsChipComponent,
     InfoChipComponent,
-    CountryFlagComponent,
+    FlagImgComponent,
     CorrectAnswerChipComponent,
   ],
 })

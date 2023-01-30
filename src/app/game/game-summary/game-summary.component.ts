@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { GameStatus } from 'src/app/core/game_manager/interfaces/game-status.interface';
+import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
 
 @Component({
   selector: 'fq-game-summary',

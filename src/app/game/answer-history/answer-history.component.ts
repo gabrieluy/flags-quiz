@@ -1,6 +1,6 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Answer } from 'src/app/core/game_manager/interfaces/game-status.interface';
+import { Answer } from 'src/app/game/interfaces/game-status.interface';
 import { slideR } from 'src/app/ui/animations/slideR.animation';
 
 @Component({
@@ -17,7 +17,7 @@ import { slideR } from 'src/app/ui/animations/slideR.animation';
       <div *ngFor="let answer of history" class="col-12 md:col-6 lg:col-4">
         <div @slideR class="surface-card border-round shadow-2 p-2">
           <div class="flex justify-content-between">
-            <fq-country-flag [country]="answer.country" class="align-self-start w-7rem"></fq-country-flag>
+            <fq-flag-img [flag]="answer.country.flag" class="align-self-start w-7rem"></fq-flag-img>
             <fq-correct-answer-chip [correct]="answer.correct"></fq-correct-answer-chip>
           </div>
           <h3 class="text-center">{{ answer.country.name }}</h3>
