@@ -1,4 +1,4 @@
-import { Country } from '../interfaces/country.interface';
+import { Country } from '../../../game/interfaces/country.interface';
 
 export const countries_json: Country[] = [
   {

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { GameManagerService } from '../core/game_manager/game-manager.service';
-import { Country } from '../core/game_manager/interfaces/country.interface';
-import { GameStatus } from '../core/game_manager/interfaces/game-status.interface';
+import { GameManagerService } from './game-manager.service';
+import { Country } from './interfaces/country.interface';
+import { GameStatus } from './interfaces/game-status.interface';
 
 @Component({
   selector: 'fq-game',

@@ -1,8 +1,8 @@
 import { Country } from './interfaces/country.interface';
-import { countries_json } from './data/filtered_countries';
+import { countries_json } from '../core/game_manager/data/filtered_countries';
 import { Answer, GameStatus } from './interfaces/game-status.interface';
-import { getRandomItem, popRandomItem } from '../utils/random-item';
-import { getPercentage } from '../utils/get-percentage';
+import { getRandomItem, popRandomItem } from '../core/utils/random-item';
+import { getPercentage } from '../core/utils/get-percentage';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 

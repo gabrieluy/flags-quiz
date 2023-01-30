@@ -1,7 +1,7 @@
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { Country } from 'src/app/core/game_manager/interfaces/country.interface';
-import { GameStatus } from 'src/app/core/game_manager/interfaces/game-status.interface';
+import { Country } from 'src/app/game/interfaces/country.interface';
+import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
 import { fadeIn } from 'src/app/ui/animations/fadeIn.animation';
 
 @Component({
@@ -14,10 +14,8 @@ import { fadeIn } from 'src/app/ui/animations/fadeIn.animation';
       <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
     </div>
     <div class="flex justify-content-center p-3 m-3 ">
-      <fq-country-flag
-        [@fadeIn]="status.selectedCountry"
-        [country]="status.selectedCountry"
-        class="h-13rem"></fq-country-flag>
+      <fq-flag-img [@fadeIn]="status.selectedCountry" [flag]="status.selectedCountry.flag" class="h-13rem">
+      </fq-flag-img>
     </div>
     <div class="grid">
       <div *ngFor="let country of status?.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
