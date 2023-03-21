@@ -11,12 +11,14 @@ import { GameSummaryComponent } from './game-summary/game-summary.component';
 import { GamePlayStatusComponent } from './game-play-status/game-play-status.component';
 import { CorrectAnswerChipComponent } from './ui/correct-answer-chip/correct-answer-chip.component';
 import { AnswerHistoryComponent } from './answer-history/answer-history.component';
+import { CardComponent } from '../ui/card/card.component';
 
 @NgModule({
   declarations: [GameComponent, GameSummaryComponent, GamePlayStatusComponent, AnswerHistoryComponent],
   exports: [GameComponent],
   providers: [],
   imports: [
+    CardComponent,
     CommonModule,
     ButtonModule,
     MessageModule,
