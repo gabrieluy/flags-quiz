@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   styles: [
     `
       div {
-        background: var(--purple-600);
+        background: var(--purple-500);
       }
     `,
   ],

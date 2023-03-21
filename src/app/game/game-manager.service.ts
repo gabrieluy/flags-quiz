@@ -1,24 +1,28 @@
 import { Country } from './interfaces/country.interface';
-import { countries_json } from '../core/game_manager/data/filtered_countries';
+import { countries_json } from '../core/data/countries';
 import { Answer, GameStatus } from './interfaces/game-status.interface';
 import { getRandomItem, popRandomItem } from '../core/utils/random-item';
 import { getPercentage } from '../core/utils/get-percentage';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { SettingsService } from '../settings/settings.service';
+import { NUM_OPTIONS } from './constants/options.constant';
 
 @Injectable()
 export class GameManagerService {
+  private _settingsService = inject(SettingsService);
+
   private status$: BehaviorSubject<GameStatus>;
-  private _num_options = 6;
+  private _num_options = NUM_OPTIONS;
   private _points = 0;
   private _correctAnswers = 0;
   private _incorrectAnswers = 0;
   private _lastAnswer: Answer = { correct: false, country: {} as Country };
   private _countries: Country[] = [];
   private _remainCountries: Country[] = [];
-  private _remainingFlags = this._remainCountries.length;
+  private _remainingFlags = 0;
   private _countryOptions: Country[] = [];
-  private _selectedCountry: Country = { flag: '', name: '', code: '', translations: {} };
+  private _selectedCountry: Country = {} as Country;
   private _answerHistory: Answer[] = [];
 
   constructor() {
@@ -37,7 +41,7 @@ export class GameManagerService {
   }
 
   public checkSelection(country: Country): void {
-    const isCorrect = country.code === this._selectedCountry.code;
+    const isCorrect = country.cca2 === this._selectedCountry.cca2;
     this._correctAnswers += isCorrect ? 1 : 0;
     this._incorrectAnswers += isCorrect ? 0 : 1;
     this._points += isCorrect ? 1 : -1;
@@ -57,11 +61,13 @@ export class GameManagerService {
     this._correctAnswers = 0;
     this._incorrectAnswers = 0;
     this._lastAnswer = { correct: false, country: {} as Country };
-    this._countries = Object.assign([], countries_json);
-    this._remainCountries = Object.assign([], countries_json);
+    const playableCountries = this._getPlayableCountries();
+    this._countries = Object.assign([], playableCountries);
+    this._remainCountries = Object.assign([], playableCountries);
+    this._num_options = NUM_OPTIONS < playableCountries.length ? NUM_OPTIONS : playableCountries.length;
     this._remainingFlags = this._remainCountries.length;
     this._countryOptions = [];
-    this._selectedCountry = { flag: '', name: '', code: '', translations: {} };
+    this._selectedCountry = {} as Country;
     this._answerHistory = [];
     this._selectRandomCountries();
   }
@@ -87,7 +93,7 @@ export class GameManagerService {
     this._countryOptions.push(this._selectedCountry);
     while (this._countryOptions.length < this._num_options) {
       const randomCountry = getRandomItem(this._countries);
-      if (!this._countryOptions.some(c => c.code === randomCountry.code)) {
+      if (!this._countryOptions.some(c => c.cca2 === randomCountry.cca2)) {
         this._countryOptions.push(randomCountry);
       }
     }
@@ -99,6 +105,20 @@ export class GameManagerService {
     const aux = this._countryOptions[inxAux];
     this._countryOptions[0] = aux;
     this._countryOptions[inxAux] = this._selectedCountry;
+  }
+
+  private _getPlayableCountries(): Country[] {
+    let countries = countries_json as Country[];
+    const settings = this._settingsService.getSettings();
+    countries = countries.filter(c => c.continents.some(con => settings.continents.includes(con)));
+    switch (settings.difficulty.value) {
+      case 'easy':
+        return countries.filter(c => c.independent && c.population > 3000000);
+      case 'medium':
+        return countries.filter(c => c.independent && c.population > 300000);
+      case 'hard':
+        return countries;
+    }
   }
 
   private _notify(): void {

@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GameModule } from './game/game.module';
 import { SharedModule } from 'primeng/api';
+import { HomeModule } from './home/home.module';
+import { SettingsModule } from './settings/settings.module';
 
 registerLocaleData(en);
 
@@ -23,6 +25,8 @@ registerLocaleData(en);
     HttpClientModule,
     SharedModule,
     GameModule,
+    HomeModule,
+    SettingsModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en' }],
   bootstrap: [AppComponent],
