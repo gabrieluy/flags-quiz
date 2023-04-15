@@ -34,7 +34,8 @@ export const pointChipAnimations = [
       useAnimation(jump, {
         params: {
           time: '1s',
-          color: 'var(--yellow-500)',
+          jumpColor: 'var(--yellow-500)',
+          color: 'var(--surface-0)',
         },
       }),
     ]),

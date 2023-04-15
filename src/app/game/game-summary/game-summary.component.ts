@@ -35,8 +35,8 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
             </ul>
           </div>
           <div class="flex flex-wrap justify-content-center col-12 mt-3 gap-3">
-            <button icon="pi pi-replay" label="Restart" class="col-11 md:col-5" pButton (click)="reset()"></button>
-            <button icon="pi pi-share-alt" label="Share" class="col-11 md:col-5" pButton (click)="share()"></button>
+            <button pButton icon="pi pi-replay" label="Restart" class="col-11 md:col-5" (click)="reset()"></button>
+            <button pButton icon="pi pi-share-alt" label="Share" class="col-11 md:col-5" (click)="share()"></button>
           </div>
         </div>
       </fq-card>

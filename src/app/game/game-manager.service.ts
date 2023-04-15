@@ -17,6 +17,7 @@ export class GameManagerService {
   private _points = 0;
   private _correctAnswers = 0;
   private _incorrectAnswers = 0;
+  private _actualFlagCount = 0;
   private _lastAnswer: Answer = { correct: false, country: {} as Country };
   private _countries: Country[] = [];
   private _remainCountries: Country[] = [];
@@ -42,6 +43,7 @@ export class GameManagerService {
 
   public checkSelection(country: Country): void {
     const isCorrect = country.cca2 === this._selectedCountry.cca2;
+    this._actualFlagCount += 1;
     this._correctAnswers += isCorrect ? 1 : 0;
     this._incorrectAnswers += isCorrect ? 0 : 1;
     this._points += isCorrect ? 1 : -1;
@@ -60,6 +62,7 @@ export class GameManagerService {
     this._points = 0;
     this._correctAnswers = 0;
     this._incorrectAnswers = 0;
+    this._actualFlagCount = 0;
     this._lastAnswer = { correct: false, country: {} as Country };
     const playableCountries = this._getPlayableCountries();
     this._countries = Object.assign([], playableCountries);
@@ -78,8 +81,9 @@ export class GameManagerService {
       points: this._points,
       correctAnswers: this._correctAnswers,
       incorrectAnswers: this._incorrectAnswers,
+      actualFlagCount: this._actualFlagCount,
       remainingFlags: this._remainingFlags,
-      successRate: getPercentage(this._correctAnswers, this._correctAnswers + this._incorrectAnswers),
+      successRate: getPercentage(this._correctAnswers, this._actualFlagCount),
       answerHistory: this._answerHistory,
       countryOptions: this._countryOptions,
       selectedCountry: this._selectedCountry,

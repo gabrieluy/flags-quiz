@@ -16,7 +16,7 @@ import { pointChipAnimations } from './animations/points-chip.animations';
   styles: [
     `
       div {
-        background: var(--purple-600);
+        background: var(--bluegray-500);
       }
     `,
   ],
