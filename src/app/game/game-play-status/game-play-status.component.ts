@@ -7,25 +7,30 @@ import { fadeIn } from 'src/app/ui/animations/fadeIn.animation';
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '0.5s' } })])])],
+  animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '1s' } })])])],
   template: `
     <div class="m-4">
-      <div *ngIf="status" class="flex flex-row flex-wrap justify-content-center gap-3">
-        <fq-points-chip [points]="status.points"></fq-points-chip>
-        <fq-info-chip [label]="status.remainingFlags" icon="pi pi-flag"></fq-info-chip>
-        <fq-info-chip [label]="status.successRate" icon="pi pi-percentage"></fq-info-chip>
-      </div>
-      <div class="flex justify-content-center p-3 m-3 ">
+      <fq-card>
+        <div *ngIf="status" class="flex flex-row flex-wrap justify-content-end mb-2">
+          <fq-points-chip [points]="status.points"></fq-points-chip>
+        </div>
+        <p-progressBar
+          [value]="status | progressPercentage"
+          [color]="status.successRate | colorGradient"
+          [showValue]="false"></p-progressBar>
+      </fq-card>
+      <div class="flex justify-content-center mt-2">
         <fq-flag-img [@fadeIn]="status.selectedCountry" [flag]="status.selectedCountry.cca2" class="h-13rem">
         </fq-flag-img>
       </div>
-      <div class="grid">
+      <div class="grid mt-2">
         <div *ngFor="let country of status?.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
           <button pButton (click)="select(country)" class="w-full">
             {{ country.translations['spa'].common }}
           </button>
         </div>
       </div>
+      <div class="mt-2"></div>
     </div>
   `,
 })

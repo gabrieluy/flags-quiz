@@ -5,6 +5,7 @@ export interface GameStatus {
   points: number;
   correctAnswers: number;
   incorrectAnswers: number;
+  actualFlagCount: number;
   remainingFlags: number;
   successRate: number;
   answerHistory: Answer[];
