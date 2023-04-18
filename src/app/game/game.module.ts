@@ -17,6 +17,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { ProgressPercentagePipe } from './pipes/progress-percentage.pipe';
 import { ColorGradientPipe } from './pipes/color-gradient.pipe';
+import { SpeedDialModule } from 'primeng/speeddial';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ColorGradientPipe } from './pipes/color-gradient.pipe';
     FlagImgComponent,
     CorrectAnswerChipComponent,
     ProgressBarModule,
+    SpeedDialModule,
   ],
 })
 export class GameModule {}
