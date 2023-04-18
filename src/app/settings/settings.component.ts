@@ -43,7 +43,7 @@ import { SettingsService } from './settings.service';
               label="Go Back"
               icon="pi pi-arrow-left"
               class="p-button-secondary col-11 md:col-5"
-              [routerLink]="['../']"></button>
+              [routerLink]="['/']"></button>
             <button
               pButton
               label="Save"

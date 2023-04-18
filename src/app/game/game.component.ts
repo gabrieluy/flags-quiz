@@ -3,15 +3,23 @@ import { Observable } from 'rxjs';
 import { GameManagerService } from './game-manager.service';
 import { Country } from './interfaces/country.interface';
 import { GameStatus } from './interfaces/game-status.interface';
+import { MenuItem } from 'primeng/api';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'fq-game',
-  providers: [GameManagerService],
   template: `
+    <p-speedDial
+      class="absolute top-0 left-0 p-2"
+      showIcon="pi pi-bars"
+      hideIcon="pi pi-times"
+      [model]="items"
+      direction="right"
+      [transitionDelay]="80"></p-speedDial>
     <ng-container *ngIf="status$ | async as status; else loading">
       <ng-container *ngTemplateOutlet="!status.isGameFinished ? playGame : summary; context: { status: status }">
       </ng-container>
-      <div class="mt-5">
+      <div class="mt-5 px-2">
         <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
       </div>
     </ng-container>
@@ -31,10 +39,22 @@ import { GameStatus } from './interfaces/game-status.interface';
 })
 export class GameComponent {
   private _gameManager = inject(GameManagerService);
+  private _router = inject(Router);
 
   public status$: Observable<GameStatus>;
+  public items: MenuItem[] = [
+    {
+      icon: 'pi pi-home',
+      command: () => this._router.navigate(['/']),
+    },
+    {
+      icon: 'pi pi-refresh',
+      command: () => this.resetGame(),
+    },
+  ];
 
   constructor() {
+    this.resetGame();
     this.status$ = this._gameManager.getStatus();
   }
 
