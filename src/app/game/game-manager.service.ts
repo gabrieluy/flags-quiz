@@ -115,7 +115,7 @@ export class GameManagerService {
     let countries = countries_json as Country[];
     const settings = this._settingsService.getSettings();
     countries = countries.filter(c => c.continents.some(con => settings.continents.includes(con)));
-    switch (settings.difficulty.value) {
+    switch (settings.difficulty) {
       case 'easy':
         return countries.filter(c => c.independent && c.population > 3000000);
       case 'medium':

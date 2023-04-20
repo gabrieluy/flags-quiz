@@ -4,8 +4,8 @@ import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
 import { CommonModule } from '@angular/common';
 import { TagModule } from 'primeng/tag';
-import { PointsChipComponent } from '../ui/chips/points-chip/points-chip';
-import { InfoChipComponent } from '../ui/chips/info-chip/info-chip';
+import { PointsChipComponent } from '../ui/chips/points-chip/points-chipcomponent';
+import { InfoChipComponent } from '../ui/chips/info-chip/info-chip.component';
 import { FlagImgComponent } from '../ui/flag-img/flag-img.component';
 import { GameSummaryComponent } from './game-summary/game-summary.component';
 import { GamePlayStatusComponent } from './game-play-status/game-play-status.component';
@@ -18,6 +18,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ProgressPercentagePipe } from './pipes/progress-percentage.pipe';
 import { ColorGradientPipe } from './pipes/color-gradient.pipe';
 import { SpeedDialModule } from 'primeng/speeddial';
+import { TranslocoModule } from '@ngneat/transloco';
+import { CountryNamePipe } from './pipes/country.name.pipe';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { SpeedDialModule } from 'primeng/speeddial';
     AnswerHistoryComponent,
     ProgressPercentagePipe,
     ColorGradientPipe,
+    CountryNamePipe,
   ],
   exports: [GameComponent],
-  providers: [GameManagerService, ProgressPercentagePipe, ColorGradientPipe],
+  providers: [GameManagerService, ProgressPercentagePipe, ColorGradientPipe, CountryNamePipe],
   imports: [
     CardComponent,
     CommonModule,
@@ -43,6 +46,7 @@ import { SpeedDialModule } from 'primeng/speeddial';
     CorrectAnswerChipComponent,
     ProgressBarModule,
     SpeedDialModule,
+    TranslocoModule,
   ],
 })
 export class GameModule {}
