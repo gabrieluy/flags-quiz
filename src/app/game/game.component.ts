@@ -48,6 +48,10 @@ export class GameComponent {
       command: () => this._router.navigate(['/']),
     },
     {
+      icon: 'pi pi-cog',
+      command: () => this._router.navigate(['/settings']),
+    },
+    {
       icon: 'pi pi-refresh',
       command: () => this.resetGame(),
     },
