@@ -5,9 +5,18 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ColorGradientPipe implements PipeTransform {
   transform(value: number): string {
-    const red = 255 * ((100 - value) / 100);
-    const green = 200 * (value / 100);
-    const blue = 50;
-    return `rgb(${red}, ${green}, ${blue})`;
+    if (value < 20) {
+      return 'var(--red-500)';
+    }
+    if (value < 40) {
+      return 'var(--orange-500)';
+    }
+    if (value < 60) {
+      return 'var(--orange-200)';
+    }
+    if (value < 80) {
+      return 'var(--green-200)';
+    }
+    return 'var(--green-500)';
   }
 }
