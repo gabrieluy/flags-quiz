@@ -1,82 +1,90 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { DifficultyType } from './interfaces/settings.interface';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { SettingsService } from './settings.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { SettingsOptions } from './interfaces/settings-options.interface';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'fq-settings',
   template: `
     <div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
-      <fq-card>
-        <div class="flex justify-content-center col-12">
-          <h2>Settings</h2>
-        </div>
-        <div class="flex flex-row flex-wrap justify-content-center">
-          <div class="col-12 md:col-6">
-            <div class="flex justify-content-center col-12">
-              <h3>Difficulty</h3>
-            </div>
-            <div class="flex justify-content-center col-12">
-              <p-selectButton
-                [options]="difficultyOptions"
-                [(ngModel)]="selectedDifficulty"
-                optionLabel="label"></p-selectButton>
+      <fq-card *transloco="let t; read: 'settings'">
+        <form [formGroup]="formGroup">
+          <div class="flex justify-content-center col-12">
+            <h2>{{ t('title') }}</h2>
+          </div>
+          <div class="flex flex-row flex-wrap justify-content-center">
+            <fq-option-wrapper class="col-12 md:col-6" [label]="t('sound')">
+              <p-selectButton [options]="options.sound" formControlName="sound">
+                <ng-template let-sound>
+                  {{ t(sound) }}
+                </ng-template>
+              </p-selectButton>
+            </fq-option-wrapper>
+            <fq-option-wrapper class="col-12 md:col-6" [label]="t('language')">
+              <fq-language-picker></fq-language-picker>
+            </fq-option-wrapper>
+            <fq-option-wrapper class="col-12 md:col-6" [label]="t('difficulty')">
+              <p-selectButton [options]="options.difficulty" formControlName="difficulty">
+                <ng-template let-difficulty>
+                  {{ t(difficulty) }}
+                </ng-template>
+              </p-selectButton>
+            </fq-option-wrapper>
+            <fq-option-wrapper class="col-12 md:col-6" [label]="t('continents')">
+              <fq-continents-picker
+                [parentForm]="formGroup"
+                [continents]="options.continents"
+                controlName="continents"></fq-continents-picker>
+            </fq-option-wrapper>
+            <div class="flex flex-wrap justify-content-center col-12 mt-3">
+              <button
+                pButton
+                [label]="t('back')"
+                icon="pi pi-arrow-left"
+                class="p-button-secondary col-6"
+                [routerLink]="['/']"></button>
             </div>
           </div>
-          <div class="flex flex-wrap justify-content-center col-12 md:col-6">
-            <div class="flex justify-content-center col-12">
-              <h3>Continents</h3>
-            </div>
-            <div class="flex flex-wrap justify-content-center col-12 gap-3">
-              <div *ngFor="let continent of continentsOptions" class="field-checkbox">
-                <p-checkbox
-                  [name]="continent.value"
-                  [value]="continent.value"
-                  [(ngModel)]="selectedContinents"
-                  [inputId]="continent.value"></p-checkbox>
-                <label [for]="continent.value">{{ continent.label }}</label>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap justify-content-center col-12 mt-3 gap-3">
-            <button
-              pButton
-              label="Go Back"
-              icon="pi pi-arrow-left"
-              class="p-button-secondary col-11 md:col-5"
-              [routerLink]="['/']"></button>
-            <button
-              pButton
-              label="Save"
-              icon="pi pi-save"
-              (click)="saveSettings()"
-              class="p-button-success col-11 md:col-5"></button>
-          </div>
-        </div>
+        </form>
       </fq-card>
     </div>
   `,
 })
-export class SettingsComponent implements OnInit {
-  private _settingsService = inject(SettingsService);
+export class SettingsComponent implements OnInit, OnDestroy {
+  public formGroup!: FormGroup;
 
-  continentsOptions: { label: string; value: string }[] = [];
-  difficultyOptions: { label: string; value: string }[] = [];
-  selectedContinents: string[] = [];
-  selectedDifficulty = {} as DifficultyType;
+  private _valueChangesSub!: Subscription;
+  private _settingsService = inject(SettingsService);
+  private _fb = inject(FormBuilder);
+
+  options: SettingsOptions = {} as SettingsOptions;
 
   ngOnInit(): void {
-    this.difficultyOptions = this._settingsService.getDifficultyOptions();
-    this.continentsOptions = this._settingsService.getContinentsOptions();
-    const { continents, difficulty } = this._settingsService.getSettings();
-    this.selectedDifficulty = difficulty;
-    this.selectedContinents = continents;
+    this.options = this._settingsService.getSettingsOptions();
+    const { continents, difficulty, sound } = this._settingsService.getSettings();
+
+    this.formGroup = this._fb.group({
+      continents: [continents],
+      difficulty: [difficulty],
+      sound: [sound],
+    });
+
+    this._valueChangesSub = this.formGroup.valueChanges.subscribe(() => {
+      this.saveSettings();
+    });
   }
 
-  saveSettings(): void {
+  public saveSettings(): void {
     const settings = {
-      difficulty: this.selectedDifficulty,
-      continents: this.selectedContinents,
+      continents: this.formGroup.value.continents,
+      difficulty: this.formGroup.value.difficulty,
+      sound: this.formGroup.value.sound,
     };
     this._settingsService.save(settings);
+  }
+
+  public ngOnDestroy(): void {
+    this._valueChangesSub.unsubscribe();
   }
 }

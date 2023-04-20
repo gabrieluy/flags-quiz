@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
-      <fq-card>
+      <fq-card *transloco="let t; read: 'home'">
         <div class="flex flex-row flex-wrap">
           <div class="flex justify-content-center col-12">
             <h1>Flags Quiz!</h1>
@@ -18,13 +18,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
               <button
                 pButton
                 icon="pi pi-play"
-                label="Play"
+                [label]="t('play')"
                 class="p-button-warning col-10 md:col-5"
                 [routerLink]="['/game']"></button>
               <button
                 pButton
                 icon="pi pi-cog"
-                label="Settings"
+                [label]="t('settings')"
                 class="p-button-secondary col-10 md:col-5"
                 [routerLink]="['/settings']"></button>
             </div>

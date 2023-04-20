@@ -15,7 +15,7 @@ import { slideR } from 'src/app/ui/animations/slideR.animation';
             <fq-flag-img [flag]="answer.country.cca2" class="align-self-start w-7rem"></fq-flag-img>
             <fq-correct-answer-chip [correct]="answer.correct"></fq-correct-answer-chip>
           </div>
-          <h3 class="text-center">{{ answer.country.name['common'] }}</h3>
+          <h3 class="text-center">{{ answer.country | countryName }}</h3>
         </fq-card>
       </div>
     </div>

@@ -1,0 +1,46 @@
+{
+  "home": {
+    "settings": "Impostazioni",
+    "play": "Gioca"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "difficulty": "Difficoltà",
+    "easy": "Facile",
+    "medium": "Media",
+    "hard": "Difficile",
+    "back": "Indietro",
+    "language": "Lingua",
+    "sound": "Suono",
+    "continents": "Continenti",
+    "on": "Acceso",
+    "off": "Spento"
+  },
+  "languages": {
+    "en": "Inglese",
+    "es": "Spagnolo",
+    "it": "Italiano"
+  },
+  "continents": {
+    "northamerica": "Nord America",
+    "southamerica": "Sud America",
+    "asia": "Asia",
+    "europe": "Europa",
+    "oceania": "Oceania",
+    "africa": "Africa",
+    "antarctica": "Antartide"
+  },
+  "summary": {
+    "title": "Grazie per aver giocato!",
+    "points": "{{ points }} Punti",
+    "successRate": "{{ rate }} Tasso di successo",
+    "correctAnswers": "{{ answers }} Risposte corrette",
+    "incorrectAnswers": "{{ answers }} Risposte sbagliate",
+    "restart": "Ricomincia",
+    "share": "Condividi"
+  },
+  "common": {
+    "correct": "Corretto",
+    "incorrect": "Errato"
+  }
+}
