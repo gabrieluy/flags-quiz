@@ -3,6 +3,7 @@ import { SettingsService } from './settings.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { SettingsOptions } from './interfaces/settings-options.interface';
 import { Subscription } from 'rxjs';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'fq-settings',
@@ -43,7 +44,7 @@ import { Subscription } from 'rxjs';
                 [label]="t('back')"
                 icon="pi pi-arrow-left"
                 class="p-button-secondary col-6"
-                [routerLink]="['/']"></button>
+                (click)="clickBack()"></button>
             </div>
           </div>
         </form>
@@ -57,6 +58,7 @@ export class SettingsComponent implements OnInit, OnDestroy {
   private _valueChangesSub!: Subscription;
   private _settingsService = inject(SettingsService);
   private _fb = inject(FormBuilder);
+  private _location = inject(Location);
 
   options: SettingsOptions = {} as SettingsOptions;
 
@@ -82,6 +84,10 @@ export class SettingsComponent implements OnInit, OnDestroy {
       sound: this.formGroup.value.sound,
     };
     this._settingsService.save(settings);
+  }
+
+  public clickBack(): void {
+    this._location.back();
   }
 
   public ngOnDestroy(): void {
