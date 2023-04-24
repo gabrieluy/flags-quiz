@@ -10,7 +10,7 @@ import { SettingsService } from './settings.service';
 import { TranslocoModule } from '@ngneat/transloco';
 import { ContinentsPickerComponent } from './ui/continents-picker/continents-picker.component';
 import { OptionWrapperComponent } from './ui/settings-option/option-wrapper.component';
-import { LanguagePickerComponent } from '../ui/language-picker.ts/language-picker.component';
+import { LanguagePickerComponent } from './ui/language-picker.ts/language-picker.component';
 
 @NgModule({
   declarations: [SettingsComponent],

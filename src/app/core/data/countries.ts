@@ -82,7 +82,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['0'] },
     capital: ['Kuala Lumpur'],
     altSpellings: ['MY'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { eng: 'English', msa: 'Malay' },
     translations: {
@@ -195,7 +195,7 @@ export const countries_json = [
     population: 254541,
     car: { signs: ['F'], side: 'right' },
     timezones: ['UTC-03:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/gf.png', svg: 'https://flagcdn.com/gf.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/gf.png',
@@ -223,7 +223,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['4'] },
     capital: ['Madrid'],
     altSpellings: ['ES', 'Kingdom of Spain', 'Reino de España'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { es: 'Spanish' },
     translations: {
@@ -298,7 +298,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['82'] },
     capital: ['Avarua'],
     altSpellings: ['CK', "Kūki 'Āirani"],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', rar: 'Cook Islands Māori' },
     translations: {
@@ -367,7 +367,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['23'] },
     capital: ['Bamako'],
     altSpellings: ['ML', 'Republic of Mali', 'République du Mali'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -438,7 +438,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['18'] },
     capital: ['Tripoli'],
     altSpellings: ['LY', 'State of Libya', 'Dawlat Libya'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ara: 'Arabic' },
     translations: {
@@ -512,7 +512,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['125288', '125289'] },
     capital: ['El Aaiún'],
     altSpellings: ['EH', 'Taneẓroft Tutrimt'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ber: 'Berber', mey: 'Hassaniya', es: 'Spanish' },
     translations: {
@@ -578,7 +578,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['77'] },
     capital: ['Honiara'],
     altSpellings: ['SB'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Melanesia',
     languages: { eng: 'English' },
     translations: {
@@ -648,7 +648,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['16'] },
     capital: ['Tunis'],
     altSpellings: ['TN', 'Republic of Tunisia', 'al-Jumhūriyyah at-Tūnisiyyah'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ara: 'Arabic' },
     translations: {
@@ -723,7 +723,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['4'] },
     capital: ['St. Peter Port'],
     altSpellings: ['GG', 'Bailiwick of Guernsey', 'Bailliage de Guernesey'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { eng: 'English', fra: 'French', nfr: 'Guernésiais' },
     translations: {
@@ -800,7 +800,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['48'] },
     capital: ['Victoria'],
     altSpellings: ['SC', 'Republic of Seychelles', 'Repiblik Sesel', 'République des Seychelles'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { crs: 'Seychellois Creole', eng: 'English', fra: 'French' },
     translations: {
@@ -939,7 +939,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['95'] },
     capital: ['Tbilisi'],
     altSpellings: ['GE', 'Sakartvelo'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { kat: 'Georgian' },
     translations: {
@@ -1079,7 +1079,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['63'] },
     capital: ['Damascus'],
     altSpellings: ['SY', 'Syrian Arab Republic', 'Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -1154,7 +1154,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['7'] },
     capital: ['Oslo'],
     altSpellings: ['NO', 'Norge', 'Noreg', 'Kingdom of Norway', 'Kongeriket Norge', 'Kongeriket Noreg'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { nno: 'Norwegian Nynorsk', nob: 'Norwegian Bokmål', smi: 'Sami' },
     translations: {
@@ -1229,7 +1229,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['3'] },
     capital: ['Manila'],
     altSpellings: ['PH', 'Republic of the Philippines', 'Repúblika ng Pilipinas'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { eng: 'English', fil: 'Filipino' },
     translations: {
@@ -1296,7 +1296,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['54'] },
     capital: ['Reykjavik'],
     altSpellings: ['IS', 'Island', 'Republic of Iceland', 'Lýðveldið Ísland'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { isl: 'Icelandic' },
     translations: {
@@ -1367,7 +1367,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['58'] },
     capital: ['Maputo'],
     altSpellings: ['MZ', 'Republic of Mozambique', 'República de Moçambique'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { por: 'Portuguese' },
     translations: {
@@ -1442,7 +1442,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['80'] },
     capital: ['Ngerulmud'],
     altSpellings: ['PW', 'Republic of Palau', 'Beluu er a Belau'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { eng: 'English', pau: 'Palauan' },
     translations: {
@@ -1515,7 +1515,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['3'] },
     capital: ['Kabul'],
     altSpellings: ['AF', 'Afġānistān'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { prs: 'Dari', pus: 'Pashto', tuk: 'Turkmen' },
     translations: {
@@ -1599,7 +1599,7 @@ export const countries_json = [
       'Gabuutih Ummuuno',
       'Jamhuuriyadda Jabuuti',
     ],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { ara: 'Arabic', fra: 'French' },
     translations: {
@@ -1718,7 +1718,7 @@ export const countries_json = [
     fifa: 'PER',
     car: { signs: ['PE'], side: 'right' },
     timezones: ['UTC-05:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/pe.png', svg: 'https://flagcdn.com/pe.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/pe.png',
@@ -1756,7 +1756,7 @@ export const countries_json = [
       'Großherzogtum Luxemburg',
       'Groussherzogtum Lëtzebuerg',
     ],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { deu: 'German', fra: 'French', ltz: 'Luxembourgish' },
     translations: {
@@ -1831,7 +1831,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['57'] },
     capital: ['Gitega'],
     altSpellings: ['BI', 'Republic of Burundi', "Republika y'Uburundi", 'République du Burundi'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { fra: 'French', run: 'Kirundi' },
     translations: {
@@ -1946,7 +1946,7 @@ export const countries_json = [
     fifa: 'GUY',
     car: { signs: ['GUY'], side: 'left' },
     timezones: ['UTC-04:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/gy.png', svg: 'https://flagcdn.com/gy.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/gy.png',
@@ -1975,7 +1975,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['4'] },
     capital: ['London'],
     altSpellings: ['GB', 'UK', 'Great Britain'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { eng: 'English' },
     translations: {
@@ -2068,7 +2068,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['1'] },
     capital: ['West Island'],
     altSpellings: ['CC', 'Keeling Islands', 'Cocos Islands'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Australia and New Zealand',
     languages: { eng: 'English' },
     translations: {
@@ -2137,7 +2137,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['70'] },
     capital: ['Ramallah', 'Jerusalem'],
     altSpellings: ['PS', 'Palestine, State of', 'State of Palestine', 'Dawlat Filasṭin'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -2207,7 +2207,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['4'] },
     capital: ['Adamstown'],
     altSpellings: ['PN', 'Pitcairn', 'Pitcairn Henderson Ducie and Oeno Islands'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English' },
     translations: {
@@ -2345,7 +2345,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['86'] },
     capital: ['South Tarawa'],
     altSpellings: ['KI', 'Republic of Kiribati', 'Ribaberiki Kiribati'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { eng: 'English', gil: 'Gilbertese' },
     translations: {
@@ -2426,7 +2426,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['7'] },
     capital: ['Pretoria', 'Bloemfontein', 'Cape Town'],
     altSpellings: ['ZA', 'RSA', 'Suid-Afrika', 'Republic of South Africa'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Southern Africa',
     languages: {
       afr: 'Afrikaans',
@@ -2510,7 +2510,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['76'] },
     capital: ['Ulan Bator'],
     altSpellings: ['MN'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { mon: 'Mongolian' },
     translations: {
@@ -2585,7 +2585,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['57'] },
     capital: ['Nicosia'],
     altSpellings: ['CY', 'Kýpros', 'Kıbrıs', 'Republic of Cyprus', 'Κυπριακή Δημοκρατία', 'Kıbrıs Cumhuriyeti'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { ell: 'Greek', tur: 'Turkish' },
     translations: {
@@ -2660,7 +2660,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['30'] },
     capital: ['Port Louis'],
     altSpellings: ['MU', 'Republic of Mauritius', 'République de Maurice'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English', fra: 'French', mfe: 'Mauritian Creole' },
     translations: {
@@ -2870,7 +2870,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['62'] },
     capital: ['Saint-Denis'],
     altSpellings: ['RE', 'Reunion'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { fra: 'French' },
     translations: {
@@ -2933,7 +2933,7 @@ export const countries_json = [
     capital: ['Hamilton'],
     altSpellings: ['BM', 'The Islands of Bermuda', 'The Bermudas', 'Somers Isles'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { eng: 'English' },
     translations: {
       ara: { official: 'برمودا', common: 'برمودا' },
@@ -3002,7 +3002,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['77'] },
     capital: ['Monaco'],
     altSpellings: ['MC', 'Principality of Monaco', 'Principauté de Monaco'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { fra: 'French' },
     translations: {
@@ -3145,7 +3145,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['4'] },
     capital: ['Saint Helier'],
     altSpellings: ['JE', 'Bailiwick of Jersey', 'Bailliage de Jersey', 'Bailliage dé Jèrri'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { eng: 'English', fra: 'French', nrf: 'Jèrriais' },
     translations: {
@@ -3218,7 +3218,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['55'] },
     capital: ['Phnom Penh'],
     altSpellings: ['KH', 'Kingdom of Cambodia'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { khm: 'Khmer' },
     translations: {
@@ -3292,7 +3292,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['49'] },
     capital: ['Khartoum'],
     altSpellings: ['SD', 'Republic of the Sudan', 'Jumhūrīyat as-Sūdān'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ara: 'Arabic', eng: 'English' },
     translations: {
@@ -3364,7 +3364,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['24'] },
     capital: ['Conakry'],
     altSpellings: ['GN', 'Republic of Guinea', 'République de Guinée'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -3569,7 +3569,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['86'] },
     capital: ['Ljubljana'],
     altSpellings: ['SI', 'Republic of Slovenia', 'Republika Slovenija'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Central Europe',
     languages: { slv: 'Slovene' },
     translations: {
@@ -3641,7 +3641,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['8'] },
     capital: ['Tehran'],
     altSpellings: ['IR', 'Islamic Republic of Iran', 'Iran, Islamic Republic of', 'Jomhuri-ye Eslāmi-ye Irān'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { fas: 'Persian (Farsi)' },
     translations: {
@@ -3712,7 +3712,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['6'] },
     capital: ['Stockholm'],
     altSpellings: ['SE', 'Kingdom of Sweden', 'Konungariket Sverige'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { swe: 'Swedish' },
     translations: {
@@ -3784,7 +3784,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['80'] },
     capital: ['Dhaka'],
     altSpellings: ['BD', "People's Republic of Bangladesh", 'Gônôprôjatôntri Bangladesh'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { bcym: 'Bengali' },
     translations: {
@@ -4110,7 +4110,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['60'] },
     capital: ['Malé'],
     altSpellings: ['MV', 'Maldive Islands', 'Republic of the Maldives', 'Dhivehi Raajjeyge Jumhooriyya'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { div: 'Maldivian' },
     translations: {
@@ -4181,7 +4181,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['0'] },
     capital: ['Athens'],
     altSpellings: ['GR', 'Elláda', 'Hellenic Republic', 'Ελληνική Δημοκρατία'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { ell: 'Greek' },
     translations: {
@@ -4253,7 +4253,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['72'] },
     capital: ['Tallinn'],
     altSpellings: ['EE', 'Eesti', 'Republic of Estonia', 'Eesti Vabariik'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { est: 'Estonian' },
     translations: {
@@ -4328,7 +4328,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['56'] },
     capital: ['Valletta'],
     altSpellings: ['MT', 'Republic of Malta', "Repubblika ta' Malta"],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { eng: 'English', mlt: 'Maltese' },
     translations: {
@@ -4398,7 +4398,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['89'] },
     capital: ['Papeetē'],
     altSpellings: ['PF', 'Polynésie française', 'French Polynesia', 'Pōrīnetia Farāni'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { fra: 'French' },
     translations: {
@@ -4541,7 +4541,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['50'] },
     capital: ['Kigali'],
     altSpellings: ['RW', 'Republic of Rwanda', "Repubulika y'u Rwanda", 'République du Rwanda'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English', fra: 'French', kin: 'Kinyarwanda' },
     translations: {
@@ -4612,7 +4612,7 @@ export const countries_json = [
     idd: { root: '+7', suffixes: ['3', '4', '5', '8', '9'] },
     capital: ['Moscow'],
     altSpellings: ['RU', 'Russian Federation', 'Российская Федерация'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Eastern Europe',
     languages: { rus: 'Russian' },
     translations: {
@@ -4697,7 +4697,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['75'] },
     capital: ['Minsk'],
     altSpellings: ['BY', 'Bielaruś', 'Republic of Belarus', 'Белоруссия', 'Республика Белоруссия'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Eastern Europe',
     languages: { bel: 'Belarusian', rus: 'Russian' },
     translations: {
@@ -4769,7 +4769,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['85'] },
     capital: ['Zagreb'],
     altSpellings: ['HR', 'Hrvatska', 'Republic of Croatia', 'Republika Hrvatska'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { hrv: 'Croatian' },
     translations: {
@@ -4908,7 +4908,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['50'] },
     capital: ['Gibraltar'],
     altSpellings: ['GI'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { eng: 'English' },
     translations: {
@@ -5085,7 +5085,7 @@ export const countries_json = [
     fifa: 'CHI',
     car: { signs: ['RCH'], side: 'right' },
     timezones: ['UTC-06:00', 'UTC-04:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/cl.png', svg: 'https://flagcdn.com/cl.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/cl.png',
@@ -5113,7 +5113,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['74'] },
     capital: ['Yerevan'],
     altSpellings: ['AM', 'Hayastan', 'Republic of Armenia', 'Հայաստանի Հանրապետություն'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { hye: 'Armenian' },
     translations: {
@@ -5266,7 +5266,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['43'] },
     capital: ['Kinshasa'],
     altSpellings: ['CD', 'DR Congo', 'Congo-Kinshasa', 'Congo, the Democratic Republic of the', 'DRC'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { fra: 'French', kon: 'Kikongo', lin: 'Lingala', lua: 'Tshiluba', swa: 'Swahili' },
     translations: {
@@ -5341,7 +5341,7 @@ export const countries_json = [
     idd: { root: '+1', suffixes: ['671'] },
     capital: ['Hagåtña'],
     altSpellings: ['GU', 'Guåhån'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { cha: 'Chamorro', eng: 'English', es: 'Spanish' },
     translations: {
@@ -5410,7 +5410,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['5818'] },
     capital: ['Mariehamn'],
     altSpellings: ['AX', 'Aaland', 'Aland', 'Ahvenanmaa'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { swe: 'Swedish' },
     translations: {
@@ -5482,7 +5482,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['64'] },
     capital: ['Baghdad'],
     altSpellings: ['IQ', 'Republic of Iraq', 'Jumhūriyyat al-‘Irāq'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic', arc: 'Aramaic', ckb: 'Sorani' },
     translations: {
@@ -5554,7 +5554,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['5'] },
     capital: ['Copenhagen'],
     altSpellings: ['DK', 'Danmark', 'Kingdom of Denmark', 'Kongeriget Danmark'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { dan: 'Danish' },
     translations: {
@@ -5626,7 +5626,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['34'] },
     capital: ['Abuja'],
     altSpellings: ['NG', 'Nijeriya', 'Naíjíríà', 'Federal Republic of Nigeria'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { eng: 'English' },
     translations: {
@@ -5701,7 +5701,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['65'] },
     capital: ['Lilongwe'],
     altSpellings: ['MW', 'Republic of Malawi'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English', nya: 'Chewa' },
     translations: {
@@ -5816,7 +5816,7 @@ export const countries_json = [
     fifa: 'COL',
     car: { signs: ['CO'], side: 'right' },
     timezones: ['UTC-05:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/co.png', svg: 'https://flagcdn.com/co.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/co.png',
@@ -5955,7 +5955,7 @@ export const countries_json = [
     population: 2563,
     car: { signs: ['GB'], side: 'left' },
     timezones: ['UTC-04:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/fk.png', svg: 'https://flagcdn.com/fk.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/fk.png',
@@ -6061,7 +6061,7 @@ export const countries_json = [
       '북한',
       '북조선',
     ],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { kor: 'Korean' },
     translations: {
@@ -6132,7 +6132,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['88'] },
     capital: ['Funafuti'],
     altSpellings: ['TV'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', tvl: 'Tuvaluan' },
     translations: {
@@ -6201,7 +6201,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['2'] },
     capital: ['Jakarta'],
     altSpellings: ['ID', 'Republic of Indonesia', 'Republik Indonesia'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { ind: 'Indonesian' },
     translations: {
@@ -6273,7 +6273,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['51'] },
     capital: ['Addis Ababa'],
     altSpellings: ['ET', 'ʾĪtyōṗṗyā', 'Federal Democratic Republic of Ethiopia', 'የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { amh: 'Amharic' },
     translations: {
@@ -6404,7 +6404,7 @@ export const countries_json = [
     fifa: 'BOL',
     car: { signs: ['BOL'], side: 'right' },
     timezones: ['UTC-04:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/bo.png', svg: 'https://flagcdn.com/bo.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/bo.png',
@@ -6431,7 +6431,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['32'] },
     capital: ['Freetown'],
     altSpellings: ['SL', 'Republic of Sierra Leone'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { eng: 'English' },
     translations: {
@@ -6502,7 +6502,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['82'] },
     capital: ['Podgorica'],
     altSpellings: ['ME', 'Crna Gora'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { cnr: 'Montenegrin' },
     translations: {
@@ -6574,7 +6574,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['1'] },
     capital: ['Canberra'],
     altSpellings: ['AU'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Australia and New Zealand',
     languages: { eng: 'English' },
     translations: {
@@ -6649,7 +6649,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['42'] },
     capital: ['Brazzaville'],
     altSpellings: ['CG', 'Congo', 'Congo-Brazzaville'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { fra: 'French', kon: 'Kikongo', lin: 'Lingala' },
     translations: {
@@ -6717,7 +6717,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['26'] },
     capital: ['Ouagadougou'],
     altSpellings: ['BF'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -6791,7 +6791,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['72'] },
     capital: ['Jerusalem'],
     altSpellings: ['IL', 'State of Israel', "Medīnat Yisrā'el"],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic', heb: 'Hebrew' },
     translations: {
@@ -6907,7 +6907,7 @@ export const countries_json = [
     fifa: 'URU',
     car: { signs: ['ROU'], side: 'right' },
     timezones: ['UTC-03:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/uy.png', svg: 'https://flagcdn.com/uy.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/uy.png',
@@ -6938,7 +6938,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['53'] },
     capital: ['Dublin'],
     altSpellings: ['IE', 'Éire', 'Republic of Ireland', 'Poblacht na hÉireann'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { eng: 'English', gle: 'Irish' },
     translations: {
@@ -7008,7 +7008,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['1'] },
     capital: ['Flying Fish Cove'],
     altSpellings: ['CX', 'Territory of Christmas Island'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Australia and New Zealand',
     languages: { eng: 'English' },
     translations: {
@@ -7150,7 +7150,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['86'] },
     capital: ['Taipei'],
     altSpellings: ['TW', 'Táiwān', 'Republic of China', '中華民國', 'Zhōnghuá Mínguó', 'Chinese Taipei'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { zho: 'Chinese' },
     translations: {
@@ -7222,7 +7222,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['67'] },
     capital: ['Gaborone'],
     altSpellings: ['BW', 'Republic of Botswana', 'Lefatshe la Botswana'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Southern Africa',
     languages: { eng: 'English', tsn: 'Tswana' },
     translations: {
@@ -7293,7 +7293,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['60'] },
     capital: ['Lusaka'],
     altSpellings: ['ZM', 'Republic of Zambia'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English' },
     translations: {
@@ -7365,7 +7365,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['41'] },
     capital: ['Libreville'],
     altSpellings: ['GA', 'Gabonese Republic', 'République Gabonaise'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { fra: 'French' },
     translations: {
@@ -7439,7 +7439,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['58'] },
     capital: ['Helsinki'],
     altSpellings: ['FI', 'Suomi', 'Republic of Finland', 'Suomen tasavalta', 'Republiken Finland'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { fin: 'Finnish', swe: 'Swedish' },
     translations: {
@@ -7516,7 +7516,7 @@ export const countries_json = [
       '中華人民共和國澳門特別行政區',
       'Região Administrativa Especial de Macau da República Popular da China',
     ],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { por: 'Portuguese', zho: 'Chinese' },
     translations: {
@@ -8041,7 +8041,7 @@ export const countries_json = [
     capital: ['Washington, D.C.'],
     altSpellings: ['US', 'USA', 'United States of America'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { eng: 'English' },
     translations: {
       ara: { official: 'الولايات المتحدة الامريكية', common: 'الولايات المتحدة' },
@@ -8127,7 +8127,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['92'] },
     capital: ['Majuro'],
     altSpellings: ['MH', 'Republic of the Marshall Islands', 'Aolepān Aorōkin M̧ajeļ'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { eng: 'English', mah: 'Marshallese' },
     translations: {
@@ -8199,7 +8199,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['79'] },
     capital: ['Suva'],
     altSpellings: ['FJ', 'Viti', 'Republic of Fiji', 'Matanitu ko Viti', 'Fijī Gaṇarājya'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Melanesia',
     languages: { eng: 'English', fij: 'Fijian', hif: 'Fiji Hindi' },
     translations: {
@@ -8269,7 +8269,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['9'] },
     capital: ['Berlin'],
     altSpellings: ['DE', 'Federal Republic of Germany', 'Bundesrepublik Deutschland'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { deu: 'German' },
     translations: {
@@ -8432,7 +8432,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['63'] },
     capital: ['Harare'],
     altSpellings: ['ZW', 'Republic of Zimbabwe'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Southern Africa',
     languages: {
       bwg: 'Chibarwe',
@@ -8515,7 +8515,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['74'] },
     capital: ['Doha'],
     altSpellings: ['QA', 'State of Qatar', 'Dawlat Qaṭar'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -8653,7 +8653,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['44'] },
     capital: ['Luanda'],
     altSpellings: ['AO', 'República de Angola', "ʁɛpublika de an'ɡɔla"],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { por: 'Portuguese' },
     translations: {
@@ -8724,7 +8724,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['9'] },
     capital: ['Rome'],
     altSpellings: ['IT', 'Italian Republic', 'Repubblica italiana'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { it: 'Italian' },
     translations: {
@@ -8796,7 +8796,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['28'] },
     capital: ['Lomé'],
     altSpellings: ['TG', 'Togolese', 'Togolese Republic', 'République Togolaise'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -8870,7 +8870,7 @@ export const countries_json = [
     idd: { root: '+1', suffixes: ['670'] },
     capital: ['Saipan'],
     altSpellings: ['MP', 'Commonwealth of the Northern Mariana Islands', 'Sankattan Siha Na Islas Mariånas'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { cal: 'Carolinian', cha: 'Chamorro', eng: 'English' },
     translations: {
@@ -8939,7 +8939,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['4'] },
     capital: ['Wellington'],
     altSpellings: ['NZ', 'Aotearoa'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Australia and New Zealand',
     languages: { eng: 'English', mri: 'Māori', nzs: 'New Zealand Sign Language' },
     translations: {
@@ -9009,7 +9009,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['5'] },
     capital: ['Naypyidaw'],
     altSpellings: ['MM', 'Burma', 'Republic of the Union of Myanmar', 'Pyidaunzu Thanmăda Myăma Nainngandaw'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { mya: 'Burmese' },
     translations: {
@@ -9081,7 +9081,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['68'] },
     capital: ['Muscat'],
     altSpellings: ['OM', 'Sultanate of Oman', 'Salṭanat ʻUmān'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -9155,7 +9155,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['85'] },
     capital: ['Apia'],
     altSpellings: ['WS', 'Independent State of Samoa', 'Malo Saʻoloto Tutoʻatasi o Sāmoa'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', smo: 'Samoan' },
     translations: {
@@ -9225,7 +9225,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['29'] },
     capital: ['Porto-Novo'],
     altSpellings: ['BJ', 'Republic of Benin', 'République du Bénin'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -9368,7 +9368,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['22'] },
     capital: ['Nouakchott'],
     altSpellings: ['MR', 'Islamic Republic of Mauritania', 'al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { ara: 'Arabic' },
     translations: {
@@ -9441,7 +9441,7 @@ export const countries_json = [
     capital: ['Washington DC'],
     altSpellings: ['UM'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { eng: 'English' },
     translations: {
       ara: { official: 'جزر الولايات المتحدة الصغيرة النائية', common: 'جزر الولايات المتحدة الصغيرة النائية' },
@@ -9526,7 +9526,7 @@ export const countries_json = [
     capital: ['Nuuk'],
     altSpellings: ['GL', 'Grønland'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { kal: 'Greenlandic' },
     translations: {
       ara: { official: 'جرينلاند', common: 'جرينلاند' },
@@ -9598,7 +9598,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['87'] },
     capital: ['Sarajevo'],
     altSpellings: ['BA', 'Bosnia-Herzegovina', 'Босна и Херцеговина'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { bos: 'Bosnian', hrv: 'Croatian', srp: 'Serbian' },
     translations: {
@@ -9676,7 +9676,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['68'] },
     capital: ['Mbabane'],
     altSpellings: ['SZ', 'Swaziland', 'weSwatini', 'Swatini', 'Ngwane', 'Kingdom of Eswatini', 'Umbuso weSwatini'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Southern Africa',
     languages: { eng: 'English', ssw: 'Swazi' },
     translations: {
@@ -9747,7 +9747,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['906698', '79'] },
     capital: ['Vatican City'],
     altSpellings: ['VA', 'Holy See (Vatican City State)', 'Vatican City State', 'Stato della Città del Vaticano'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { it: 'Italian', lat: 'Latin' },
     translations: {
@@ -9816,7 +9816,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['3'] },
     capital: ['Paris'],
     altSpellings: ['FR', 'French Republic', 'République française'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { fra: 'French' },
     translations: {
@@ -9903,7 +9903,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['8'] },
     capital: ['Warsaw'],
     altSpellings: ['PL', 'Republic of Poland', 'Rzeczpospolita Polska'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Central Europe',
     languages: { pol: 'Polish' },
     translations: {
@@ -9979,7 +9979,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['69'] },
     capital: ['Moroni'],
     altSpellings: ['KM', 'Union of the Comoros', 'Union des Comores', 'Udzima wa Komori', 'al-Ittiḥād al-Qumurī'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { ara: 'Arabic', fra: 'French', zdj: 'Comorian' },
     translations: {
@@ -10053,7 +10053,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['75'] },
     capital: ['Port Moresby'],
     altSpellings: ['PG', 'Independent State of Papua New Guinea', 'Independen Stet bilong Papua Niugini'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Melanesia',
     languages: { eng: 'English', hmo: 'Hiri Motu', tpi: 'Tok Pisin' },
     translations: {
@@ -10128,7 +10128,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['54'] },
     capital: ['Nairobi'],
     altSpellings: ['KE', 'Republic of Kenya', 'Jamhuri ya Kenya'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English', swa: 'Swahili' },
     translations: {
@@ -10200,7 +10200,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['4'] },
     capital: ['Hanoi'],
     altSpellings: ['VN', 'Socialist Republic of Vietnam', 'Cộng hòa Xã hội chủ nghĩa Việt Nam', 'Viet Nam'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { vie: 'Vietnamese' },
     translations: {
@@ -10276,7 +10276,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['78'] },
     capital: ['Port Vila'],
     altSpellings: ['VU', 'Republic of Vanuatu', 'Ripablik blong Vanuatu', 'République de Vanuatu'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Melanesia',
     languages: { bis: 'Bislama', eng: 'English', fra: 'French' },
     translations: {
@@ -10349,7 +10349,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['45'] },
     capital: ['Bissau'],
     altSpellings: ['GW', 'Republic of Guinea-Bissau', 'República da Guiné-Bissau'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { por: 'Portuguese', pov: 'Upper Guinea Creole' },
     translations: {
@@ -10426,7 +10426,7 @@ export const countries_json = [
     capital: ['Saint-Pierre'],
     altSpellings: ['PM', 'Collectivité territoriale de Saint-Pierre-et-Miquelon'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { fra: 'French' },
     translations: {
       ara: { official: 'سان بيير وميكلون', common: 'سان بيير وميكلون' },
@@ -10498,7 +10498,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['90', '47'] },
     capital: ['Jamestown'],
     altSpellings: ['Saint Helena', 'St. Helena, Ascension and Tristan da Cunha'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { eng: 'English' },
     translations: {
@@ -10612,7 +10612,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['56'] },
     capital: ['Kampala'],
     altSpellings: ['UG', 'Republic of Uganda', 'Jamhuri ya Uganda'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English', swa: 'Swahili' },
     translations: {
@@ -10686,7 +10686,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['98'] },
     capital: ['Tashkent'],
     altSpellings: ['UZ', 'Republic of Uzbekistan', 'O‘zbekiston Respublikasi', 'Ўзбекистон Республикаси'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Central Asia',
     languages: { rus: 'Russian', uzb: 'Uzbek' },
     translations: {
@@ -10757,7 +10757,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['87'] },
     capital: ['Nouméa'],
     altSpellings: ['NC'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Melanesia',
     languages: { fra: 'French' },
     translations: {
@@ -10877,7 +10877,7 @@ export const countries_json = [
     fifa: 'PAR',
     car: { signs: ['PY'], side: 'right' },
     timezones: ['UTC-04:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/py.png', svg: 'https://flagcdn.com/py.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/py.png',
@@ -10906,7 +10906,7 @@ export const countries_json = [
     capital: ['Ottawa'],
     altSpellings: ['CA'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { eng: 'English', fra: 'French' },
     translations: {
       ara: { official: 'كندا', common: 'كندا' },
@@ -10979,7 +10979,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['83'] },
     capital: ['Alofi'],
     altSpellings: ['NU'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', niu: 'Niuean' },
     translations: {
@@ -11044,7 +11044,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['6'] },
     capital: ['Bangkok'],
     altSpellings: ['TH', 'Prathet', 'Thai', 'Kingdom of Thailand', 'ราชอาณาจักรไทย', 'Ratcha Anachak Thai'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { tha: 'Thai' },
     translations: {
@@ -11116,7 +11116,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['3'] },
     capital: ['Vienna'],
     altSpellings: ['AT', 'Osterreich', 'Oesterreich'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Central Europe',
     languages: { bar: 'Austro-Bavarian German' },
     translations: {
@@ -11188,7 +11188,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['73'] },
     capital: ['Manama'],
     altSpellings: ['BH', 'Kingdom of Bahrain', 'Mamlakat al-Baḥrayn'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -11258,7 +11258,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['77'] },
     capital: ['Kathmandu'],
     altSpellings: ['NP', 'Federal Democratic Republic of Nepal', 'Loktāntrik Ganatantra Nepāl'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { nep: 'Nepali' },
     translations: {
@@ -11330,7 +11330,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['13'] },
     capital: ['Algiers'],
     altSpellings: ['DZ', 'Dzayer', 'Algérie'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ara: 'Arabic' },
     translations: {
@@ -11414,7 +11414,7 @@ export const countries_json = [
       'Республика Казахстан',
       'Respublika Kazakhstan',
     ],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Central Asia',
     languages: { kaz: 'Kazakh', rus: 'Russian' },
     translations: {
@@ -11486,7 +11486,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['56'] },
     capital: ['Vientiane'],
     altSpellings: ['LA', 'Lao', "Lao People's Democratic Republic", 'Sathalanalat Paxathipatai Paxaxon Lao'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { lao: 'Lao' },
     translations: {
@@ -11558,7 +11558,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['83'] },
     capital: ['Pristina'],
     altSpellings: ['XK', 'Република Косово'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { sqi: 'Albanian', srp: 'Serbian' },
     translations: {
@@ -11628,7 +11628,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['25'] },
     capital: ['Yamoussoukro'],
     altSpellings: ['CI', "Côte d'Ivoire", 'Ivory Coast', "Republic of Côte d'Ivoire", "République de Côte d'Ivoire"],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -11771,7 +11771,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['35'] },
     capital: ["N'Djamena"],
     altSpellings: ['TD', 'Tchad', 'Republic of Chad', 'République du Tchad'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { ara: 'Arabic', fra: 'French' },
     translations: {
@@ -11845,7 +11845,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['93'] },
     capital: ['Ashgabat'],
     altSpellings: ['TM'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Central Asia',
     languages: { rus: 'Russian', tuk: 'Turkmen' },
     translations: {
@@ -12031,7 +12031,7 @@ export const countries_json = [
     fifa: 'BRA',
     car: { signs: ['BR'], side: 'right' },
     timezones: ['UTC-05:00', 'UTC-04:00', 'UTC-03:00', 'UTC-02:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/br.png', svg: 'https://flagcdn.com/br.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/br.png',
@@ -12055,7 +12055,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['0'] },
     capital: ['Bucharest'],
     altSpellings: ['RO', 'Rumania', 'Roumania', 'România'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { ron: 'Romanian' },
     translations: {
@@ -12201,7 +12201,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['1'] },
     capital: ['Bern'],
     altSpellings: ['CH', 'Swiss Confederation', 'Schweiz', 'Suisse', 'Svizzera', 'Svizra'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { fra: 'French', gsw: 'Swiss German', it: 'Italian', roh: 'Romansh' },
     translations: {
@@ -12278,7 +12278,7 @@ export const countries_json = [
       'Sao Tome and Principe',
       'República Democrática de São Tomé e Príncipe',
     ],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { por: 'Portuguese' },
     translations: {
@@ -12357,7 +12357,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['2'] },
     capital: ['Islamabad'],
     altSpellings: ['PK', 'Pākistān', 'Islamic Republic of Pakistan', "Islāmī Jumhūriya'eh Pākistān"],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { eng: 'English', urd: 'Urdu' },
     translations: {
@@ -12429,7 +12429,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['0'] },
     capital: ['Ankara'],
     altSpellings: ['TR', 'Turkiye', 'Republic of Turkey', 'Türkiye Cumhuriyeti'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { tur: 'Turkish' },
     translations: {
@@ -12545,7 +12545,7 @@ export const countries_json = [
     fifa: 'SUR',
     car: { signs: ['SME'], side: 'left' },
     timezones: ['UTC-03:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/sr.png', svg: 'https://flagcdn.com/sr.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/sr.png',
@@ -12574,7 +12574,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['72'] },
     capital: ['Kingston'],
     altSpellings: ['NF', 'Territory of Norfolk Island', "Teratri of Norf'k Ailen"],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Australia and New Zealand',
     languages: { eng: 'English', pih: 'Norfuk' },
     translations: {
@@ -12644,7 +12644,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['5'] },
     capital: ['Singapore'],
     altSpellings: ['SG', 'Singapura', 'Republik Singapura', '新加坡共和国'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { zho: 'Chinese', eng: 'English', msa: 'Malay', tam: 'Tamil' },
     translations: {
@@ -12721,7 +12721,7 @@ export const countries_json = [
       'United Republic of Tanzania',
       'Jamhuri ya Muungano wa Tanzania',
     ],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English', swa: 'Swahili' },
     translations: {
@@ -12792,7 +12792,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['91'] },
     capital: ['Palikir'],
     altSpellings: ['FM', 'Federated States of Micronesia', 'Micronesia, Federated States of'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { eng: 'English' },
     translations: {
@@ -12862,7 +12862,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['21'] },
     capital: ['Bratislava'],
     altSpellings: ['SK', 'Slovak Republic', 'Slovenská republika'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Central Europe',
     languages: { slk: 'Slovak' },
     translations: {
@@ -12940,7 +12940,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['52'] },
     capital: ['City of Victoria'],
     altSpellings: ['HK'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { eng: 'English', zho: 'Chinese' },
     translations: {
@@ -13021,7 +13021,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['55'] },
     capital: ['Tirana'],
     altSpellings: ['AL', 'Shqipëri', 'Shqipëria', 'Shqipnia'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { sqi: 'Albanian' },
     translations: {
@@ -13096,7 +13096,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['1'] },
     capital: ['New Delhi'],
     altSpellings: ['IN', 'Bhārat', 'Republic of India', 'Bharat Ganrajya', 'இந்தியா'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { eng: 'English', hin: 'Hindi', tam: 'Tamil' },
     translations: {
@@ -13236,7 +13236,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['1'] },
     capital: ['Tokyo'],
     altSpellings: ['JP', 'Nippon', 'Nihon'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { jpn: 'Japanese' },
     translations: {
@@ -13354,7 +13354,7 @@ export const countries_json = [
     fifa: 'ARG',
     car: { signs: ['RA'], side: 'right' },
     timezones: ['UTC-03:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/ar.png', svg: 'https://flagcdn.com/ar.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/ar.png',
@@ -13382,7 +13382,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['38'] },
     capital: ['Praia'],
     altSpellings: ['CV', 'Republic of Cabo Verde', 'República de Cabo Verde'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { por: 'Portuguese' },
     translations: {
@@ -13453,7 +13453,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['73'] },
     capital: ['Chișinău'],
     altSpellings: ['MD', 'Moldova, Republic of', 'Republic of Moldova', 'Republica Moldova'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Eastern Europe',
     languages: { ron: 'Romanian' },
     translations: {
@@ -13598,7 +13598,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['779'] },
     capital: ['Longyearbyen'],
     altSpellings: ['SJ', 'Svalbard and Jan Mayen Islands'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { nor: 'Norwegian' },
     translations: {
@@ -13666,7 +13666,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['76'] },
     capital: ["Nuku'alofa"],
     altSpellings: ['TO'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', ton: 'Tongan' },
     translations: {
@@ -13808,7 +13808,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['20'] },
     capital: ['Prague'],
     altSpellings: ['CZ', 'Česká republika', 'Česko'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Central Europe',
     languages: { ces: 'Czech', slk: 'Slovak' },
     translations: {
@@ -13883,7 +13883,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['61'] },
     capital: ['Antananarivo'],
     altSpellings: ['MG', 'Republic of Madagascar', "Repoblikan'i Madagasikara", 'République de Madagascar'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { fra: 'French', mlg: 'Malagasy' },
     translations: {
@@ -13968,7 +13968,7 @@ export const countries_json = [
       'Royaume de Belgique',
       'Königreich Belgien',
     ],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { deu: 'German', fra: 'French', nld: 'Dutch' },
     translations: {
@@ -14040,7 +14040,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['6'] },
     capital: ['Budapest'],
     altSpellings: ['HU'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Central Europe',
     languages: { hun: 'Hungarian' },
     translations: {
@@ -14184,7 +14184,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['0'] },
     capital: ['Cairo'],
     altSpellings: ['EG', 'Arab Republic of Egypt'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ara: 'Arabic' },
     translations: {
@@ -14259,7 +14259,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['74'] },
     capital: ['Yaren'],
     altSpellings: ['NR', 'Naoero', 'Pleasant Island', 'Republic of Nauru', 'Ripublik Naoero'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Micronesia',
     languages: { eng: 'English', nau: 'Nauru' },
     translations: {
@@ -14331,7 +14331,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['37'] },
     capital: ['Yaoundé'],
     altSpellings: ['CM', 'Republic of Cameroon', 'République du Cameroun'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { eng: 'English', fra: 'French' },
     translations: {
@@ -14532,7 +14532,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['66'] },
     capital: ['Riyadh'],
     altSpellings: ['Saudi', 'SA', 'Kingdom of Saudi Arabia', 'Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -14606,7 +14606,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['94'] },
     capital: ['Baku'],
     altSpellings: ['AZ', 'Republic of Azerbaijan', 'Azərbaycan Respublikası'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { aze: 'Azerbaijani', rus: 'Russian' },
     translations: {
@@ -14678,7 +14678,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['62'] },
     capital: ['Amman'],
     altSpellings: ['JO', 'Hashemite Kingdom of Jordan', 'al-Mamlakah al-Urdunīyah al-Hāshimīyah'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -14750,7 +14750,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['70'] },
     capital: ['Vilnius'],
     altSpellings: ['LT', 'Republic of Lithuania', 'Lietuvos Respublika'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { lit: 'Lithuanian' },
     translations: {
@@ -14824,7 +14824,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['4'] },
     capital: ['Douglas'],
     altSpellings: ['IM', 'Ellan Vannin', 'Mann', 'Mannin'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { eng: 'English', glv: 'Manx' },
     translations: {
@@ -14907,7 +14907,7 @@ export const countries_json = [
       'République de Guinée équatoriale',
       'República da Guiné Equatorial',
     ],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { fra: 'French', por: 'Portuguese', es: 'Spanish' },
     translations: {
@@ -15194,7 +15194,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['36'] },
     capital: ['Bangui'],
     altSpellings: ['CF', 'Central African Republic', 'République centrafricaine'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { fra: 'French', sag: 'Sango' },
     translations: {
@@ -15275,7 +15275,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['64'] },
     capital: ['Windhoek'],
     altSpellings: ['NA', 'Namibië', 'Republic of Namibia'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Southern Africa',
     languages: {
       afr: 'Afrikaans',
@@ -15359,7 +15359,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['90'] },
     capital: ['Fakaofo'],
     altSpellings: ['TK'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', smo: 'Samoan', tkl: 'Tokelauan' },
     translations: {
@@ -15492,7 +15492,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['81'] },
     capital: ['Belgrade'],
     altSpellings: ['RS', 'Srbija', 'Republic of Serbia', 'Република Србија', 'Republika Srbija'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { srp: 'Serbian' },
     translations: {
@@ -15564,7 +15564,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['65'] },
     capital: ['Kuwait City'],
     altSpellings: ['KW', 'State of Kuwait', 'Dawlat al-Kuwait'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -15635,7 +15635,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['27'] },
     capital: ['Niamey'],
     altSpellings: ['NE', 'Nijar'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -15707,7 +15707,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['78'] },
     capital: ['City of San Marino'],
     altSpellings: ['SM', 'Republic of San Marino', 'Repubblica di San Marino'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { it: 'Italian' },
     translations: {
@@ -15774,7 +15774,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['80'] },
     capital: ['Kyiv'],
     altSpellings: ['UA', 'Ukrayina'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Eastern Europe',
     languages: { ukr: 'Ukrainian' },
     translations: {
@@ -15846,7 +15846,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['75'] },
     capital: ['Thimphu'],
     altSpellings: ['BT', 'Kingdom of Bhutan'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { dzo: 'Dzongkha' },
     translations: {
@@ -15917,7 +15917,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['67'] },
     capital: ["Sana'a"],
     altSpellings: ['YE', 'Yemeni Republic', 'al-Jumhūriyyah al-Yamaniyyah'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -16037,7 +16037,7 @@ export const countries_json = [
     fifa: 'VEN',
     car: { signs: ['YV'], side: 'right' },
     timezones: ['UTC-04:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/ve.png', svg: 'https://flagcdn.com/ve.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/ve.png',
@@ -16068,7 +16068,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['12'] },
     capital: ['Rabat'],
     altSpellings: ['MA', 'Kingdom of Morocco', 'Al-Mamlakah al-Maġribiyah'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Northern Africa',
     languages: { ara: 'Arabic', ber: 'Berber' },
     translations: {
@@ -16140,7 +16140,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['73'] },
     capital: ['Bandar Seri Begawan'],
     altSpellings: ['BN', 'Brunei Darussalam', 'Nation of Brunei', 'the Abode of Peace'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { msa: 'Malay' },
     translations: {
@@ -16211,7 +16211,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['21'] },
     capital: ['Dakar'],
     altSpellings: ['SN', 'Republic of Senegal', 'République du Sénégal'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { fra: 'French' },
     translations: {
@@ -16283,7 +16283,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['11'] },
     capital: ['Juba'],
     altSpellings: ['SS'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Middle Africa',
     languages: { eng: 'English' },
     translations: {
@@ -16354,7 +16354,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['1'] },
     capital: ['Amsterdam'],
     altSpellings: ['NL', 'Holland', 'Nederland', 'The Netherlands'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { nld: 'Dutch' },
     translations: {
@@ -16426,7 +16426,7 @@ export const countries_json = [
     idd: { root: '+4', suffixes: ['23'] },
     capital: ['Vaduz'],
     altSpellings: ['LI', 'Principality of Liechtenstein', 'Fürstentum Liechtenstein'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Western Europe',
     languages: { deu: 'German' },
     translations: {
@@ -16500,7 +16500,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['76'] },
     capital: ['Andorra la Vella'],
     altSpellings: ['AD', 'Principality of Andorra', "Principat d'Andorra"],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { cat: 'Catalan' },
     translations: {
@@ -16574,7 +16574,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['61'] },
     capital: ['Beirut'],
     altSpellings: ['LB', 'Lebanese Republic', 'Al-Jumhūrīyah Al-Libnānīyah'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic', fra: 'French' },
     translations: {
@@ -16646,7 +16646,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['71'] },
     capital: ['Riga'],
     altSpellings: ['LV', 'Republic of Latvia', 'Latvijas Republika'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { lav: 'Latvian' },
     translations: {
@@ -16724,7 +16724,7 @@ export const countries_json = [
       'Macedonia, The Former Yugoslav Republic of',
       'Република Северна Македонија',
     ],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { mkd: 'Macedonian' },
     translations: {
@@ -16796,7 +16796,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['51'] },
     capital: ['Lisbon'],
     altSpellings: ['PT', 'Portuguesa', 'Portuguese Republic', 'República Portuguesa'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southern Europe',
     languages: { por: 'Portuguese' },
     translations: {
@@ -16869,7 +16869,7 @@ export const countries_json = [
     capital: ['Mexico City'],
     altSpellings: ['MX', 'Mexicanos', 'United Mexican States', 'Estados Unidos Mexicanos'],
     region: 'Americas',
-    subregion: 'northamerica',
+    subregion: 'North America',
     languages: { es: 'Spanish' },
     translations: {
       ara: { official: 'الولايات المتحدة المكسيكية', common: 'المسكيك' },
@@ -17008,7 +17008,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['62'] },
     capital: ['Mamoudzou'],
     altSpellings: ['YT', 'Department of Mayotte', 'Département de Mayotte'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { fra: 'French' },
     translations: {
@@ -17082,7 +17082,7 @@ export const countries_json = [
       '中华人民共和国',
       'Zhōnghuá Rénmín Gònghéguó',
     ],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { zho: 'Chinese' },
     translations: {
@@ -17173,7 +17173,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['96'] },
     capital: ['Bishkek'],
     altSpellings: ['KG', 'Киргизия', 'Kyrgyz Republic', 'Кыргыз Республикасы', 'Kyrgyz Respublikasy'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Central Asia',
     languages: { kir: 'Kyrgyz', rus: 'Russian' },
     translations: {
@@ -17244,7 +17244,7 @@ export const countries_json = [
     idd: { root: '+6', suffixes: ['81'] },
     capital: ['Mata-Utu'],
     altSpellings: ['WF', 'Territory of the Wallis and Futuna Islands', 'Territoire des îles Wallis et Futuna'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { fra: 'French' },
     translations: {
@@ -17310,7 +17310,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['20'] },
     capital: ['Banjul'],
     altSpellings: ['GM', 'Republic of the Gambia'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { eng: 'English' },
     translations: {
@@ -17392,7 +17392,7 @@ export const countries_json = [
       "Timór Lorosa'e",
       'Timor Lorosae',
     ],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'South-Eastern Asia',
     languages: { por: 'Portuguese', tet: 'Tetum' },
     translations: {
@@ -17464,7 +17464,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['91'] },
     capital: ['Asmara'],
     altSpellings: ['ER', 'State of Eritrea', 'ሃገረ ኤርትራ', 'Dawlat Iritriyá', 'ʾErtrā', 'Iritriyā'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { ara: 'Arabic', eng: 'English', tir: 'Tigrinya' },
     translations: {
@@ -17537,7 +17537,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['92'] },
     capital: ['Dushanbe'],
     altSpellings: ['TJ', 'Toçikiston', 'Republic of Tajikistan', 'Ҷумҳурии Тоҷикистон', 'Çumhuriyi Toçikiston'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Central Asia',
     languages: { rus: 'Russian', tgk: 'Tajik' },
     translations: {
@@ -17612,7 +17612,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['4'] },
     capital: ['Sri Jayawardenepura Kotte'],
     altSpellings: ['LK', 'ilaṅkai', 'Democratic Socialist Republic of Sri Lanka'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Southern Asia',
     languages: { sin: 'Sinhala', tam: 'Tamil' },
     translations: {
@@ -17684,7 +17684,7 @@ export const countries_json = [
     idd: { root: '+3', suffixes: ['59'] },
     capital: ['Sofia'],
     altSpellings: ['BG', 'Republic of Bulgaria', 'Република България'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Southeast Europe',
     languages: { bul: 'Bulgarian' },
     translations: {
@@ -17759,7 +17759,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['66'] },
     capital: ['Maseru'],
     altSpellings: ['LS', 'Kingdom of Lesotho', 'Muso oa Lesotho'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Southern Africa',
     languages: { eng: 'English', sot: 'Sotho' },
     translations: {
@@ -17830,7 +17830,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['46'] },
     capital: ['Diego Garcia'],
     altSpellings: ['IO'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { eng: 'English' },
     translations: {
@@ -17904,7 +17904,7 @@ export const countries_json = [
     idd: { root: '+8', suffixes: ['2'] },
     capital: ['Seoul'],
     altSpellings: ['KR', 'Korea, Republic of', 'Republic of Korea', '남한', '남조선'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Eastern Asia',
     languages: { kor: 'Korean' },
     translations: {
@@ -17985,7 +17985,7 @@ export const countries_json = [
       'Jamhuuriyadda Federaalka Soomaaliya',
       'Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya',
     ],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Eastern Africa',
     languages: { ara: 'Arabic', som: 'Somali' },
     translations: {
@@ -18057,7 +18057,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['33'] },
     capital: ['Accra'],
     altSpellings: ['GH'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { eng: 'English' },
     translations: {
@@ -18131,7 +18131,7 @@ export const countries_json = [
     idd: { root: '+1', suffixes: ['684'] },
     capital: ['Pago Pago'],
     altSpellings: ['AS', 'Amerika Sāmoa', 'Amelika Sāmoa', 'Sāmoa Amelika'],
-    region: 'oceania',
+    region: 'Oceania',
     subregion: 'Polynesia',
     languages: { eng: 'English', smo: 'Samoan' },
     translations: {
@@ -18197,7 +18197,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['31'] },
     capital: ['Monrovia'],
     altSpellings: ['LR', 'Republic of Liberia'],
-    region: 'africa',
+    region: 'Africa',
     subregion: 'Western Africa',
     languages: { eng: 'English' },
     translations: {
@@ -18271,7 +18271,7 @@ export const countries_json = [
     idd: { root: '+2', suffixes: ['98'] },
     capital: ['Tórshavn'],
     altSpellings: ['FO', 'Føroyar', 'Færøerne'],
-    region: 'europe',
+    region: 'Europe',
     subregion: 'Northern Europe',
     languages: { dan: 'Danish', fao: 'Faroese' },
     translations: {
@@ -18341,7 +18341,7 @@ export const countries_json = [
     idd: { root: '+9', suffixes: ['71'] },
     capital: ['Abu Dhabi'],
     altSpellings: ['AE', 'UAE', 'Emirates'],
-    region: 'asia',
+    region: 'Asia',
     subregion: 'Western Asia',
     languages: { ara: 'Arabic' },
     translations: {
@@ -18528,7 +18528,7 @@ export const countries_json = [
     fifa: 'ECU',
     car: { signs: ['EC'], side: 'right' },
     timezones: ['UTC-06:00', 'UTC-05:00'],
-    continents: ['South America'],
+    continents: ['southamerica'],
     flags: { png: 'https://flagcdn.com/w320/ec.png', svg: 'https://flagcdn.com/ec.svg' },
     coatOfArms: {
       png: 'https://mainfacts.com/media/images/coats_of_arms/ec.png',

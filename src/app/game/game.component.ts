@@ -19,13 +19,13 @@ import { Router } from '@angular/router';
     <ng-container *ngIf="status$ | async as status; else loading">
       <ng-container *ngTemplateOutlet="!status.isGameFinished ? playGame : summary; context: { status: status }">
       </ng-container>
-      <div class="mt-5 px-2">
-        <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
-      </div>
     </ng-container>
 
     <ng-template #playGame let-status="status">
       <fq-game-play-status [status]="status" (selectCountry)="checkSelection($event)"></fq-game-play-status>
+      <div class="mt-5 px-2">
+        <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
+      </div>
     </ng-template>
 
     <ng-template #summary let-status="status">

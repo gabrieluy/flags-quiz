@@ -11,7 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
             <h1>Flags Quiz!</h1>
           </div>
           <div class="flex justify-content-center col-12">
-            <img class="w-10rem h-10rem col12" src="assets/images/pet.webp" />
+            <img class="w-10rem h-10rem" src="assets/images/pet.webp" />
           </div>
           <div class="flex flex-wrap justify-content-center col-12 mt-5">
             <div class="flex flex-wrap justify-content-center col-12 gap-3">
