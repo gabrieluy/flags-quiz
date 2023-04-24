@@ -7,7 +7,7 @@ import { GameStatus } from '../interfaces/game-status.interface';
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '1s' } })])])],
+  animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '2s' } })])])],
   template: `
     <div class="m-3">
       <div class="flex justify-content-center">
