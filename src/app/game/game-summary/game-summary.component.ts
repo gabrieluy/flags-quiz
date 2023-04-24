@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
 
 @Component({
@@ -12,7 +13,7 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
             <h2>{{ t('title') }}</h2>
           </div>
           <div class="flex justify-content-center col-12">
-            <img class="col-12" src="assets/images/pet.webp" />
+            <img class="w-10rem h-10rem" src="assets/images/pet.webp" />
           </div>
           <div class="flex justify-content-center col-12">
             <ul>
@@ -54,6 +55,8 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
   `,
 })
 export class GameSummaryComponent {
+  private _router = inject(Router);
+
   @Input() public status!: GameStatus;
   @Output() resetClick: EventEmitter<void> = new EventEmitter();
 
@@ -62,6 +65,7 @@ export class GameSummaryComponent {
   }
 
   public share(): void {
-    throw new Error('Method not implemented.');
+    const url = 'https://twitter.com/intent/tweet?text=Hello%20world';
+    window.open(url);
   }
 }

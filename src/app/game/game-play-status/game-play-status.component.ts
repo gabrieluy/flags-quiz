@@ -9,7 +9,7 @@ import { GameStatus } from '../interfaces/game-status.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '1s' } })])])],
   template: `
-    <div class="m-4">
+    <div class="m-3">
       <div class="flex justify-content-center">
         <fq-card class="col-12 md:col-6">
           <div *ngIf="status" class="flex flex-row flex-wrap justify-content-end mb-2">
