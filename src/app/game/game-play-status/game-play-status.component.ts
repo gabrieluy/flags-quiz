@@ -1,13 +1,12 @@
-import { transition, trigger, useAnimation } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Country } from 'src/app/game/interfaces/country.interface';
-import { fadeIn } from 'src/app/ui/animations/fadeIn.animation';
 import { GameStatus } from '../interfaces/game-status.interface';
+import { fadeInImage } from 'src/app/ui/animations/fadeInImage';
 
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [trigger('fadeIn', [transition('* <=> *', [useAnimation(fadeIn, { params: { time: '2s' } })])])],
+  animations: [fadeInImage],
   template: `
     <div class="m-3">
       <div class="flex justify-content-center">
@@ -22,7 +21,10 @@ import { GameStatus } from '../interfaces/game-status.interface';
         </fq-card>
       </div>
       <div class="flex justify-content-center mt-2">
-        <fq-flag-img [@fadeIn]="status.selectedCountry" [flag]="status.selectedCountry.cca2" class="h-13rem md:h-20rem">
+        <fq-flag-img
+          [@fadeInImage]="status.selectedCountry"
+          [flag]="status.selectedCountry.cca2"
+          class="h-13rem md:h-20rem">
         </fq-flag-img>
       </div>
       <div class="grid mt-2">
