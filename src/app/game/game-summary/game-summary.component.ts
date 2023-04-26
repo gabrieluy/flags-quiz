@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { TranslocoService } from '@ngneat/transloco';
 import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
 
 @Component({
@@ -44,9 +44,9 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
               (click)="reset()"></button>
             <button
               pButton
-              icon="pi pi-share-alt"
+              icon="pi pi-twitter"
               [label]="t('share')"
-              class="col-11 md:col-5"
+              class="col-11 md:col-5 bg-cyan-500 border-cyan-600"
               (click)="share()"></button>
           </div>
         </div>
@@ -55,7 +55,7 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
   `,
 })
 export class GameSummaryComponent {
-  private _router = inject(Router);
+  private _transloco = inject(TranslocoService);
 
   @Input() public status!: GameStatus;
   @Output() resetClick: EventEmitter<void> = new EventEmitter();
@@ -65,7 +65,8 @@ export class GameSummaryComponent {
   }
 
   public share(): void {
-    const url = 'https://twitter.com/intent/tweet?text=Hello%20world';
+    const text = this._transloco.translate('share-text', { points: this.status.points }, 'summary');
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
     window.open(url);
   }
 }

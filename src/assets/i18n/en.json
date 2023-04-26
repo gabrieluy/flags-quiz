@@ -37,7 +37,8 @@
     "correctAnswers": "{{ answers }} Correct Answers",
     "incorrectAnswers": "{{ answers }} Incorrect Answers",
     "restart": "Restart",
-    "share": "Share"
+    "share": "Share",
+    "share-text": "Do you know your flags of the world? I just took the FlagsQuiz and scored {{ points }}! 🏴🌏 Put your knowledge to the test and challenge yourself with this fantastic quiz. Play here! gabrieluy.github.io/flags-quiz"
   },
   "common": {
     "correct": "Correct",
