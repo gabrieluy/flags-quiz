@@ -37,7 +37,8 @@
     "correctAnswers": "{{ answers }} Respuestas correctas",
     "incorrectAnswers": "{{ answers }} Respuestas incorrectas",
     "restart": "Reiniciar",
-    "share": "Compartir"
+    "share": "Compartir",
+    "share-text": "¿Conoces las banderas del mundo? ¡Acabo de hacer el FlagsQuiz y obtuve {{ points }} puntos! 🏴🌏 Pon a prueba tus conocimientos y desafíate a ti mismo con este fantástico quiz. ¡Juega aquí! gabrieluy.github.io/flags-quiz"
   },
   "common": {
     "correct": "Correcto",
