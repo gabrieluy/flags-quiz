@@ -19,13 +19,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
                 pButton
                 icon="pi pi-play"
                 [label]="t('play')"
-                class="p-button-warning col-10 md:col-5"
+                class="col-10 md:col-5"
                 [routerLink]="['/game']"></button>
               <button
                 pButton
                 icon="pi pi-cog"
                 [label]="t('settings')"
-                class="p-button-secondary col-10 md:col-5"
+                class="p-button-help col-10 md:col-5"
                 [routerLink]="['/settings']"></button>
             </div>
           </div>

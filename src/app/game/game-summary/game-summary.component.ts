@@ -46,7 +46,7 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
               pButton
               icon="pi pi-twitter"
               [label]="t('share')"
-              class="col-11 md:col-5 bg-cyan-500 border-cyan-600"
+              class="col-11 md:col-5 p-button-help"
               (click)="share()"></button>
           </div>
         </div>

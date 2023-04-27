@@ -43,7 +43,7 @@ import { Location } from '@angular/common';
                 pButton
                 [label]="t('back')"
                 icon="pi pi-arrow-left"
-                class="p-button-secondary col-6"
+                class="p-button-outlined col-6"
                 (click)="clickBack()"></button>
             </div>
           </div>
