@@ -14,7 +14,8 @@
     "sound": "Sonido",
     "continents": "Continentes",
     "on": "Activado",
-    "off": "Desactivado"
+    "off": "Desactivado",
+    "continents.placeholder":"Seleccione continentes"
   },
   "languages": {
     "en": "Inglés",
