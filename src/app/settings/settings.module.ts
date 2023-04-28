@@ -8,7 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardComponent } from '../ui/card/card.component';
 import { SettingsService } from './settings.service';
 import { TranslocoModule } from '@ngneat/transloco';
-import { ContinentsPickerComponent } from './ui/continents-picker/continents-picker.component';
+import { MultiselectPickerComponent } from '../ui/multiselect-picker/multiselect-picker.component';
 import { OptionWrapperComponent } from './ui/settings-option/option-wrapper.component';
 import { LanguagePickerComponent } from './ui/language-picker.ts/language-picker.component';
 
@@ -25,7 +25,7 @@ import { LanguagePickerComponent } from './ui/language-picker.ts/language-picker
     SelectButtonModule,
     ButtonModule,
     TranslocoModule,
-    ContinentsPickerComponent,
+    MultiselectPickerComponent,
     OptionWrapperComponent,
     LanguagePickerComponent,
   ],

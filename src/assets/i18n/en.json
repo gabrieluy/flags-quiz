@@ -14,7 +14,8 @@
     "sound": "Sound",
     "continents": "Continents",
     "on": "On",
-    "off": "Off"
+    "off": "Off",
+    "continents.placeholder":"Select continents"
   },
   "languages": {
     "en": "English",

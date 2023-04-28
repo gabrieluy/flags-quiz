@@ -33,10 +33,12 @@ import { Location } from '@angular/common';
               </p-selectButton>
             </fq-option-wrapper>
             <fq-option-wrapper class="col-12 md:col-6" [label]="t('continents')">
-              <fq-continents-picker
+              <fq-multiselect-picker
                 [parentForm]="formGroup"
-                [continents]="options.continents"
-                controlName="continents"></fq-continents-picker>
+                [items]="options.continents"
+                [placeholder]="t('continents.placeholder')"
+                controlName="continents"
+                translationScope="continents"></fq-multiselect-picker>
             </fq-option-wrapper>
             <div class="flex flex-wrap justify-content-center col-12 mt-3">
               <button
