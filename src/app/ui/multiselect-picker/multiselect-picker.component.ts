@@ -14,7 +14,12 @@ import { Observable, map, of } from 'rxjs';
     <ng-container [formGroup]="parentForm">
       <ng-container *ngIf="items$ | async as items">
         <div class="flex flex-wrap justify-content-center max-w-18rem gap-3">
-          <p-multiSelect [placeholder]="placeholder" display="chip" [options]="items" [formControlName]="controlName">
+          <p-multiSelect
+            [placeholder]="placeholder"
+            [filter]="false"
+            display="chip"
+            [options]="items"
+            [formControlName]="controlName">
           </p-multiSelect>
         </div>
       </ng-container>
