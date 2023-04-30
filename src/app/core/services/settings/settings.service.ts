@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { DifficultyType, Settings, SoundType } from './interfaces/settings.interface';
-import { SettingsOptions } from './interfaces/settings-options.interface';
+import { DifficultyType, Settings, SoundType } from '../../../settings/interfaces/settings.interface';
+import { SettingsOptions } from '../../../settings/interfaces/settings-options.interface';
 
 @Injectable()
 export class SettingsService {
@@ -19,6 +19,16 @@ export class SettingsService {
     continents: ['northamerica', 'asia', 'southamerica', 'europe', 'oceania', 'africa', 'antarctica'],
     sound: ['on', 'off'],
   };
+
+  get isSoundEnable(): boolean {
+    return this.getSettings().sound == 'on';
+  }
+
+  public toggleSound(): void {
+    const settings = this.getSettings();
+    settings.sound === 'on' ? 'on' : 'off';
+    this.save(settings);
+  }
 
   public getSettings(): Settings {
     const settings = this.cookieService.get(this.COOKIE_NAME);

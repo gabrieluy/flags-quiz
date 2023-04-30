@@ -9095,7 +9095,7 @@ export const countries_json = [
       fra: { official: "Sultanat d'Oman", common: 'Oman' },
       hrv: { official: 'Sultanat Oman', common: 'Oman' },
       hun: { official: 'Ománi Szultanátus', common: 'Omán' },
-      it: { official: "Sultanato dell'Oman", common: 'oman' },
+      it: { official: "Sultanato dell'Oman", common: 'Oman' },
       jpn: { official: 'オマーン·スルタン国', common: 'オマーン' },
       kor: { official: '오만 술탄국', common: '오만' },
       nld: { official: 'Sultanaat van Oman', common: 'Oman' },
