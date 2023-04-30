@@ -5,12 +5,14 @@ import { getRandomItem, popRandomItem } from '../core/utils/random-item';
 import { getPercentage } from '../core/utils/get-percentage';
 import { inject, Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { SettingsService } from '../settings/settings.service';
+import { SettingsService } from '../core/services/settings/settings.service';
 import { NUM_OPTIONS } from './constants/options.constant';
+import { SoundsService } from '../core/services/sounds/sounds.service';
 
 @Injectable()
 export class GameManagerService {
   private _settingsService = inject(SettingsService);
+  private _sounds = inject(SoundsService);
 
   private status$: BehaviorSubject<GameStatus>;
   private _num_options = NUM_OPTIONS;
@@ -43,14 +45,16 @@ export class GameManagerService {
 
   public checkSelection(country: Country): void {
     const isCorrect = country.cca2 === this._selectedCountry.cca2;
+    this._sounds.playAnswerSound(isCorrect);
+
     this._actualFlagCount += 1;
     this._correctAnswers += isCorrect ? 1 : 0;
     this._incorrectAnswers += isCorrect ? 0 : 1;
     this._points += isCorrect ? 1 : -1;
     this._lastAnswer = { correct: isCorrect, country: this._selectedCountry };
     this._answerHistory = [this._lastAnswer, ...this._answerHistory];
-
     this._remainingFlags--;
+
     if (this._remainingFlags > 0) {
       this._selectRandomCountries();
     }
@@ -59,6 +63,7 @@ export class GameManagerService {
   }
 
   private _init(): void {
+    this._sounds.playStartLevelSound();
     this._points = 0;
     this._correctAnswers = 0;
     this._incorrectAnswers = 0;

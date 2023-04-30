@@ -1,5 +1,5 @@
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
-import { SettingsService } from './settings.service';
+import { SettingsService } from '../core/services/settings/settings.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { SettingsOptions } from './interfaces/settings-options.interface';
 import { Subscription } from 'rxjs';

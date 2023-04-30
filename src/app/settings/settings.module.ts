@@ -6,7 +6,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { CardComponent } from '../ui/card/card.component';
-import { SettingsService } from './settings.service';
+import { SettingsService } from '../core/services/settings/settings.service';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MultiselectPickerComponent } from '../ui/multiselect-picker/multiselect-picker.component';
 import { OptionWrapperComponent } from './ui/settings-option/option-wrapper.component';
