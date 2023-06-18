@@ -5,6 +5,7 @@ import { Country } from './interfaces/country.interface';
 import { GameStatus } from './interfaces/game-status.interface';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
+import { SoundsService } from '../core/services/sounds/sounds.service';
 
 @Component({
   selector: 'fq-game',
@@ -40,6 +41,7 @@ import { Router } from '@angular/router';
 export class GameComponent {
   private _gameManager = inject(GameManagerService);
   private _router = inject(Router);
+  private _sounds = inject(SoundsService);
 
   public status$: Observable<GameStatus>;
   public items: MenuItem[] = [
@@ -67,6 +69,7 @@ export class GameComponent {
   }
 
   public resetGame(): void {
+    this._sounds.playStartLevelSound();
     this._gameManager.reset();
   }
 }

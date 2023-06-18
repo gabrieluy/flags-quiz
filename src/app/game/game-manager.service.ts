@@ -63,7 +63,6 @@ export class GameManagerService {
   }
 
   private _init(): void {
-    this._sounds.playStartLevelSound();
     this._points = 0;
     this._correctAnswers = 0;
     this._incorrectAnswers = 0;
