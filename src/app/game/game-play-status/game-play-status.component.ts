@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Country } from 'src/app/game/interfaces/country.interface';
 import { GameStatus } from '../interfaces/game-status.interface';
-import { fadeInImage } from 'src/app/ui/animations/fadeInImage';
+import { fadeImage } from 'src/app/game/game-play-status/animations/fadeImage';
 
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [fadeInImage],
+  animations: [fadeImage],
   template: `
     <div class="m-3">
       <div class="flex justify-content-center">
@@ -22,14 +22,15 @@ import { fadeInImage } from 'src/app/ui/animations/fadeInImage';
       </div>
       <div class="flex justify-content-center mt-2">
         <fq-flag-img
-          [@fadeInImage]="status.selectedCountry"
+          [@fadeImage]="isImgLoad"
+          (imgLoad)="onImgLoad()"
           [flag]="status.selectedCountry.cca2"
           class="h-13rem md:h-20rem">
         </fq-flag-img>
       </div>
       <div class="grid mt-2">
         <div *ngFor="let country of status?.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
-          <button pButton (click)="select(country)" class="w-full">
+          <button pButton [disabled]="!isImgLoad" (click)="select(country)" class="w-full">
             {{ country | countryName }}
           </button>
         </div>
@@ -41,8 +42,14 @@ import { fadeInImage } from 'src/app/ui/animations/fadeInImage';
 export class GamePlayStatusComponent {
   @Input() public status!: GameStatus;
   @Output() selectCountry: EventEmitter<Country> = new EventEmitter();
+  public isImgLoad = false;
 
   public select(country: Country): void {
     this.selectCountry.emit(country);
+    this.isImgLoad = false;
+  }
+
+  public onImgLoad(): void {
+    this.isImgLoad = true;
   }
 }
