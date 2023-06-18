@@ -13,7 +13,7 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
             <h2>{{ t('title') }}</h2>
           </div>
           <div class="flex justify-content-center col-12">
-            <img class="w-10rem h-10rem" src="assets/images/pet.webp" />
+            <img class="w-10rem h-10rem" src="assets/images/pet.png" />
           </div>
           <div class="flex justify-content-center col-12">
             <ul>
