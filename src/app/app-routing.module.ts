@@ -7,7 +7,8 @@ import { SettingsComponent } from './settings/settings.component';
 const routes: Routes = [
   { path: 'game', pathMatch: 'full', component: GameComponent },
   { path: 'settings', pathMatch: 'full', component: SettingsComponent },
-  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: 'home', pathMatch: 'full', component: HomeComponent },
+  { path: '**', redirectTo: '/home' },
 ];
 
 @NgModule({
