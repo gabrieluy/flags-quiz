@@ -7,12 +7,12 @@ import { SettingsComponent } from './settings/settings.component';
 const routes: Routes = [
   { path: 'game', pathMatch: 'full', component: GameComponent },
   { path: 'settings', pathMatch: 'full', component: SettingsComponent },
-  { path: 'home', pathMatch: 'full', component: HomeComponent },
-  { path: '**', redirectTo: '/home' },
+  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
