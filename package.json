@@ -21,7 +21,7 @@
     "@angular/router": "^16.1.1",
     "@ngneat/transloco": "^4.2.2",
     "@ngneat/transloco-persist-lang": "^4.0.0",
-    "ngx-cookie-service": "^15.0.0",
+    "ngx-cookie-service": "^16.0.0",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primeng": "^16.0.1",
