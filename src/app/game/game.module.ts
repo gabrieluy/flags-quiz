@@ -21,6 +21,7 @@ import { SpeedDialModule } from 'primeng/speeddial';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CountryNamePipe } from './pipes/country.name.pipe';
 import { SoundsService } from '../core/services/sounds/sounds.service';
+import { LocalStorageService } from '../core/services/local-storage/local-storage.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,14 @@ import { SoundsService } from '../core/services/sounds/sounds.service';
     CountryNamePipe,
   ],
   exports: [GameComponent],
-  providers: [GameManagerService, ProgressPercentagePipe, ColorGradientPipe, CountryNamePipe, SoundsService],
+  providers: [
+    GameManagerService,
+    ProgressPercentagePipe,
+    ColorGradientPipe,
+    CountryNamePipe,
+    SoundsService,
+    LocalStorageService,
+  ],
   imports: [
     CardComponent,
     CommonModule,

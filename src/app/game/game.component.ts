@@ -1,8 +1,6 @@
-import { Component, inject } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { GameManagerService } from './game-manager.service';
 import { Country } from './interfaces/country.interface';
-import { GameStatus } from './interfaces/game-status.interface';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
 import { SoundsService } from '../core/services/sounds/sounds.service';
@@ -17,8 +15,8 @@ import { SoundsService } from '../core/services/sounds/sounds.service';
       [model]="items"
       direction="right"
       [transitionDelay]="80"></p-speedDial>
-    <ng-container *ngIf="status$ | async as status; else loading">
-      <ng-container *ngTemplateOutlet="!status.isGameFinished ? playGame : summary; context: { status: status }">
+    <ng-container *ngIf="this.gameManager.status() as status">
+      <ng-container *ngTemplateOutlet="!status.isGameFinished ? playGame : summary; context: { status }">
       </ng-container>
     </ng-container>
 
@@ -32,18 +30,14 @@ import { SoundsService } from '../core/services/sounds/sounds.service';
     <ng-template #summary let-status="status">
       <fq-game-summary [status]="status" (resetClick)="resetGame()"></fq-game-summary>
     </ng-template>
-
-    <ng-template #loading>
-      {{ 'Loading ...' }}
-    </ng-template>
   `,
 })
-export class GameComponent {
-  private _gameManager = inject(GameManagerService);
+export class GameComponent implements OnInit {
+  @Input() isNewGame?: boolean; // from query params
+  public gameManager = inject(GameManagerService);
   private _router = inject(Router);
   private _sounds = inject(SoundsService);
 
-  public status$: Observable<GameStatus>;
   public items: MenuItem[] = [
     {
       icon: 'pi pi-home',
@@ -59,17 +53,21 @@ export class GameComponent {
     },
   ];
 
-  constructor() {
-    this.resetGame();
-    this.status$ = this._gameManager.getStatus();
+  ngOnInit(): void {
+    this._sounds.playStartLevelSound();
+    if (this.isNewGame) {
+      this.gameManager.reset();
+      return;
+    }
+    this.gameManager.init();
   }
 
   public checkSelection(country: Country): void {
-    this._gameManager.checkSelection(country);
+    this.gameManager.checkSelection(country);
   }
 
   public resetGame(): void {
     this._sounds.playStartLevelSound();
-    this._gameManager.reset();
+    this.gameManager.reset();
   }
 }
