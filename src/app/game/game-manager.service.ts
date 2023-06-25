@@ -1,118 +1,168 @@
 import { Country } from './interfaces/country.interface';
 import { countries_json } from '../core/data/countries';
-import { Answer, GameStatus } from './interfaces/game-status.interface';
+import { GameStatus } from './interfaces/game-status.interface';
 import { getRandomItem, popRandomItem } from '../core/utils/random-item';
 import { getPercentage } from '../core/utils/get-percentage';
-import { inject, Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { computed, inject, Injectable, signal, effect } from '@angular/core';
 import { SettingsService } from '../core/services/settings/settings.service';
 import { NUM_OPTIONS } from './constants/options.constant';
 import { SoundsService } from '../core/services/sounds/sounds.service';
+import { PersistedStatus } from './interfaces/persisted-status.interface';
+import { Answer } from './interfaces/answer.interface';
+import { LocalStorageService } from '../core/services/local-storage/local-storage.service';
 
 @Injectable()
 export class GameManagerService {
+  LOCAL_STORAGE_KEY = 'fq:gameStatus';
+  EASY_POPULATION = 3000000;
+  MEDIUM_POPULATION = 300000;
+
   private _settingsService = inject(SettingsService);
   private _sounds = inject(SoundsService);
+  private _localStorage = inject(LocalStorageService);
 
-  private status$: BehaviorSubject<GameStatus>;
-  private _num_options = NUM_OPTIONS;
-  private _points = 0;
-  private _correctAnswers = 0;
-  private _incorrectAnswers = 0;
-  private _actualFlagCount = 0;
-  private _lastAnswer: Answer = { correct: false, country: {} as Country };
-  private _countries: Country[] = [];
-  private _remainCountries: Country[] = [];
-  private _remainingFlags = 0;
-  private _countryOptions: Country[] = [];
-  private _selectedCountry: Country = {} as Country;
-  private _answerHistory: Answer[] = [];
+  private _countries = signal<Country[]>([]);
+  private _remainCountries = signal<Country[]>([]);
+  private _countryOptions = signal<Country[]>([]);
+  private _selectedCountry = signal<Country>({} as Country);
 
-  constructor() {
-    this._init();
-    this.status$ = new BehaviorSubject(this._getGameStatus());
-  }
+  private _numOptions = signal<number>(NUM_OPTIONS);
+  private _remainingFlags = signal<number>(0);
+  private _answerHistory = signal<Answer[]>([]);
+  private _lastAnswer = signal<Answer>({ correct: false, country: {} as Country });
+
+  private _correctAnswers = computed<number>(() => {
+    return this._answerHistory().filter(a => a.correct).length;
+  });
+
+  private _incorrectAnswers = computed<number>(() => {
+    return this._answerHistory().filter(a => !a.correct).length;
+  });
+
+  private _points = computed<number>(() => {
+    return this._correctAnswers() - this._incorrectAnswers();
+  });
+
+  private _actualFlagCount = computed<number>(() => {
+    return this._correctAnswers() + this._incorrectAnswers();
+  });
+
+  private _successRate = computed<number>(() => {
+    return getPercentage(this._correctAnswers(), this._actualFlagCount());
+  });
+
+  public status = computed<GameStatus>(() => {
+    const status = {
+      isGameFinished: this._remainingFlags() === 0,
+      points: this._points(),
+      correctAnswers: this._correctAnswers(),
+      incorrectAnswers: this._incorrectAnswers(),
+      actualFlagCount: this._actualFlagCount(),
+      remainingFlags: this._remainingFlags(),
+      successRate: this._successRate(),
+      answerHistory: this._answerHistory,
+      countryOptions: this._countryOptions(),
+      selectedCountry: this._selectedCountry(),
+      lastAnswer: this._lastAnswer(),
+    };
+    return status;
+  });
+
+  public persistentStatus = computed<PersistedStatus>(() => {
+    const pStatus = {
+      countries: this._countries(),
+      remainCountries: this._remainCountries(),
+      countryOptions: this._countryOptions(),
+      selectedCountry: this._selectedCountry(),
+      numOptions: this._numOptions(),
+      remainingFlags: this._remainingFlags(),
+      answerHistory: this._answerHistory(),
+      lastAnswer: this._lastAnswer(),
+    };
+    return pStatus;
+  });
 
   public reset(): void {
-    this._init();
-    this._notify();
+    this._createNewGame();
   }
 
-  public getStatus(): Observable<GameStatus> {
-    // Downcast the status$ to a simple Observable to avoid expose the Observer.
-    return this.status$.asObservable();
+  public init(): void {
+    const persistedGame = this._localStorage.getData<PersistedStatus>(this.LOCAL_STORAGE_KEY);
+    if (persistedGame) {
+      this._restorePersistedGame(persistedGame);
+    } else {
+      this._createNewGame();
+    }
+  }
+
+  public hasPersistedState(): boolean {
+    return this._localStorage.hasData(this.LOCAL_STORAGE_KEY);
   }
 
   public checkSelection(country: Country): void {
-    const isCorrect = country.cca2 === this._selectedCountry.cca2;
+    const isCorrect = country.cca2 === this._selectedCountry().cca2;
     this._sounds.playAnswerSound(isCorrect);
+    this._lastAnswer.set({ correct: isCorrect, country: this._selectedCountry() });
+    this._answerHistory.mutate(list => {
+      list.unshift(this._lastAnswer());
+    });
+    this._remainingFlags.update(value => value - 1);
 
-    this._actualFlagCount += 1;
-    this._correctAnswers += isCorrect ? 1 : 0;
-    this._incorrectAnswers += isCorrect ? 0 : 1;
-    this._points += isCorrect ? 1 : -1;
-    this._lastAnswer = { correct: isCorrect, country: this._selectedCountry };
-    this._answerHistory = [this._lastAnswer, ...this._answerHistory];
-    this._remainingFlags--;
-
-    if (this._remainingFlags > 0) {
+    if (this._remainingFlags() > 0) {
       this._selectRandomCountries();
     }
-
-    this._notify();
+    this._localStorage.saveData<PersistedStatus>(this.LOCAL_STORAGE_KEY, this.persistentStatus());
   }
 
-  private _init(): void {
-    this._points = 0;
-    this._correctAnswers = 0;
-    this._incorrectAnswers = 0;
-    this._actualFlagCount = 0;
-    this._lastAnswer = { correct: false, country: {} as Country };
+  private _createNewGame() {
+    this._localStorage.removeData(this.LOCAL_STORAGE_KEY);
+    this._lastAnswer.set({ correct: false, country: {} as Country });
     const playableCountries = this._getPlayableCountries();
-    this._countries = Object.assign([], playableCountries);
-    this._remainCountries = Object.assign([], playableCountries);
-    this._num_options = NUM_OPTIONS < playableCountries.length ? NUM_OPTIONS : playableCountries.length;
-    this._remainingFlags = this._remainCountries.length;
-    this._countryOptions = [];
-    this._selectedCountry = {} as Country;
-    this._answerHistory = [];
+    this._countries.set(Object.assign([], playableCountries));
+    this._remainCountries.set(Object.assign([], playableCountries));
+    this._numOptions.set(NUM_OPTIONS < playableCountries.length ? NUM_OPTIONS : playableCountries.length);
+    this._remainingFlags.set(this._remainCountries().length);
+    this._countryOptions.set([]);
+    this._selectedCountry.set({} as Country);
+    this._answerHistory.set([]);
     this._selectRandomCountries();
   }
 
-  private _getGameStatus(): GameStatus {
-    return {
-      isGameFinished: this._remainingFlags === 0,
-      points: this._points,
-      correctAnswers: this._correctAnswers,
-      incorrectAnswers: this._incorrectAnswers,
-      actualFlagCount: this._actualFlagCount,
-      remainingFlags: this._remainingFlags,
-      successRate: getPercentage(this._correctAnswers, this._actualFlagCount),
-      answerHistory: this._answerHistory,
-      countryOptions: this._countryOptions,
-      selectedCountry: this._selectedCountry,
-      lastAnswer: this._lastAnswer,
-    };
+  private _restorePersistedGame(pStatus: PersistedStatus) {
+    this._countries.set(pStatus.countries);
+    this._remainCountries.set(pStatus.remainCountries);
+    this._countryOptions.set(pStatus.countryOptions);
+    this._selectedCountry.set(pStatus.selectedCountry);
+    this._numOptions.set(pStatus.numOptions);
+    this._remainingFlags.set(pStatus.remainingFlags);
+    this._answerHistory.set(pStatus.answerHistory);
+    this._lastAnswer.set(pStatus.lastAnswer);
   }
 
   private _selectRandomCountries(): void {
-    this._countryOptions = [];
-    this._selectedCountry = popRandomItem(this._remainCountries);
-    this._countryOptions.push(this._selectedCountry);
-    while (this._countryOptions.length < this._num_options) {
-      const randomCountry = getRandomItem(this._countries);
-      if (!this._countryOptions.some(c => c.cca2 === randomCountry.cca2)) {
-        this._countryOptions.push(randomCountry);
+    this._countryOptions.set([]);
+    this._remainCountries.mutate(list => {
+      this._selectedCountry.set(popRandomItem(list));
+    });
+    this._countryOptions.mutate(list => {
+      list.push(this._selectedCountry());
+    });
+    while (this._countryOptions().length < this._numOptions()) {
+      const randomCountry = getRandomItem(this._countries());
+      if (!this._countryOptions().some(c => c.cca2 === randomCountry.cca2)) {
+        this._countryOptions.mutate(list => {
+          list.push(randomCountry);
+        });
       }
     }
     this._mixSelectedOption();
   }
 
   private _mixSelectedOption(): void {
-    const inxAux = Math.floor(Math.random() * this._num_options);
-    const aux = this._countryOptions[inxAux];
-    this._countryOptions[0] = aux;
-    this._countryOptions[inxAux] = this._selectedCountry;
+    const inxAux = Math.floor(Math.random() * this._numOptions());
+    const aux = this._countryOptions()[inxAux];
+    this._countryOptions()[0] = aux;
+    this._countryOptions()[inxAux] = this._selectedCountry();
   }
 
   private _getPlayableCountries(): Country[] {
@@ -121,15 +171,11 @@ export class GameManagerService {
     countries = countries.filter(c => c.continents.some(con => settings.continents.includes(con)));
     switch (settings.difficulty) {
       case 'easy':
-        return countries.filter(c => c.independent && c.population > 3000000);
+        return countries.filter(c => c.independent && c.population > this.EASY_POPULATION);
       case 'medium':
-        return countries.filter(c => c.independent && c.population > 300000);
+        return countries.filter(c => c.independent && c.population > this.MEDIUM_POPULATION);
       case 'hard':
         return countries;
     }
-  }
-
-  private _notify(): void {
-    this.status$.next(this._getGameStatus());
   }
 }

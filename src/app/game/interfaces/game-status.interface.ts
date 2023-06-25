@@ -1,4 +1,6 @@
+import { WritableSignal } from '@angular/core';
 import { Country } from './country.interface';
+import { Answer } from './answer.interface';
 
 export interface GameStatus {
   isGameFinished: boolean;
@@ -8,13 +10,8 @@ export interface GameStatus {
   actualFlagCount: number;
   remainingFlags: number;
   successRate: number;
-  answerHistory: Answer[];
+  answerHistory: WritableSignal<Answer[]>;
   countryOptions: Country[];
   lastAnswer: Answer;
   selectedCountry: Country;
-}
-
-export interface Answer {
-  country: Country;
-  correct: boolean;
 }

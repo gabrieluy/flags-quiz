@@ -6,7 +6,7 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
   selector: 'fq-game-summary',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
+    <div class="flex flex-wrap align-content-center justify-content-center p-2 mt-5">
       <fq-card *transloco="let t; read: 'summary'">
         <div class="flex flex-row flex-wrap">
           <div class="flex justify-content-center col-12">
@@ -41,7 +41,7 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
               icon="pi pi-replay"
               [label]="t('restart')"
               class="col-11 md:col-5"
-              (click)="reset()"></button>
+              (click)="this.resetClick.emit()"></button>
             <button
               pButton
               icon="pi pi-twitter"
@@ -52,6 +52,9 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
         </div>
       </fq-card>
     </div>
+    <div class="mt-5 px-2">
+      <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
+    </div>
   `,
 })
 export class GameSummaryComponent {
@@ -59,10 +62,6 @@ export class GameSummaryComponent {
 
   @Input() public status!: GameStatus;
   @Output() resetClick: EventEmitter<void> = new EventEmitter();
-
-  public reset(): void {
-    this.resetClick.emit();
-  }
 
   public share(): void {
     const text = this._transloco.translate('share-text', { points: this.status.points }, 'summary');

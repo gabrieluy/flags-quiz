@@ -1,7 +1,9 @@
 {
   "home": {
     "settings": "Configuración",
-    "play": "Jugar"
+    "play": "Jugar",
+    "continue": "Continuar",
+    "new": "Nuevo juego"
   },
   "settings": {
     "title": "Configuración",
