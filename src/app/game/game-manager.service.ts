@@ -32,7 +32,6 @@ export class GameManagerService {
   private _countryOptions = signal<Country[]>([]);
   private _selectedCountry = signal<Country>({} as Country);
 
-  private _numOptions = signal<number>(NUM_OPTIONS);
   private _answerHistory = signal<Answer[]>([]);
   private _gameTime = signal<number>(0);
 
@@ -54,6 +53,11 @@ export class GameManagerService {
 
   private _isGameFinished = computed<boolean>(() => {
     return this._playableCountries().length === this._answerHistory().length;
+  });
+
+  private _numOptions = computed<number>(() => {
+    const maxNumOpt = this._playableCountries().length;
+    return NUM_OPTIONS < maxNumOpt ? NUM_OPTIONS : maxNumOpt;
   });
 
   public status = computed<GameStatus>(() => {
@@ -95,17 +99,13 @@ export class GameManagerService {
 
   public reset(): void {
     this._stopGameTimer();
-    this._createNewGame();
+    this._clearLocalStorageData();
+    this._loadGame();
     this._setupGameTimer();
   }
 
   public init(): void {
-    const persistedGame = this._localStorage.getData<PersistedStatus>(this.GAME_STATUS_KEY);
-    if (persistedGame) {
-      this._restorePersistedGame(persistedGame);
-    } else {
-      this._createNewGame();
-    }
+    this._loadGame();
     this._setupGameTimer();
   }
 
@@ -130,29 +130,18 @@ export class GameManagerService {
     this._stopGameTimer();
   }
 
-  private _createNewGame() {
-    this._localStorage.removeData(this.GAME_STATUS_KEY);
-    this._localStorage.removeData(this.GAME_TIME_KEY);
-    const playableCountries = this._getPlayableCountries();
-    this._playableCountries.set([...playableCountries]);
-    this._remainCountries.set([...playableCountries]);
-    this._numOptions.set(NUM_OPTIONS < playableCountries.length ? NUM_OPTIONS : playableCountries.length);
-    this._countryOptions.set([]);
-    this._selectedCountry.set({} as Country);
-    this._answerHistory.set([]);
-    this._gameTime.set(0);
-    this._selectRandomCountries();
-  }
-
-  private _restorePersistedGame(pStatus: PersistedStatus) {
+  private _loadGame() {
+    const data = this._localStorage.getData<PersistedStatus>(this.GAME_STATUS_KEY);
     const gameTime = this._localStorage.getData<number>(this.GAME_TIME_KEY);
-    this._playableCountries.set(pStatus.playableCountries);
-    this._remainCountries.set(pStatus.remainCountries);
-    this._countryOptions.set(pStatus.countryOptions);
-    this._selectedCountry.set(pStatus.selectedCountry);
-    this._numOptions.set(pStatus.numOptions);
-    this._answerHistory.set(pStatus.answerHistory);
+    this._playableCountries.set(data?.playableCountries || this._getPlayableCountries());
+    this._remainCountries.set(data?.remainCountries || this._getPlayableCountries());
+    this._countryOptions.set(data?.countryOptions || []);
+    this._selectedCountry.set(data?.selectedCountry || ({} as Country));
+    this._answerHistory.set(data?.answerHistory || []);
     this._gameTime.set(gameTime || 0);
+    if (!data) {
+      this._selectRandomCountries();
+    }
   }
 
   private _setupGameTimer(): void {
@@ -171,6 +160,10 @@ export class GameManagerService {
     if (this._gameTimerSubscription$) {
       this._gameTimerSubscription$.unsubscribe();
     }
+  }
+
+  private _clearLocalStorageData(): void {
+    this._localStorage.removeData([this.GAME_STATUS_KEY, this.GAME_TIME_KEY]);
   }
 
   private _selectRandomCountries(): void {
