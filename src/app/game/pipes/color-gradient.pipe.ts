@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'colorGradient',
+  standalone: true,
 })
 export class ColorGradientPipe implements PipeTransform {
   transform(value: number): string {

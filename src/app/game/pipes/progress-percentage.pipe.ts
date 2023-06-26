@@ -3,6 +3,7 @@ import { GameStatus } from '../interfaces/game-status.interface';
 
 @Pipe({
   name: 'progressPercentage',
+  standalone: true,
 })
 export class ProgressPercentagePipe implements PipeTransform {
   transform(status: GameStatus): number {

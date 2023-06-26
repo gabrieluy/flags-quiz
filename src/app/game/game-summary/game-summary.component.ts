@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { TranslocoService } from '@ngneat/transloco';
 import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
+import { SecondsToTimePipe } from '../pipes/secods-to-time.pipe';
 
 @Component({
   selector: 'fq-game-summary',
@@ -20,6 +21,10 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
               <li class="flex mb-3 align-items-center">
                 <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
                 <span class="font-medium"> {{ t('points', { points: status.points }) }}</span>
+              </li>
+              <li class="flex mb-3 align-items-center">
+                <i class="pi pi-clock text-purple-500 mr-2"></i>
+                <span class="font-medium"> {{ status.gameTime | secondsToTime }}</span>
               </li>
               <li class="flex mb-3 align-items-center">
                 <i class="pi pi-percentage text-green-500 mr-2"></i>
@@ -59,12 +64,15 @@ import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
 })
 export class GameSummaryComponent {
   private _transloco = inject(TranslocoService);
+  private _secondeToTime = inject(SecondsToTimePipe);
 
   @Input() public status!: GameStatus;
   @Output() resetClick: EventEmitter<void> = new EventEmitter();
 
   public share(): void {
-    const text = this._transloco.translate('share-text', { points: this.status.points }, 'summary');
+    const { points, gameTime } = this.status;
+    const time = this._secondeToTime.transform(gameTime);
+    const text = this._transloco.translate('share-text', { points, time }, 'summary');
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
     window.open(url);
   }
