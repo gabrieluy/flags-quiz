@@ -10,4 +10,5 @@ export interface PersistedStatus {
   remainingFlags: number;
   answerHistory: Answer[];
   lastAnswer: Answer;
+  gameTime: number;
 }

@@ -41,7 +41,7 @@
     "incorrectAnswers": "{{ answers }} Respuestas incorrectas",
     "restart": "Reiniciar",
     "share": "Compartir",
-    "share-text": "¿Conoces las banderas del mundo? ¡Acabo de hacer el FlagsQuiz y obtuve {{ points }} puntos! 🏴🌏 Pon a prueba tus conocimientos y desafíate a ti mismo con este fantástico quiz. ¡Juega aquí! gabrieluy.github.io/flags-quiz"
+    "share-text": "¿Conoces las banderas del mundo? ¡Acabo de hacer el FlagsQuiz y obtuve {{ points }} en {{ time }}⏰! 🏴🌏 Pon a prueba tus conocimientos y desafíate con este fantástico quiz. ¡Juega aquí! flagstiquiz.netlify.app"
   },
   "common": {
     "correct": "Correcto",

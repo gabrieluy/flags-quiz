@@ -14,4 +14,5 @@ export interface GameStatus {
   countryOptions: Country[];
   lastAnswer: Answer;
   selectedCountry: Country;
+  gameTime: number;
 }

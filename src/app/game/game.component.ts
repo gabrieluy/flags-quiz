@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
 import { GameManagerService } from './game-manager.service';
 import { Country } from './interfaces/country.interface';
 import { MenuItem } from 'primeng/api';
@@ -32,7 +32,7 @@ import { SoundsService } from '../core/services/sounds/sounds.service';
     </ng-template>
   `,
 })
-export class GameComponent implements OnInit {
+export class GameComponent implements OnInit, OnDestroy {
   @Input() isNewGame?: boolean; // from query params
   public gameManager = inject(GameManagerService);
   private _router = inject(Router);
@@ -69,5 +69,9 @@ export class GameComponent implements OnInit {
   public resetGame(): void {
     this._sounds.playStartLevelSound();
     this.gameManager.reset();
+  }
+
+  ngOnDestroy(): void {
+    this.gameManager.quitGame();
   }
 }

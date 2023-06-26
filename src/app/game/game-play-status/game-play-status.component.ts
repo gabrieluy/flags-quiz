@@ -11,8 +11,9 @@ import { fadeImage } from 'src/app/game/game-play-status/animations/fadeImage';
     <div class="m-3">
       <div class="flex justify-content-center">
         <fq-card class="col-12 md:col-6">
-          <div *ngIf="status" class="flex flex-row flex-wrap justify-content-end mb-2">
+          <div *ngIf="status" class="flex flex-row flex-wrap justify-content-end mb-2 gap-2">
             <fq-points-chip [points]="status.points"></fq-points-chip>
+            <fq-time-chip [seconds]="status.gameTime"></fq-time-chip>
           </div>
           <p-progressBar
             [value]="status | progressPercentage"

@@ -4,6 +4,7 @@ import { Country } from '../interfaces/country.interface';
 
 @Pipe({
   name: 'countryName',
+  standalone: true,
 })
 export class CountryNamePipe implements PipeTransform {
   private _transloco = inject(TranslocoService);

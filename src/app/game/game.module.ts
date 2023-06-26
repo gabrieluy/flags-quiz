@@ -22,26 +22,13 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { CountryNamePipe } from './pipes/country.name.pipe';
 import { SoundsService } from '../core/services/sounds/sounds.service';
 import { LocalStorageService } from '../core/services/local-storage/local-storage.service';
+import { TimeChipComponent } from '../ui/chips/info-chip copy/time-chip.component';
+import { SecondsToTimePipe } from './pipes/secods-to-time.pipe';
 
 @NgModule({
-  declarations: [
-    GameComponent,
-    GameSummaryComponent,
-    GamePlayStatusComponent,
-    AnswerHistoryComponent,
-    ProgressPercentagePipe,
-    ColorGradientPipe,
-    CountryNamePipe,
-  ],
+  declarations: [GameComponent, GameSummaryComponent, GamePlayStatusComponent, AnswerHistoryComponent],
   exports: [GameComponent],
-  providers: [
-    GameManagerService,
-    ProgressPercentagePipe,
-    ColorGradientPipe,
-    CountryNamePipe,
-    SoundsService,
-    LocalStorageService,
-  ],
+  providers: [GameManagerService, SoundsService, LocalStorageService, SecondsToTimePipe],
   imports: [
     CardComponent,
     CommonModule,
@@ -50,12 +37,17 @@ import { LocalStorageService } from '../core/services/local-storage/local-storag
     MessageModule,
     TagModule,
     PointsChipComponent,
+    TimeChipComponent,
     InfoChipComponent,
     FlagImgComponent,
     CorrectAnswerChipComponent,
     ProgressBarModule,
     SpeedDialModule,
     TranslocoModule,
+    ProgressPercentagePipe,
+    ColorGradientPipe,
+    CountryNamePipe,
+    SecondsToTimePipe,
   ],
 })
 export class GameModule {}

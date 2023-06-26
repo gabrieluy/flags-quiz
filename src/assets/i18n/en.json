@@ -41,7 +41,7 @@
     "incorrectAnswers": "{{ answers }} Incorrect Answers",
     "restart": "Restart",
     "share": "Share",
-    "share-text": "Do you know your flags of the world? I just took the FlagsQuiz and scored {{ points }}! 🏴🌏 Put your knowledge to the test and challenge yourself with this fantastic quiz. Play here! gabrieluy.github.io/flags-quiz"
+    "share-text": "Do you know your flags of the world? I just took the FlagsQuiz and scored {{ points }} in {{ time }}⏰! 🏴🌏 Put your knowledge to the test and challenge yourself with this fantastic quiz. Play here! flagstiquiz.netlify.app"
   },
   "common": {
     "correct": "Correct",
