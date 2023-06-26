@@ -41,7 +41,7 @@
     "incorrectAnswers": "{{ answers }} Risposte sbagliate",
     "restart": "Ricomincia",
     "share": "Condividi",
-    "share-text": "Conosci le bandiere del mondo? Ho appena fatto il FlagsQuiz e ho totalizzato {{ points }} in {{ time }}⏰! 🏴🌏 Metti alla prova le tue conoscenze e sfidati con questo fantastico quiz. Gioca qui! flagstiquiz.netlify.app"
+    "share-text": "Conosci le bandiere del mondo? Ho appena fatto il FlagsQuiz e ho totalizzato {{ points }} punti in {{ time }}⏰! 🏴🌏 Metti alla prova le tue conoscenze e sfidati con questo fantastico quiz. Gioca qui! flagstiquiz.netlify.app"
   },
   "common": {
     "correct": "Corretto",
