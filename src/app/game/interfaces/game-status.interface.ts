@@ -7,12 +7,10 @@ export interface GameStatus {
   points: number;
   correctAnswers: number;
   incorrectAnswers: number;
-  actualFlagCount: number;
-  remainingFlags: number;
+  playableCountriesCount: number;
   successRate: number;
   answerHistory: WritableSignal<Answer[]>;
   countryOptions: Country[];
-  lastAnswer: Answer;
   selectedCountry: Country;
   gameTime: number;
 }

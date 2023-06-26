@@ -11,6 +11,7 @@ import { PersistedStatus } from './interfaces/persisted-status.interface';
 import { Answer } from './interfaces/answer.interface';
 import { LocalStorageService } from '../core/services/local-storage/local-storage.service';
 import { Subscription, tap, timer } from 'rxjs';
+import { mixSelectedOption } from '../core/utils/mix-selected-element';
 
 @Injectable()
 export class GameManagerService {
@@ -26,15 +27,13 @@ export class GameManagerService {
   private _sounds = inject(SoundsService);
   private _localStorage = inject(LocalStorageService);
 
-  private _countries = signal<Country[]>([]);
+  private _playableCountries = signal<Country[]>([]);
   private _remainCountries = signal<Country[]>([]);
   private _countryOptions = signal<Country[]>([]);
   private _selectedCountry = signal<Country>({} as Country);
 
   private _numOptions = signal<number>(NUM_OPTIONS);
-  private _remainingFlags = signal<number>(0);
   private _answerHistory = signal<Answer[]>([]);
-  private _lastAnswer = signal<Answer>({ correct: false, country: {} as Country });
   private _gameTime = signal<number>(0);
 
   private _correctAnswers = computed<number>(() => {
@@ -49,16 +48,12 @@ export class GameManagerService {
     return this._correctAnswers() - this._incorrectAnswers();
   });
 
-  private _actualFlagCount = computed<number>(() => {
-    return this._correctAnswers() + this._incorrectAnswers();
-  });
-
   private _successRate = computed<number>(() => {
-    return getPercentage(this._correctAnswers(), this._actualFlagCount());
+    return getPercentage(this._correctAnswers(), this._playableCountries().length);
   });
 
   private _isGameFinished = computed<boolean>(() => {
-    return this._remainingFlags() === 0;
+    return this._playableCountries().length === this._answerHistory().length;
   });
 
   public status = computed<GameStatus>(() => {
@@ -67,13 +62,11 @@ export class GameManagerService {
       points: this._points(),
       correctAnswers: this._correctAnswers(),
       incorrectAnswers: this._incorrectAnswers(),
-      actualFlagCount: this._actualFlagCount(),
-      remainingFlags: this._remainingFlags(),
+      playableCountriesCount: this._playableCountries().length,
       successRate: this._successRate(),
       answerHistory: this._answerHistory,
       countryOptions: this._countryOptions(),
       selectedCountry: this._selectedCountry(),
-      lastAnswer: this._lastAnswer(),
       gameTime: this._gameTime(),
     };
     return status;
@@ -81,14 +74,12 @@ export class GameManagerService {
 
   public persistentStatus = computed<PersistedStatus>(() => {
     const pStatus = {
-      countries: this._countries(),
+      playableCountries: this._playableCountries(),
       remainCountries: this._remainCountries(),
       countryOptions: this._countryOptions(),
       selectedCountry: this._selectedCountry(),
       numOptions: this._numOptions(),
-      remainingFlags: this._remainingFlags(),
       answerHistory: this._answerHistory(),
-      lastAnswer: this._lastAnswer(),
       gameTime: this._gameTime(),
     };
     return pStatus;
@@ -125,13 +116,11 @@ export class GameManagerService {
   public checkSelection(country: Country): void {
     const isCorrect = country.cca2 === this._selectedCountry().cca2;
     this._sounds.playAnswerSound(isCorrect);
-    this._lastAnswer.set({ correct: isCorrect, country: this._selectedCountry() });
     this._answerHistory.mutate(list => {
-      list.unshift(this._lastAnswer());
+      list.unshift({ correct: isCorrect, country: this._selectedCountry() });
     });
-    this._remainingFlags.update(value => value - 1);
 
-    if (this._remainingFlags() > 0) {
+    if (!this._isGameFinished()) {
       this._selectRandomCountries();
       this._localStorage.saveData<PersistedStatus>(this.GAME_STATUS_KEY, this.persistentStatus());
     }
@@ -144,12 +133,10 @@ export class GameManagerService {
   private _createNewGame() {
     this._localStorage.removeData(this.GAME_STATUS_KEY);
     this._localStorage.removeData(this.GAME_TIME_KEY);
-    this._lastAnswer.set({ correct: false, country: {} as Country });
     const playableCountries = this._getPlayableCountries();
-    this._countries.set([...playableCountries]);
+    this._playableCountries.set([...playableCountries]);
     this._remainCountries.set([...playableCountries]);
     this._numOptions.set(NUM_OPTIONS < playableCountries.length ? NUM_OPTIONS : playableCountries.length);
-    this._remainingFlags.set(this._remainCountries().length);
     this._countryOptions.set([]);
     this._selectedCountry.set({} as Country);
     this._answerHistory.set([]);
@@ -159,14 +146,12 @@ export class GameManagerService {
 
   private _restorePersistedGame(pStatus: PersistedStatus) {
     const gameTime = this._localStorage.getData<number>(this.GAME_TIME_KEY);
-    this._countries.set(pStatus.countries);
+    this._playableCountries.set(pStatus.playableCountries);
     this._remainCountries.set(pStatus.remainCountries);
     this._countryOptions.set(pStatus.countryOptions);
     this._selectedCountry.set(pStatus.selectedCountry);
     this._numOptions.set(pStatus.numOptions);
-    this._remainingFlags.set(pStatus.remainingFlags);
     this._answerHistory.set(pStatus.answerHistory);
-    this._lastAnswer.set(pStatus.lastAnswer);
     this._gameTime.set(gameTime || 0);
   }
 
@@ -197,21 +182,14 @@ export class GameManagerService {
       list.push(this._selectedCountry());
     });
     while (this._countryOptions().length < this._numOptions()) {
-      const randomCountry = getRandomItem(this._countries());
+      const randomCountry = getRandomItem(this._playableCountries());
       if (!this._countryOptions().some(c => c.cca2 === randomCountry.cca2)) {
         this._countryOptions.mutate(list => {
           list.push(randomCountry);
         });
       }
     }
-    this._mixSelectedOption();
-  }
-
-  private _mixSelectedOption(): void {
-    const inxAux = Math.floor(Math.random() * this._numOptions());
-    const aux = this._countryOptions()[inxAux];
-    this._countryOptions()[0] = aux;
-    this._countryOptions()[inxAux] = this._selectedCountry();
+    mixSelectedOption<Country>(this._countryOptions(), this._selectedCountry());
   }
 
   private _getPlayableCountries(): Country[] {

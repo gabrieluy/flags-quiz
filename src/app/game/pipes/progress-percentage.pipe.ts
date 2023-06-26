@@ -7,7 +7,7 @@ import { GameStatus } from '../interfaces/game-status.interface';
 })
 export class ProgressPercentagePipe implements PipeTransform {
   transform(status: GameStatus): number {
-    const value = Math.floor((status.actualFlagCount * 100) / (status.actualFlagCount + status.remainingFlags));
+    const value = Math.floor((status.answerHistory().length * 100) / status.playableCountriesCount);
     return value;
   }
 }
