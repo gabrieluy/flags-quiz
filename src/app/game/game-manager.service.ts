@@ -122,8 +122,8 @@ export class GameManagerService {
 
     if (!this._isGameFinished()) {
       this._selectRandomCountries();
-      this._localStorage.saveData<PersistedStatus>(this.GAME_STATUS_KEY, this.persistentStatus());
     }
+    this._localStorage.saveData<PersistedStatus>(this.GAME_STATUS_KEY, this.persistentStatus());
   }
 
   public quitGame(): void {
