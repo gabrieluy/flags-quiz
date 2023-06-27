@@ -4,7 +4,7 @@ h1 {
   background-image: url("/assets/flags/combined.png");
   background-clip: text;
   animation: BackgroundAnimated 15s linear infinite alternate;
-  -webkit-text-stroke: 0.2px var(--text-color);
+  -webkit-text-stroke: .01rem var(--text-color);
 }
 
 @keyframes BackgroundAnimated {
