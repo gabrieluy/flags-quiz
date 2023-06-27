@@ -17,7 +17,7 @@ import { Location } from '@angular/common';
           <div class="flex flex-row flex-wrap justify-content-center">
             <fq-option-wrapper class="col-12 md:col-6" [label]="t('sound')">
               <p-selectButton [options]="options.sound" formControlName="sound">
-                <ng-template let-sound>
+                <ng-template let-sound pTemplate>
                   {{ t(sound) }}
                 </ng-template>
               </p-selectButton>
@@ -27,7 +27,7 @@ import { Location } from '@angular/common';
             </fq-option-wrapper>
             <fq-option-wrapper class="col-12 md:col-6" [label]="t('difficulty')">
               <p-selectButton [options]="options.difficulty" formControlName="difficulty">
-                <ng-template let-difficulty>
+                <ng-template let-difficulty pTemplate>
                   {{ t(difficulty) }}
                 </ng-template>
               </p-selectButton>
