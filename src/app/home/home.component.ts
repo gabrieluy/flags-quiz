@@ -9,7 +9,7 @@ import { GameManagerService } from '../game/game-manager.service';
       <fq-card *transloco="let t; read: 'home'">
         <div class="flex flex-row flex-wrap">
           <div class="flex justify-content-center col-12">
-            <fq-title text="Flags Quiz!"></fq-title>
+            <h1>Flags Quiz!</h1>
           </div>
           <div class="flex justify-content-center col-12">
             <img class="w-10rem h-10rem" src="assets/images/pet.png" />
