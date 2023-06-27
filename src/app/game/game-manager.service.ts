@@ -145,6 +145,7 @@ export class GameManagerService {
   }
 
   private _setupGameTimer(): void {
+    if (this._isGameFinished()) return;
     this._gameTimerSubscription$ = timer(0, this.TIMER_INTERVAL_MS)
       .pipe(
         tap(() => {
