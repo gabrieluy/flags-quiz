@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+
 body {
   background: url(assets/images/background.jpg);
   background-repeat: repeat;
@@ -9,4 +13,21 @@ body {
 .p-multiselect {
   min-width: 15rem;
   width: 18rem;
+}
+
+h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.2rem;
+}
+
+
+h2 {
+  font-family: 'Cairo Play', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.1;
 }
