@@ -10,7 +10,6 @@ import { FlagImgComponent } from '../ui/flag-img/flag-img.component';
 import { GameSummaryComponent } from './game-summary/game-summary.component';
 import { GamePlayStatusComponent } from './game-play-status/game-play-status.component';
 import { CorrectAnswerChipComponent } from './ui/correct-answer-chip/correct-answer-chip.component';
-import { AnswerHistoryComponent } from './answer-history/answer-history.component';
 import { CardComponent } from '../ui/card/card.component';
 import { GameManagerService } from './game-manager.service';
 import { AppRoutingModule } from '../app-routing.module';
@@ -24,9 +23,10 @@ import { SoundsService } from '../core/services/sounds/sounds.service';
 import { LocalStorageService } from '../core/services/local-storage/local-storage.service';
 import { TimeChipComponent } from '../ui/chips/info-chip copy/time-chip.component';
 import { SecondsToTimePipe } from './pipes/secods-to-time.pipe';
+import { AnswerHistoryComponent } from './answer-history/answer-history.component';
 
 @NgModule({
-  declarations: [GameComponent, GameSummaryComponent, GamePlayStatusComponent, AnswerHistoryComponent],
+  declarations: [GameComponent, GameSummaryComponent, GamePlayStatusComponent],
   exports: [GameComponent],
   providers: [GameManagerService, SoundsService, LocalStorageService, SecondsToTimePipe],
   imports: [
@@ -48,6 +48,7 @@ import { SecondsToTimePipe } from './pipes/secods-to-time.pipe';
     ColorGradientPipe,
     CountryNamePipe,
     SecondsToTimePipe,
+    AnswerHistoryComponent,
   ],
 })
 export class GameModule {}

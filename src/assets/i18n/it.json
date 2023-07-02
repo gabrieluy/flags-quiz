@@ -22,7 +22,8 @@
   "languages": {
     "en": "Inglese",
     "es": "Spagnolo",
-    "it": "Italiano"
+    "it": "Italiano",
+    "ru": "Russo"
   },
   "continents": {
     "northamerica": "Nord America",
@@ -45,6 +46,7 @@
   },
   "common": {
     "correct": "Corretto",
-    "incorrect": "Errato"
+    "incorrect": "Errato",
+    "showMore": "Mostra altri"
   }
 }
