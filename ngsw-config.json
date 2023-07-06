@@ -21,6 +21,7 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
+          "/app/core/data/countries.ts",
           "/assets/**",
           "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
