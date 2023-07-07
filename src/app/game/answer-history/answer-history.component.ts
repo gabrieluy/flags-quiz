@@ -20,7 +20,7 @@ import { CountryNamePipe } from '../pipes/country.name.pipe';
       <div *ngFor="let answer of visibleHistory()" class="col-12 md:col-6 lg:col-4">
         <fq-card @slideR>
           <div class="flex justify-content-between">
-            <fq-flag-img [flag]="answer.country.cca2" class="align-self-start w-7rem"></fq-flag-img>
+            <fq-flag-img [flag]="answer.country.code" class="align-self-start w-7rem"></fq-flag-img>
             <fq-correct-answer-chip [correct]="answer.correct"></fq-correct-answer-chip>
           </div>
           <h3 class="text-center">{{ answer.country | countryName }}</h3>

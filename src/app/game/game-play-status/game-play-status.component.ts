@@ -25,7 +25,7 @@ import { fadeImage } from 'src/app/game/game-play-status/animations/fadeImage';
         <fq-flag-img
           [@fadeImage]="isImgLoad"
           (imgLoad)="onImgLoad()"
-          [flag]="status.selectedCountry.cca2"
+          [flag]="status.selectedCountry.code"
           class="h-13rem md:h-20rem">
         </fq-flag-img>
       </div>
