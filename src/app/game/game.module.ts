@@ -24,6 +24,8 @@ import { LocalStorageService } from '../core/services/local-storage/local-storag
 import { TimeChipComponent } from '../ui/chips/info-chip copy/time-chip.component';
 import { SecondsToTimePipe } from './pipes/secods-to-time.pipe';
 import { AnswerHistoryComponent } from './answer-history/answer-history.component';
+import { DialogModule } from 'primeng/dialog';
+import { SummaryItemComponent } from './game-summary/ui/summary-item';
 
 @NgModule({
   declarations: [GameComponent, GameSummaryComponent, GamePlayStatusComponent],
@@ -33,6 +35,7 @@ import { AnswerHistoryComponent } from './answer-history/answer-history.componen
     CardComponent,
     CommonModule,
     ButtonModule,
+    DialogModule,
     AppRoutingModule,
     MessageModule,
     TagModule,
@@ -41,6 +44,7 @@ import { AnswerHistoryComponent } from './answer-history/answer-history.componen
     InfoChipComponent,
     FlagImgComponent,
     CorrectAnswerChipComponent,
+    SummaryItemComponent,
     ProgressBarModule,
     SpeedDialModule,
     TranslocoModule,

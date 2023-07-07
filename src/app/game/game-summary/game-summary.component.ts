@@ -18,26 +18,26 @@ import { SecondsToTimePipe } from '../pipes/secods-to-time.pipe';
           </div>
           <div class="flex justify-content-center col-12">
             <ul>
-              <li class="flex mb-3 align-items-center">
-                <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
-                <span class="font-medium"> {{ t('points', { points: status.points }) }}</span>
-              </li>
-              <li class="flex mb-3 align-items-center">
-                <i class="pi pi-clock text-purple-500 mr-2"></i>
-                <span class="font-medium"> {{ status.gameTime | secondsToTime }}</span>
-              </li>
-              <li class="flex mb-3 align-items-center">
-                <i class="pi pi-percentage text-green-500 mr-2"></i>
-                <span class="font-medium"> {{ t('successRate', { rate: status.successRate }) }}</span>
-              </li>
-              <li class="flex mb-3 align-items-center">
-                <i class="pi pi-check text-green-500 mr-2"></i>
-                <span class="font-medium"> {{ t('correctAnswers', { answers: status.correctAnswers }) }}</span>
-              </li>
-              <li class="flex align-items-center">
-                <i class="pi pi-times text-red-500 mr-2"></i>
-                <span class="font-medium"> {{ t('incorrectAnswers', { answers: status.incorrectAnswers }) }}</span>
-              </li>
+              <fq-summary-item
+                icon="star-fill"
+                color="yellow"
+                text="{{ t('points', { points: status.points }) }}"></fq-summary-item>
+              <fq-summary-item
+                icon="clock"
+                color="purple"
+                text="{{ status.gameTime | secondsToTime }}"></fq-summary-item>
+              <fq-summary-item
+                icon="percentage"
+                color="green"
+                text="{{ t('successRate', { rate: status.successRate }) }}"></fq-summary-item>
+              <fq-summary-item
+                icon="check"
+                color="green"
+                text="{{ t('correctAnswers', { answers: status.correctAnswers }) }}"></fq-summary-item>
+              <fq-summary-item
+                icon="times"
+                color="red"
+                text="{{ t('incorrectAnswers', { answers: status.incorrectAnswers }) }}"></fq-summary-item>
             </ul>
           </div>
           <div class="flex flex-wrap justify-content-center col-12 mt-3 gap-3">
@@ -49,10 +49,10 @@ import { SecondsToTimePipe } from '../pipes/secods-to-time.pipe';
               (click)="this.resetClick.emit()"></button>
             <button
               pButton
-              icon="pi pi-twitter"
+              icon="pi pi-share-alt"
               [label]="t('share')"
-              class="col-11 md:col-5 p-button-help"
-              (click)="share()"></button>
+              class="col-11 md:col-5 p-button-outlined"
+              (click)="showDialog()"></button>
           </div>
         </div>
       </fq-card>
@@ -60,20 +60,51 @@ import { SecondsToTimePipe } from '../pipes/secods-to-time.pipe';
     <div class="mt-5 px-2">
       <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
     </div>
+    <p-dialog [header]="t('share')" [(visible)]="dialogVisible" class="m-2" *transloco="let t; read: 'summary'">
+      <div class="flex flex-wrap justify-content-center col-12 mt-3 gap-3">
+        <button
+          pButton
+          icon="pi pi-twitter"
+          label="twitter"
+          class="col-11 md:col-11 p-button-help border-none"
+          (click)="shareTw()"></button>
+        <button
+          pButton
+          icon="pi pi-whatsapp"
+          label="whatsapp"
+          class="col-11 md:col-11 bg-green-600 border-none"
+          (click)="shareWp()"></button>
+      </div>
+    </p-dialog>
   `,
 })
 export class GameSummaryComponent {
   private _transloco = inject(TranslocoService);
   private _secondeToTime = inject(SecondsToTimePipe);
+  public dialogVisible = false;
 
   @Input() public status!: GameStatus;
   @Output() resetClick: EventEmitter<void> = new EventEmitter();
 
-  public share(): void {
+  public showDialog(): void {
+    this.dialogVisible = true;
+  }
+
+  public shareTw(): void {
+    const url = `https://twitter.com/intent/tweet?text=`;
+    this._share(url);
+  }
+
+  public shareWp(): void {
+    const url = `https://web.whatsapp.com/send/?text=`;
+    this._share(url);
+  }
+
+  private _share(url: string): void {
     const { points, gameTime } = this.status;
     const time = this._secondeToTime.transform(gameTime);
     const text = this._transloco.translate('share-text', { points, time }, 'summary');
-    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
-    window.open(url);
+    const urlWithText = `${url}${encodeURIComponent(text)}`;
+    window.open(urlWithText);
   }
 }
