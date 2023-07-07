@@ -114,7 +114,7 @@ export class GameManagerService {
   }
 
   public checkSelection(country: Country): void {
-    const isCorrect = country.cca2 === this._selectedCountry().cca2;
+    const isCorrect = country.code === this._selectedCountry().code;
     this._sounds.playAnswerSound(isCorrect);
     this._answerHistory.mutate(list => {
       list.unshift({ correct: isCorrect, country: this._selectedCountry() });
@@ -177,7 +177,7 @@ export class GameManagerService {
     });
     while (this._countryOptions().length < this._numOptions()) {
       const randomCountry = getRandomItem(this._playableCountries());
-      if (!this._countryOptions().some(c => c.cca2 === randomCountry.cca2)) {
+      if (!this._countryOptions().some(c => c.code === randomCountry.code)) {
         this._countryOptions.mutate(list => {
           list.push(randomCountry);
         });
