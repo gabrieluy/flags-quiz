@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "flags-quiz": {
+    "flags-mastery": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "flags-quiz:build:production"
+              "browserTarget": "flags-mastery:build:production"
             },
             "development": {
-              "browserTarget": "flags-quiz:build:development"
+              "browserTarget": "flags-mastery:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "flags-quiz:build"
+            "browserTarget": "flags-mastery:build"
           }
         },
         "test": {

@@ -42,7 +42,7 @@
     "incorrectAnswers": "{{ answers }} Respuestas incorrectas",
     "restart": "Reiniciar",
     "share": "Compartir",
-    "share-text": "¿Conoces las banderas del mundo? ¡Acabo de hacer el FlagsQuiz y obtuve {{ points }} puntos en {{ time }}⏰! 🏴🌏 Pon a prueba tus conocimientos y desafíate con este fantástico quiz. ¡Juega aquí! flagstiquiz.netlify.app"
+    "share-text": "¿Conoces las banderas del mundo? ¡Acabo de hacer el Flags Mastery y obtuve {{ points }} puntos en {{ time }}⏰! 🏴🌏 Pon a prueba tus conocimientos y desafíate con este fantástico quiz. ¡Juega aquí! FlagsMastery.com"
   },
   "common": {
     "correct": "Correcto",
