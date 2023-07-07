@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap');
 
 body {
   background: url(assets/images/background.jpg);
@@ -16,19 +14,19 @@ body {
 }
 
 h1 {
-  font-family: 'Cairo Play', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 3.5rem;
   text-align: center;
   margin: 0;
   letter-spacing: 0.2rem;
+  line-height: 4rem;
 }
 
 
 h2 {
-  font-family: 'Cairo Play', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-align: center;
   font-size: 2rem;
-  line-height: 1.1;
 }
 
 [hidden] {
