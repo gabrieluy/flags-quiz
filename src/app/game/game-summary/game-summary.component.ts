@@ -96,7 +96,7 @@ export class GameSummaryComponent {
   }
 
   public shareWp(): void {
-    const url = `https://web.whatsapp.com/send/?text=`;
+    const url = `https://api.whatsapp.com/send/?text=`;
     this._share(url);
   }
 
