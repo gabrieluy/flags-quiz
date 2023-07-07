@@ -9,14 +9,14 @@ export class SettingsService {
 
   SETTINGS_STORAGE_KEY = 'fq:settings';
   DEFAULT_SETTINGS = {
-    continents: ['northamerica', 'asia', 'southamerica', 'europe', 'oceania', 'africa', 'antarctica'],
+    continents: ['northamerica', 'asia', 'southamerica', 'europe', 'oceania', 'africa'],
     difficulty: 'medium' as DifficultyType,
     sound: 'on' as SoundType,
   };
 
   DEFAULT_OPTIONS: SettingsOptions = {
     difficulty: ['easy', 'medium', 'hard'],
-    continents: ['northamerica', 'asia', 'southamerica', 'europe', 'oceania', 'africa', 'antarctica'],
+    continents: ['northamerica', 'asia', 'southamerica', 'europe', 'oceania', 'africa'],
     sound: ['on', 'off'],
   };
 
