@@ -23,6 +23,7 @@ import { fadeImage } from 'src/app/game/game-play-status/animations/fadeImage';
       </div>
       <div class="flex justify-content-center mt-2">
         <fq-flag-img
+          [hidden]="!isImgLoad"
           [@fadeImage]="isImgLoad"
           (imgLoad)="onImgLoad()"
           [flag]="status.selectedCountry.code"
