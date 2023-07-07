@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { Country } from 'src/app/game/interfaces/country.interface';
 import { GameStatus } from '../interfaces/game-status.interface';
-import { fadeImage } from 'src/app/game/game-play-status/animations/fadeImage';
+import { transformOpt } from './animations/transform-option.animation';
+import { fadeImage } from './animations/fade-image.animation';
+import { Country } from '../interfaces/country.interface';
 
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [fadeImage],
+  animations: [fadeImage, transformOpt],
   template: `
     <div class="m-3">
       <div class="flex justify-content-center">
@@ -32,9 +33,13 @@ import { fadeImage } from 'src/app/game/game-play-status/animations/fadeImage';
       </div>
       <div class="grid mt-2">
         <div *ngFor="let country of status?.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">
-          <button pButton [disabled]="!isImgLoad" (click)="select(country)" class="w-full">
-            {{ country | countryName }}
-          </button>
+          <button
+            pButton
+            [disabled]="!isImgLoad"
+            [@transformOpt]="isImgLoad"
+            (click)="select(country)"
+            [label]="country | countryName"
+            class="w-full"></button>
         </div>
       </div>
       <div class="mt-2"></div>
