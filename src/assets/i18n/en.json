@@ -42,7 +42,7 @@
     "incorrectAnswers": "{{ answers }} Incorrect Answers",
     "restart": "Restart",
     "share": "Share",
-    "share-text": "Do you know your flags of the world? I just took the Flags Mastery and scored {{ points }} points in {{ time }}⏰! 🏴🌏 Put your knowledge to the test and challenge yourself with this fantastic quiz. Play here! FlagsMastery.com"
+    "share-text": "Do you know your flags of the world 🏴🌏? I just played Flags Mastery and scored {{ points }} points in {{ time }}⏰! Test your knowledge and challenge yourself with this amazing quiz. Play in FlagsMastery.com"
   },
   "common": {
     "correct": "Correct",

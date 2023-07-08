@@ -42,7 +42,7 @@
     "incorrectAnswers": "{{ answers }} Risposte sbagliate",
     "restart": "Ricomincia",
     "share": "Condividi",
-    "share-text": "Conosci le bandiere del mondo? Ho appena fatto il Flags Mastery e ho totalizzato {{ points }} punti in {{ time }}⏰! 🏴🌏 Metti alla prova le tue conoscenze e sfidati con questo fantastico quiz. Gioca qui! FlagsMastery.com"
+    "share-text": "Sai riconoscere le bandiere del mondo 🏴🌏? Ho appena giocato a Flags Mastery e ho ottenuto {{ points }} punti in {{ time }}⏰! Metti alla prova la tua conoscenza e sfidati con questo fantastico quiz. Gioca su FlagsMastery.com"
   },
   "common": {
     "correct": "Corretto",
