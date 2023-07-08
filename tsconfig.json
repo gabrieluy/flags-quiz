@@ -2,7 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
+    "paths": {
+      "@shared-ui/*": ["app/ui/*"],
+      "@core/*": ["app/core/*"],
+      "@pipes/*": ["app/pipes/*"],
+      "@app/*": ["app/*"],
+      "@features/*": ["app/features/*"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

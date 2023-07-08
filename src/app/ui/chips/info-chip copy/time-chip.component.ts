@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { SecondsToTimePipe } from 'src/app/game/pipes/secods-to-time.pipe';
+import { SecondsToTimePipe } from '@pipes/secods-to-time.pipe';
 
 @Component({
   selector: 'fq-time-chip',

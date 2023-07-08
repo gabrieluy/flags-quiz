@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { CommonModule } from '@angular/common';
 import { Observable, map, of } from 'rxjs';
 
 @Component({

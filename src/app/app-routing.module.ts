@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
+import { SettingsComponent } from '@features/settings/settings.component';
+import { HomeComponent } from '@features/home/home.component';
+import { GameComponent } from '@features/game/game.component';
 import { RouterModule, Routes } from '@angular/router';
-import { GameComponent } from './game/game.component';
-import { HomeComponent } from './home/home.component';
-import { SettingsComponent } from './settings/settings.component';
+import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   { path: 'game', pathMatch: 'full', component: GameComponent },
