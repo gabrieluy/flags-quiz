@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject
 import { TranslocoService } from '@ngneat/transloco';
 import { GameStatus } from 'src/app/game/interfaces/game-status.interface';
 import { SecondsToTimePipe } from '../pipes/secods-to-time.pipe';
+import { SHARE_URLS, SharePlatform } from './game-summary.constants';
 
 @Component({
   selector: 'fq-game-summary',
@@ -67,13 +68,13 @@ import { SecondsToTimePipe } from '../pipes/secods-to-time.pipe';
           icon="pi pi-twitter"
           label="twitter"
           class="col-11 md:col-11 p-button-help border-none"
-          (click)="shareTw()"></button>
+          (click)="share('twitter')"></button>
         <button
           pButton
           icon="pi pi-whatsapp"
           label="whatsapp"
           class="col-11 md:col-11 bg-green-600 border-none"
-          (click)="shareWp()"></button>
+          (click)="share('whatsapp')"></button>
       </div>
     </p-dialog>
   `,
@@ -90,17 +91,8 @@ export class GameSummaryComponent {
     this.dialogVisible = true;
   }
 
-  public shareTw(): void {
-    const url = `https://twitter.com/intent/tweet?text=`;
-    this._share(url);
-  }
-
-  public shareWp(): void {
-    const url = `https://api.whatsapp.com/send/?text=`;
-    this._share(url);
-  }
-
-  private _share(url: string): void {
+  public share(platform: SharePlatform): void {
+    const url = SHARE_URLS[platform];
     const { points, gameTime } = this.status;
     const time = this._secondeToTime.transform(gameTime);
     const text = this._transloco.translate('share-text', { points, time }, 'summary');
