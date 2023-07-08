@@ -1,6 +1,7 @@
+import { SettingsService } from '@core/services/settings/settings.service';
 import { Injectable, inject } from '@angular/core';
+
 import { END_LEVEL_URL, ERROR_URL, START_LEVEL_URL, SUCCESS_URL } from './sounds-urls.constants';
-import { SettingsService } from 'src/app/core/services/settings/settings.service';
 
 @Injectable()
 export class SoundsService {

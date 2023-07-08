@@ -1,7 +1,8 @@
 import { Injectable, inject } from '@angular/core';
-import { DifficultyType, Settings, SoundType } from '../../../settings/interfaces/settings.interface';
-import { SettingsOptions } from '../../../settings/interfaces/settings-options.interface';
+
+import { DifficultyType, Settings, SoundType } from './interfaces/settings.interface';
 import { LocalStorageService } from '../local-storage/local-storage.service';
+import { SettingsOptions } from './interfaces/settings-options.interface';
 
 @Injectable()
 export class SettingsService {

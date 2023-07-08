@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { FlagSrcPipe } from 'src/app/game/pipes/flag-src.pipe';
+import { FlagSrcPipe } from '@pipes/flag-src.pipe';
 
 @Component({
   selector: 'fq-flag-img',
