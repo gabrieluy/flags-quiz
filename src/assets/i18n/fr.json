@@ -1,0 +1,64 @@
+{
+  "home": {
+    "settings": "Paramètres",
+    "play": "Jouer",
+    "continue": "Continuer",
+    "new": "Nouvelle partie",
+    "about": "À propos"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "difficulty": "Difficulté",
+    "easy": "Facile",
+    "medium": "Moyen",
+    "hard": "Difficile",
+    "back": "Retour",
+    "language": "Langue",
+    "sound": "Son",
+    "continents": "Continents",
+    "on": "Activé",
+    "off": "Désactivé",
+    "continents.placeholder":"Sélectionnez des continents"
+  },
+  "languages": {
+    "en": "Anglais",
+    "es": "Espagnol",
+    "it": "Italien",
+    "ru": "Russe",
+    "tr": "Turc",
+    "fr": "Français",
+    "ir": "Persan",
+    "de": "Allemand",
+    "pt": "Portugais"
+  },
+  "continents": {
+    "northamerica": "Amérique du Nord",
+    "southamerica": "Amérique du Sud",
+    "asia": "Asie",
+    "europe": "Europe",
+    "oceania": "Océanie",
+    "africa": "Afrique",
+    "antarctica": "Antarctique"
+  },
+  "summary": {
+    "title": "Merci d'avoir joué !",
+    "points": "{{ points }} points",
+    "successRate": "Taux de réussite : {{ rate }}",
+    "correctAnswers": "{{ answers }} réponses correctes",
+    "incorrectAnswers": "{{ answers }} réponses incorrectes",
+    "restart": "Recommencer",
+    "share": "Partager",
+    "share-text": "Connaissez-vous les drapeaux du monde 🏴🌏 ? Je viens de jouer à Flags Mastery et j'ai obtenu {{ points }} points en {{ time }}⏰ ! Testez vos connaissances et relevez le défi de ce quiz incroyable. Jouez sur FlagsMastery.com"
+  },
+  "common": {
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "showMore": "Afficher plus"
+  },
+  "about": {
+    "title": "À propos",
+    "description": "Flags Mastery est un jeu gratuit et open source qui vise à améliorer vos connaissances sur les pays et leurs drapeaux. N'hésitez pas à collaborer et à suggérer de nouvelles fonctionnalités ou des modifications.",
+    "show-code": "Montrez-moi le code !",
+    "back": "Retour"
+  }
+}

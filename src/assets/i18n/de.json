@@ -1,0 +1,64 @@
+{
+  "home": {
+    "settings": "Einstellungen",
+    "play": "Spielen",
+    "continue": "Weiter",
+    "new": "Neues Spiel",
+    "about": "Über"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "difficulty": "Schwierigkeit",
+    "easy": "Leicht",
+    "medium": "Mittel",
+    "hard": "Schwer",
+    "back": "Zurück",
+    "language": "Sprache",
+    "sound": "Ton",
+    "continents": "Kontinente",
+    "on": "An",
+    "off": "Aus",
+    "continents.placeholder":"Kontinente auswählen"
+  },
+  "languages": {
+    "en": "Englisch",
+    "es": "Spanisch",
+    "it": "Italienisch",
+    "ru": "Russisch",
+    "tr": "Türkisch",
+    "fr": "Französisch",
+    "ir": "Persisch",
+    "de": "Deutsch",
+    "pt": "Portugiesisch"
+  },
+  "continents": {
+    "northamerica": "Nordamerika",
+    "southamerica": "Südamerika",
+    "asia": "Asien",
+    "europe": "Europa",
+    "oceania": "Ozeanien",
+    "africa": "Afrika",
+    "antarctica": "Antarktis"
+  },
+  "summary": {
+    "title": "Danke fürs Spielen!",
+    "points": "{{ points }} Punkte",
+    "successRate": "{{ rate }} Erfolgsrate",
+    "correctAnswers": "{{ answers }} Richtige Antworten",
+    "incorrectAnswers": "{{ answers }} Falsche Antworten",
+    "restart": "Neustart",
+    "share": "Teilen",
+    "share-text": "Kennst du die Flaggen der Welt 🏴🌏? Ich habe gerade Flags Mastery gespielt und {{ points }} Punkte in {{ time }}⏰ erreicht! Teste dein Wissen und fordere dich mit diesem erstaunlichen Quiz heraus. Spiele auf FlagsMastery.com"
+  },
+  "common": {
+    "correct": "Richtig",
+    "incorrect": "Falsch",
+    "showMore": "Mehr anzeigen"
+  },
+  "about": {
+    "title": "Über",
+    "description": "Flags Mastery ist ein kostenloses und Open-Source-Spiel, das dein Wissen über Länder und ihre Flaggen verbessern möchte. Fühle dich frei, mitzuwirken und neue Funktionen oder Änderungen vorzuschlagen.",
+    "show-code": "Zeige mir den Code!",
+    "back": "Zurück"
+  }
+}

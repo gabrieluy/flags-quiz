@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
       <fq-card *transloco="let t; read: 'about'">
         <div class="flex flex-row flex-wrap">
           <div class="flex justify-content-center col-12">
-            <h1>About</h1>
+            <h2>{{ t('title') }}</h2>
           </div>
           <div class="flex justify-content-center col-12">
             <p class="text-lg text-center	">

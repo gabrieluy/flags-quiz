@@ -1,0 +1,64 @@
+{
+  "home": {
+    "settings": "Ayarlar",
+    "play": "Oyna",
+    "continue": "Devam Et",
+    "new": "Yeni oyun",
+    "about": "Hakkında"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "difficulty": "Zorluk",
+    "easy": "Kolay",
+    "medium": "Orta",
+    "hard": "Zor",
+    "back": "Geri",
+    "language": "Dil",
+    "sound": "Ses",
+    "continents": "Kıtalar",
+    "on": "Açık",
+    "off": "Kapalı",
+    "continents.placeholder":"Kıta seçin"
+  },
+  "languages": {
+    "en": "İngilizce",
+    "es": "İspanyolca",
+    "it": "İtalyanca",
+    "ru": "Rusça",
+    "tr": "Türkçe",
+    "fr": "Fransızca",
+    "ir": "Farsça",
+    "de": "Almanca",
+    "pt": "Portekizce"
+  },
+  "continents": {
+    "northamerica": "Kuzey Amerika",
+    "southamerica": "Güney Amerika",
+    "asia": "Asya",
+    "europe": "Avrupa",
+    "oceania": "Okyanusya",
+    "africa": "Afrika",
+    "antarctica": "Antarktika"
+  },
+  "summary": {
+    "title": "Oynamanız için teşekkürler!",
+    "points": "{{ points }} Puan",
+    "successRate": "{{ rate }} Başarı oranı",
+    "correctAnswers": "{{ answers }} Doğru Cevaplar",
+    "incorrectAnswers": "{{ answers }} Yanlış Cevaplar",
+    "restart": "Yeniden Başlat",
+    "share": "Paylaş",
+    "share-text": "Dünya bayraklarını biliyor musunuz 🏴🌏? Flags Mastery oyununu oynadım ve {{ points }} puan aldım, sürem {{ time }}⏰! Bilginizi test edin ve bu harika quiz ile kendinizi meydan okumaya davet edin. FlagsMastery.com adresinde oynayın."
+  },
+  "common": {
+    "correct": "Doğru",
+    "incorrect": "Yanlış",
+    "showMore": "Daha fazla göster"
+  },
+  "about": {
+    "title": "Hakkında",
+    "description": "Flags Mastery ülkeler ve bayrakları hakkındaki bilginizi geliştirmeyi amaçlayan ücretsiz ve açık kaynaklı bir oyundur. Yeni özellikler veya değişiklikler önermek için gönül rahatlığıyla katkıda bulunabilirsiniz.",
+    "show-code": "Kodu Göster!",
+    "back": "Geri"
+  }
+}

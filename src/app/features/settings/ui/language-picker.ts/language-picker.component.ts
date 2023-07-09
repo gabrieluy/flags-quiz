@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
       <ng-template let-lang pTemplate="item">
         <div class="flex align-items-center gap-2">
           <img [src]="'assets/flags/4x3/' + lang + '.svg'" [class]="'flag flag-' + lang" style="width: 18px" />
-          <div>{{ t(lang) }}</div>
+          <div>{{ 'languages.' + lang | transloco : {} : lang }}</div>
         </div>
       </ng-template>
     </p-dropdown>
