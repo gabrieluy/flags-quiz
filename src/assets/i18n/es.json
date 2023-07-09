@@ -24,7 +24,12 @@
     "en": "Inglés",
     "es": "Español",
     "it": "Italiano",
-    "ru": "Ruso"
+    "ru": "Ruso",
+    "tr": "Turco",
+    "fr": "Francés",
+    "ir": "Persa",
+    "de": "Alemán",
+    "pt": "Portugués"
   },
   "continents": {
     "northamerica": "Norteamérica",

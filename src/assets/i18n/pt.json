@@ -1,0 +1,64 @@
+{
+  "home": {
+    "settings": "Configurações",
+    "play": "Jogar",
+    "continue": "Continuar",
+    "new": "Novo jogo",
+    "about": "Sobre"
+  },
+  "settings": {
+    "title": "Configurações",
+    "difficulty": "Dificuldade",
+    "easy": "Fácil",
+    "medium": "Médio",
+    "hard": "Difícil",
+    "back": "Voltar",
+    "language": "Idioma",
+    "sound": "Som",
+    "continents": "Continentes",
+    "on": "Ativado",
+    "off": "Desativado",
+    "continents.placeholder":"Selecionar continentes"
+  },
+  "languages": {
+    "en": "Inglês",
+    "es": "Espanhol",
+    "it": "Italiano",
+    "ru": "Russo",
+    "tr": "Turco",
+    "fr": "Francês",
+    "ir": "Persa",
+    "de": "Alemão",
+    "pt": "Português"
+  },
+  "continents": {
+    "northamerica": "América do Norte",
+    "southamerica": "América do Sul",
+    "asia": "Ásia",
+    "europe": "Europa",
+    "oceania": "Oceania",
+    "africa": "África",
+    "antarctica": "Antártida"
+  },
+  "summary": {
+    "title": "Obrigado por jogar!",
+    "points": "{{ points }} Pontos",
+    "successRate": "{{ rate }} Taxa de sucesso",
+    "correctAnswers": "{{ answers }} Respostas corretas",
+    "incorrectAnswers": "{{ answers }} Respostas incorretas",
+    "restart": "Reiniciar",
+    "share": "Compartilhar",
+    "share-text": "Você conhece as bandeiras do mundo 🏴🌏? Acabei de jogar o Flags Mastery e fiz {{ points }} pontos em {{ time }}⏰! Teste seus conhecimentos e desafie-se com este incrível quiz. Jogue em FlagsMastery.com"
+  },
+  "common": {
+    "correct": "Correto",
+    "incorrect": "Incorreto",
+    "showMore": "Mostrar mais"
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Flags Mastery é um jogo gratuito e de código aberto que busca aprimorar seus conhecimentos sobre países e suas bandeiras. Sinta-se à vontade para colaborar e sugerir novos recursos ou alterações.",
+    "show-code": "Mostrar o código!",
+    "back": "Voltar"
+  }
+}
