@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@shared-ui/*": ["app/ui/*"],
+      "@ui/*": ["app/ui/*"],
       "@core/*": ["app/core/*"],
       "@pipes/*": ["app/pipes/*"],
       "@app/*": ["app/*"],
