@@ -2,8 +2,8 @@ import { CorrectAnswerChipComponent } from '@ui/chips/correct-answer-chip/correc
 import { LocalStorageService } from '@core/services/local-storage/local-storage.service';
 import { GameManagerService } from '@core/services/game-manager/game-manager.service';
 import { AnswerHistoryComponent } from '@ui/answer-history/answer-history.component';
-import { PointsChipComponent } from '@ui/chips/points-chip/points-chipcomponent';
-import { TimeChipComponent } from '@ui/chips/info-chip copy/time-chip.component';
+import { PointsChipComponent } from '@ui/chips/points-chip/points-chip.component';
+import { TimeChipComponent } from '@ui/chips/time-chip/time-chip.component';
 import { InfoChipComponent } from '@ui/chips/info-chip/info-chip.component';
 import { ProgressPercentagePipe } from '@pipes/progress-percentage.pipe';
 import { SoundsService } from '@core/services/sounds/sounds.service';

@@ -3,7 +3,8 @@
     "settings": "Settings",
     "play": "Play",
     "continue": "Continue",
-    "new": "New game"
+    "new": "New game",
+    "about": "About"
   },
   "settings": {
     "title": "Settings",
@@ -48,5 +49,11 @@
     "correct": "Correct",
     "incorrect": "Incorrect",
     "showMore": "Show more"
+  },
+  "about": {
+    "title": "About",
+    "description": "Flags Mastery is a free and open source game that tries to improve your knowledge about countries and their flags. Feel free to collaborate and suggest new features or changes.",
+    "show-code": "Show me the code!",
+    "back": "Back"
   }
 }
