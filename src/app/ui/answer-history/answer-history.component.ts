@@ -1,9 +1,9 @@
-import { CorrectAnswerChipComponent } from '@shared-ui/chips/correct-answer-chip/correct-answer-chip.component';
 import { ChangeDetectionStrategy, Component, Input, WritableSignal, computed, signal } from '@angular/core';
+import { CorrectAnswerChipComponent } from '@ui/chips/correct-answer-chip/correct-answer-chip.component';
 import { Answer } from '@core/services/game-manager/interfaces/answer.interface';
-import { FlagImgComponent } from '@shared-ui/flag-img/flag-img.component';
-import { CardComponent } from '@shared-ui/card/card.component';
+import { FlagImgComponent } from '@ui/flag-img/flag-img.component';
 import { CountryNamePipe } from '@pipes/country.name.pipe';
+import { CardComponent } from '@ui/card/card.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';

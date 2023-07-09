@@ -1,9 +1,9 @@
-import { MultiselectPickerComponent } from '@shared-ui/multiselect-picker/multiselect-picker.component';
+import { MultiselectPickerComponent } from '@ui/multiselect-picker/multiselect-picker.component';
 import { SettingsService } from '@core/services/settings/settings.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CardComponent } from '@shared-ui/card/card.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { CardComponent } from '@ui/card/card.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';

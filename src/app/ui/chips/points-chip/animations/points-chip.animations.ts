@@ -1,8 +1,8 @@
 import { animateChild, group, query, transition, trigger, useAnimation } from '@angular/animations';
-import { scale } from '@shared-ui/animations/scale.animation';
-import { shake } from '@shared-ui/animations/shake.animation';
-import { drop } from '@shared-ui/animations/drop.animation';
-import { jump } from '@shared-ui/animations/jump.animation';
+import { scale } from '@ui/animations/scale.animation';
+import { shake } from '@ui/animations/shake.animation';
+import { drop } from '@ui/animations/drop.animation';
+import { jump } from '@ui/animations/jump.animation';
 
 export const pointChipAnimations = [
   trigger('pointsAnimation', [
