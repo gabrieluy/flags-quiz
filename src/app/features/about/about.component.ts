@@ -24,12 +24,13 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
                 icon="pi pi-arrow-left"
                 class="col-11 md:col-5 p-button-outlined"
                 [routerLink]="['/home']"></button>
-              <button
+              <a
                 pButton
                 icon="pi pi-github"
                 [label]="t('show-code')"
-                class="col-11 md:col-5 bg-gray-900 border-none"
-                [routerLink]="['/settings']"></button>
+                class="col-11 md:col-5 bg-gray-900 border-gray-900"
+                [href]="['https://github.com/gabrieluy/flags-quiz/']"
+                target="_blank"></a>
             </div>
           </div>
         </div>
