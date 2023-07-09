@@ -49,7 +49,7 @@ export class GameManagerService {
   });
 
   private _successRate = computed<number>(() => {
-    return getPercentage(this._correctAnswers(), this._playableCountries().length);
+    return getPercentage(this._correctAnswers(), this._correctAnswers() + this._incorrectAnswers());
   });
 
   private _isGameFinished = computed<boolean>(() => {
