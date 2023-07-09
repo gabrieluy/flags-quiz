@@ -3,7 +3,8 @@
     "settings": "Configuración",
     "play": "Jugar",
     "continue": "Continuar",
-    "new": "Nuevo juego"
+    "new": "Nuevo juego",
+    "about": "Acerca de"
   },
   "settings": {
     "title": "Configuración",
@@ -48,5 +49,11 @@
     "correct": "Correcto",
     "incorrect": "Incorrecto",
     "showMore": "Mostrar mas"
+  },
+  "about": {
+    "title": "Acerca de",
+    "description": "Flags Mastery es un juego gratuito y de código abierto que busca mejorar tus conocimientos sobre los países y sus banderas. Siéntete libre de colaborar y sugerir nuevas características o cambios.",
+    "show-code": "¡Muéstrame el código!",
+    "back": "Volver"
   }
 }

@@ -68,13 +68,13 @@ import { SHARE_URLS, SharePlatform } from './constants/game-summary.constants';
           pButton
           icon="pi pi-twitter"
           label="twitter"
-          class="col-11 md:col-11 p-button-help border-none"
+          class="col-11 p-button-help border-none"
           (click)="share('twitter')"></button>
         <button
           pButton
           icon="pi pi-whatsapp"
           label="whatsapp"
-          class="col-11 md:col-11 bg-green-600 border-none"
+          class="col-11 bg-green-600 border-none"
           (click)="share('whatsapp')"></button>
       </div>
     </p-dialog>

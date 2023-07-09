@@ -4,6 +4,7 @@ import { SettingsModule } from '@features/settings/settings.module';
 import { TranslocoRootModule } from '@app/transloco-root.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppRoutingModule } from '@app/app-routing.module';
+import { AboutModule } from '@features/about/about.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { GameModule } from '@features/game/game.module';
@@ -26,6 +27,7 @@ import { SharedModule } from 'primeng/api';
     SharedModule,
     GameModule,
     HomeModule,
+    AboutModule,
     SettingsModule,
     TranslocoRootModule,
     TranslocoPersistLangModule.forRoot({
