@@ -8,11 +8,6 @@ body {
   margin: 0;
 }
 
-.p-multiselect {
-  min-width: 15rem;
-  width: 18rem;
-}
-
 h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 3.5rem;
@@ -29,7 +24,17 @@ h2 {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+.p-multiselect {
+  min-width: 15rem;
+  width: 18rem;
+}
+
 [hidden] {
   visibility: hidden;
   display: block;
 }
+
