@@ -4,16 +4,18 @@ import { Country } from '@core/data/interfaces/country.interface';
 
 import { transformOpt } from './animations/transform-option.animation';
 import { fadeImage } from './animations/fade-image.animation';
+import { saveIcon } from './animations/save-icon.animation';
 
 @Component({
   selector: 'fq-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [fadeImage, transformOpt],
+  animations: [fadeImage, transformOpt, saveIcon],
   template: `
     <div class="m-3">
       <div class="flex justify-content-center">
         <fq-card class="col-12 md:col-6">
           <div *ngIf="status" class="flex flex-row flex-wrap justify-content-end mb-2 gap-2">
+            <fq-save-icon [points]="status.points"></fq-save-icon>
             <fq-points-chip [points]="status.points"></fq-points-chip>
             <fq-time-chip [seconds]="status.gameTime"></fq-time-chip>
           </div>
