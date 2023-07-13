@@ -24,8 +24,9 @@ import { NgModule } from '@angular/core';
 import { TagModule } from 'primeng/tag';
 
 import { GamePlayStatusComponent } from './game-play-status/game-play-status.component';
+import { SummaryItemComponent } from './game-summary/ui/summary-item/summary-item';
 import { GameSummaryComponent } from './game-summary/game-summary.component';
-import { SummaryItemComponent } from './game-summary/ui/summary-item';
+import { SaveIconComponent } from './game-summary/ui/save-icon/save-icon';
 import { GameComponent } from './game.component';
 
 @NgModule({
@@ -54,6 +55,7 @@ import { GameComponent } from './game.component';
     CountryNamePipe,
     SecondsToTimePipe,
     AnswerHistoryComponent,
+    SaveIconComponent,
   ],
 })
 export class GameModule {}
