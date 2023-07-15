@@ -21,14 +21,6 @@
     "continents.placeholder":"Selecionar continentes"
   },
   "languages": {
-    "en": "Inglês",
-    "es": "Espanhol",
-    "it": "Italiano",
-    "ru": "Russo",
-    "tr": "Turco",
-    "fr": "Francês",
-    "ir": "Persa",
-    "de": "Alemão",
     "pt": "Português"
   },
   "continents": {

@@ -1,0 +1,56 @@
+{
+  "home": {
+    "settings": "设置",
+    "play": "开始游戏",
+    "continue": "继续",
+    "new": "新游戏",
+    "about": "关于"
+  },
+  "settings": {
+    "title": "设置",
+    "difficulty": "难度",
+    "easy": "简单",
+    "medium": "中等",
+    "hard": "困难",
+    "back": "返回",
+    "language": "语言",
+    "sound": "声音",
+    "continents": "大洲",
+    "on": "开启",
+    "off": "关闭",
+    "continents.placeholder": "选择大洲"
+  },
+  "languages": {
+    "cn": "中文"
+  },
+  "continents": {
+    "northamerica": "北美洲",
+    "southamerica": "南美洲",
+    "asia": "亚洲",
+    "europe": "欧洲",
+    "oceania": "大洋洲",
+    "africa": "非洲",
+    "antarctica": "南极洲"
+  },
+  "summary": {
+    "title": "感谢参与游戏！",
+    "points": "{{ points }} 分",
+    "successRate": "{{ rate }} 成功率",
+    "correctAnswers": "{{ answers }} 正确答案",
+    "incorrectAnswers": "{{ answers }} 错误答案",
+    "restart": "重新开始",
+    "share": "分享",
+    "share-text": "你了解世界的国旗吗？ 🏴🌏 我刚刚玩了Flags Mastery，并在{{ time }}⏰内获得{{ points }}分！测试你的知识，挑战自我，参加这个惊人的问答游戏。在FlagsMastery.com上开始游戏吧！"
+  },
+  "common": {
+    "correct": "正确",
+    "incorrect": "错误",
+    "showMore": "显示更多"
+  },
+  "about": {
+    "title": "关于",
+    "description": "Flags Mastery是一个免费且开源的游戏，旨在提高您对国家和其国旗的认识。欢迎参与合作，提出新功能或更改意见。",
+    "show-code": "显示代码",
+    "back": "返回"
+  }
+}
