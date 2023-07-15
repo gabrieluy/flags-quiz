@@ -6,40 +6,40 @@ import { Location } from '@angular/common';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'fq-settings',
+  selector: 'fm-settings',
   template: `
     <div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
-      <fq-card *transloco="let t; read: 'settings'">
+      <fm-card *transloco="let t; read: 'settings'">
         <form [formGroup]="formGroup">
           <div class="flex justify-content-center col-12">
             <h2>{{ t('title') }}</h2>
           </div>
           <div class="flex flex-row flex-wrap justify-content-center">
-            <fq-option-wrapper class="col-12 md:col-6" [label]="t('sound')">
+            <fm-option-wrapper class="col-12 md:col-6" [label]="t('sound')">
               <p-selectButton [options]="options.sound" formControlName="sound">
                 <ng-template let-sound pTemplate>
                   {{ t(sound) }}
                 </ng-template>
               </p-selectButton>
-            </fq-option-wrapper>
-            <fq-option-wrapper class="col-12 md:col-6" [label]="t('language')">
-              <fq-language-picker></fq-language-picker>
-            </fq-option-wrapper>
-            <fq-option-wrapper class="col-12 md:col-6" [label]="t('difficulty')">
+            </fm-option-wrapper>
+            <fm-option-wrapper class="col-12 md:col-6" [label]="t('language')">
+              <fm-language-picker></fm-language-picker>
+            </fm-option-wrapper>
+            <fm-option-wrapper class="col-12 md:col-6" [label]="t('difficulty')">
               <p-selectButton [options]="options.difficulty" formControlName="difficulty">
                 <ng-template let-difficulty pTemplate>
                   {{ t(difficulty) }}
                 </ng-template>
               </p-selectButton>
-            </fq-option-wrapper>
-            <fq-option-wrapper class="col-12 md:col-6" [label]="t('continents')">
-              <fq-multiselect-picker
+            </fm-option-wrapper>
+            <fm-option-wrapper class="col-12 md:col-6" [label]="t('continents')">
+              <fm-multiselect-picker
                 [parentForm]="formGroup"
                 [items]="options.continents"
                 [placeholder]="t('continents.placeholder')"
                 controlName="continents"
-                translationScope="continents"></fq-multiselect-picker>
-            </fq-option-wrapper>
+                translationScope="continents"></fm-multiselect-picker>
+            </fm-option-wrapper>
             <div class="flex flex-wrap justify-content-center col-12 mt-3">
               <button
                 pButton
@@ -50,7 +50,7 @@ import { Subscription } from 'rxjs';
             </div>
           </div>
         </form>
-      </fq-card>
+      </fm-card>
     </div>
   `,
 })

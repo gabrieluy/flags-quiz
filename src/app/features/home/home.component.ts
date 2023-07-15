@@ -2,11 +2,11 @@ import { GameManagerService } from '@core/services/game-manager/game-manager.ser
 import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 
 @Component({
-  selector: 'fq-home',
+  selector: 'fm-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
-      <fq-card *transloco="let t; read: 'home'">
+      <fm-card *transloco="let t; read: 'home'">
         <div class="flex flex-row flex-wrap">
           <div class="flex justify-content-center col-12">
             <h1>Flags Mastery!</h1>
@@ -45,7 +45,7 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
             </div>
           </div>
         </div>
-      </fq-card>
+      </fm-card>
     </div>
   `,
 })

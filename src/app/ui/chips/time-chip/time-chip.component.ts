@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { SecondsToTimePipe } from '@pipes/secods-to-time.pipe';
 
 @Component({
-  selector: 'fq-time-chip',
+  selector: 'fm-time-chip',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

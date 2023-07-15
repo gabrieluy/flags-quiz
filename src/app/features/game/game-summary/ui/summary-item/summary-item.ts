@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'fq-summary-item',
+  selector: 'fm-summary-item',
   template: `
     <li class="flex mb-3 align-items-center">
       <i [class]="iconClasses"></i>

@@ -2,11 +2,11 @@ import { GameManagerService } from '@core/services/game-manager/game-manager.ser
 import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 
 @Component({
-  selector: 'fq-about',
+  selector: 'fm-about',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
-      <fq-card *transloco="let t; read: 'about'">
+      <fm-card *transloco="let t; read: 'about'">
         <div class="flex justify-content-center">
           <h2>{{ t('title') }}</h2>
         </div>
@@ -32,7 +32,7 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
               target="_blank"></a>
           </div>
         </div>
-      </fq-card>
+      </fm-card>
     </div>
   `,
 })

@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "fq",
+      "prefix": "fm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'fq-card',
+  selector: 'fm-card',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

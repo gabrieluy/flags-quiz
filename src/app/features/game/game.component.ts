@@ -1,12 +1,13 @@
 import { Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
-import { GameManagerService } from '../../core/services/game-manager/game-manager.service';
-import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
+import { MenuItem } from 'primeng/api';
+
+import { GameManagerService } from '../../core/services/game-manager/game-manager.service';
 import { SoundsService } from '../../core/services/sounds/sounds.service';
 import { Country } from '../../core/data/interfaces/country.interface';
 
 @Component({
-  selector: 'fq-game',
+  selector: 'fm-game',
   template: `
     <p-speedDial
       class="absolute top-0 left-0 p-2"
@@ -21,14 +22,14 @@ import { Country } from '../../core/data/interfaces/country.interface';
     </ng-container>
 
     <ng-template #playGame let-status="status">
-      <fq-game-play-status [status]="status" (selectCountry)="checkSelection($event)"></fq-game-play-status>
+      <fm-game-play-status [status]="status" (selectCountry)="checkSelection($event)"></fm-game-play-status>
       <div class="mt-5 px-2">
-        <fq-answer-history [history]="status.answerHistory"></fq-answer-history>
+        <fm-answer-history [history]="status.answerHistory"></fm-answer-history>
       </div>
     </ng-template>
 
     <ng-template #summary let-status="status">
-      <fq-game-summary [status]="status" (resetClick)="resetGame()"></fq-game-summary>
+      <fm-game-summary [status]="status" (resetClick)="resetGame()"></fm-game-summary>
     </ng-template>
   `,
 })
