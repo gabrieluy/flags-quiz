@@ -69,7 +69,7 @@ export class GameManagerService {
       incorrectAnswers: this._incorrectAnswers(),
       playableCountriesCount: this._playableCountries().length,
       successRate: this._successRate(),
-      answerHistory: this._answerHistory,
+      answerHistory: this._answerHistory, //TODO: update after signal components
       countryOptions: this._countryOptions(),
       selectedCountry: this._selectedCountry(),
       gameTime: this._gameTime(),
@@ -90,6 +90,8 @@ export class GameManagerService {
     return pStatus;
   });
 
+  public hasPersistedState = (): boolean => this._localStorage.hasData(this.GAME_STATUS_KEY);
+
   constructor() {
     effect(() => {
       if (this._isGameFinished()) {
@@ -108,10 +110,6 @@ export class GameManagerService {
   public init(): void {
     this._loadGame();
     this._setupGameTimer();
-  }
-
-  public hasPersistedState(): boolean {
-    return this._localStorage.hasData(this.GAME_STATUS_KEY);
   }
 
   public checkSelection(country: Country): void {
