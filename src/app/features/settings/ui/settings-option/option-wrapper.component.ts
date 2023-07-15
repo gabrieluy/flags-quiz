@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'fq-option-wrapper',
+  selector: 'fm-option-wrapper',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

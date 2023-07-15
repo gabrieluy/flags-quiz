@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { pointChipAnimations } from './animations/points-chip.animations';
 
 @Component({
-  selector: 'fq-points-chip',
+  selector: 'fm-points-chip',
   standalone: true,
   imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,

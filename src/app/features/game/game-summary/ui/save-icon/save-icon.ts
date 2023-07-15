@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { saveIcon } from './animations/save-icon.animation';
 
 @Component({
-  selector: 'fq-save-icon',
+  selector: 'fm-save-icon',
   standalone: true,
   imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,

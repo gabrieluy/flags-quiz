@@ -16,8 +16,8 @@ import { countries_json } from '../../data/countries';
 
 @Injectable()
 export class GameManagerService {
-  GAME_STATUS_KEY = 'fq:gameStatus';
-  GAME_TIME_KEY = 'fq:gameTime';
+  GAME_STATUS_KEY = 'fm:gameStatus';
+  GAME_TIME_KEY = 'fm:gameTime';
 
   EASY_POPULATION = 3000000;
   MEDIUM_POPULATION = 300000;

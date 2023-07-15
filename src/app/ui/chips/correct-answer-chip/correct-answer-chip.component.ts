@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ChipModule } from 'primeng/chip';
 
 @Component({
-  selector: 'fq-correct-answer-chip',
+  selector: 'fm-correct-answer-chip',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

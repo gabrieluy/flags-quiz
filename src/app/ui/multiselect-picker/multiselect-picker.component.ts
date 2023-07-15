@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { Observable, map, of } from 'rxjs';
 
 @Component({
-  selector: 'fq-multiselect-picker',
+  selector: 'fm-multiselect-picker',
   standalone: true,
   imports: [CommonModule, MultiSelectModule, ReactiveFormsModule, TranslocoModule],
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'fq-info-chip',
+  selector: 'fm-info-chip',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `

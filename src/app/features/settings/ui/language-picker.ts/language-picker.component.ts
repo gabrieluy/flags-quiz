@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'fq-language-picker',
+  selector: 'fm-language-picker',
   standalone: true,
   imports: [CommonModule, DropdownModule, TranslocoModule, FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -7,32 +7,32 @@ import { fadeImage } from './animations/fade-image.animation';
 import { saveIcon } from './animations/save-icon.animation';
 
 @Component({
-  selector: 'fq-game-play-status',
+  selector: 'fm-game-play-status',
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [fadeImage, transformOpt, saveIcon],
   template: `
     <div class="m-3">
       <div class="flex justify-content-center">
-        <fq-card class="col-12 md:col-6">
+        <fm-card class="col-12 md:col-6">
           <div *ngIf="status" class="flex flex-row flex-wrap justify-content-end mb-2 gap-2">
-            <fq-save-icon [points]="status.points"></fq-save-icon>
-            <fq-points-chip [points]="status.points"></fq-points-chip>
-            <fq-time-chip [seconds]="status.gameTime"></fq-time-chip>
+            <fm-save-icon [points]="status.points"></fm-save-icon>
+            <fm-points-chip [points]="status.points"></fm-points-chip>
+            <fm-time-chip [seconds]="status.gameTime"></fm-time-chip>
           </div>
           <p-progressBar
             [value]="status | progressPercentage"
             [color]="status.successRate | colorGradient"
             [showValue]="false"></p-progressBar>
-        </fq-card>
+        </fm-card>
       </div>
       <div class="flex justify-content-center mt-2">
-        <fq-flag-img
+        <fm-flag-img
           [hidden]="!isImgLoad"
           [@fadeImage]="isImgLoad"
           (imgLoad)="onImgLoad()"
           [flag]="status.selectedCountry.code"
           class="h-13rem md:h-20rem">
-        </fq-flag-img>
+        </fm-flag-img>
       </div>
       <div class="grid mt-2">
         <div *ngFor="let country of status?.countryOptions" class="p-1 col-12 md:col-6 lg:col-4">

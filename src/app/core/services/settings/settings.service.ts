@@ -8,7 +8,7 @@ import { SettingsOptions } from './interfaces/settings-options.interface';
 export class SettingsService {
   private _localStorage = inject(LocalStorageService);
 
-  SETTINGS_STORAGE_KEY = 'fq:settings';
+  SETTINGS_STORAGE_KEY = 'fm:settings';
   DEFAULT_SETTINGS = {
     continents: ['northamerica', 'asia', 'southamerica', 'europe', 'oceania', 'africa'],
     difficulty: 'medium' as DifficultyType,

@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 import { FlagSrcPipe } from '@pipes/flag-src.pipe';
 
 @Component({
-  selector: 'fq-flag-img',
+  selector: 'fm-flag-img',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: ` <img class="border-round shadow-2" [class]="class" [src]="flag | flagSrc" (load)="onImageLoad()" /> `,
