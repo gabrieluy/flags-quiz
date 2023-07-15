@@ -21,15 +21,7 @@
     "continents.placeholder":"Kıta seçin"
   },
   "languages": {
-    "en": "İngilizce",
-    "es": "İspanyolca",
-    "it": "İtalyanca",
-    "ru": "Rusça",
-    "tr": "Türkçe",
-    "fr": "Fransızca",
-    "ir": "Farsça",
-    "de": "Almanca",
-    "pt": "Portekizce"
+    "tr": "Türkçe"
   },
   "continents": {
     "northamerica": "Kuzey Amerika",

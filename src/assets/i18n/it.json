@@ -21,15 +21,7 @@
     "continents.placeholder":"Seleziona continenti"
   },
   "languages": {
-    "en": "Inglese",
-    "es": "Spagnolo",
-    "it": "Italiano",
-    "ru": "Russo",
-    "tr": "Turco",
-    "fr": "Francese",
-    "ir": "Persiano",
-    "de": "Tedesco",
-    "pt": "Portoghese"
+    "it": "Italiano"
   },
   "continents": {
     "northamerica": "Nord America",
