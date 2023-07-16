@@ -11,7 +11,7 @@ export class CountryNamePipe implements PipeTransform {
 
   transform(country: Country): string {
     const activeLang = this._transloco.getActiveLang();
-    if (activeLang === this._transloco.getDefaultLang()) {
+    if (activeLang === 'en') {
       return country.name.common;
     }
     return country.translations[activeLang].common;
