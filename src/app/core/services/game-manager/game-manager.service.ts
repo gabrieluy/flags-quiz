@@ -115,10 +115,10 @@ export class GameManagerService {
   public checkSelection(country: Country): void {
     const isCorrect = country.code === this._selectedCountry().code;
     this._sounds.playAnswerSound(isCorrect);
-    this._answerHistory.mutate(list => {
+    this._answerHistory.update(list => {
       list.unshift({ correct: isCorrect, country: this._selectedCountry() });
+      return [...list];
     });
-
     if (!this._isGameFinished()) {
       this._selectRandomCountries();
     }
@@ -168,17 +168,19 @@ export class GameManagerService {
 
   private _selectRandomCountries(): void {
     this._countryOptions.set([]);
-    this._remainCountries.mutate(list => {
-      this._selectedCountry.set(popRandomItem(list));
-    });
-    this._countryOptions.mutate(list => {
+
+    this._selectedCountry.set(popRandomItem(this._remainCountries()));
+    this._countryOptions.update(list => {
       list.push(this._selectedCountry());
+      return [...list];
     });
+
     while (this._countryOptions().length < this._numOptions()) {
       const randomCountry = getRandomItem(this._playableCountries());
       if (!this._countryOptions().some(c => c.code === randomCountry.code)) {
-        this._countryOptions.mutate(list => {
+        this._countryOptions.update(list => {
           list.push(randomCountry);
+          return [...list];
         });
       }
     }
