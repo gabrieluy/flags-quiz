@@ -1,10 +1,9 @@
-import { Component, Input, OnDestroy, OnInit, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
+import { GameStore } from '@core/game/game.store';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
-import { GameManagerService } from '../../core/services/game-manager/game-manager.service';
 import { SoundsService } from '../../core/services/sounds/sounds.service';
-import { Country } from '../../core/data/interfaces/country.interface';
 
 @Component({
   selector: 'fm-game',
@@ -16,26 +15,25 @@ import { Country } from '../../core/data/interfaces/country.interface';
       [model]="items"
       direction="right"
       [transitionDelay]="80"></p-speedDial>
-    <ng-container *ngIf="this.gameManager.status() as status">
-      <ng-container *ngTemplateOutlet="!status.isGameFinished ? playGame : summary; context: { status }">
-      </ng-container>
+    <ng-container>
+      <ng-container *ngTemplateOutlet="!this.gameStore.isGameFinished() ? playGame : summary"> </ng-container>
     </ng-container>
 
-    <ng-template #playGame let-status="status">
-      <fm-game-play-status [status]="status" (selectCountry)="checkSelection($event)"></fm-game-play-status>
+    <ng-template #playGame>
+      <fm-game-play-status></fm-game-play-status>
       <div class="mt-5 px-2">
-        <fm-answer-history [history]="status.answerHistory"></fm-answer-history>
+        <fm-answer-history></fm-answer-history>
       </div>
     </ng-template>
 
     <ng-template #summary let-status="status">
-      <fm-game-summary [status]="status" (resetClick)="resetGame()"></fm-game-summary>
+      <fm-game-summary></fm-game-summary>
     </ng-template>
   `,
 })
-export class GameComponent implements OnInit, OnDestroy {
+export class GameComponent implements OnInit {
   @Input() isNewGame?: boolean; // from query params
-  public gameManager = inject(GameManagerService);
+  public gameStore = inject(GameStore);
   private _router = inject(Router);
   private _sounds = inject(SoundsService);
 
@@ -57,22 +55,14 @@ export class GameComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this._sounds.playStartLevelSound();
     if (this.isNewGame) {
-      this.gameManager.reset();
+      this.gameStore.reset();
       return;
     }
-    this.gameManager.init();
-  }
-
-  public checkSelection(country: Country): void {
-    this.gameManager.checkSelection(country);
+    this.gameStore.init();
   }
 
   public resetGame(): void {
     this._sounds.playStartLevelSound();
-    this.gameManager.reset();
-  }
-
-  ngOnDestroy(): void {
-    this.gameManager.quitGame();
+    this.gameStore.reset();
   }
 }

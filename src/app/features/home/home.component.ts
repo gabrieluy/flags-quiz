@@ -1,5 +1,5 @@
-import { GameManagerService } from '@core/services/game-manager/game-manager.service';
-import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { GameStore } from '@core/game/game.store';
 
 @Component({
   selector: 'fm-home',
@@ -19,11 +19,11 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
               <button
                 pButton
                 icon="pi pi-play"
-                [label]="hasPersistedState ? t('continue') : t('play')"
+                [label]="gameStore.hasPersistedState() ? t('continue') : t('play')"
                 class="col-10 md:col-5"
                 [routerLink]="['/game']"></button>
               <button
-                *ngIf="hasPersistedState"
+                *ngIf="gameStore.hasPersistedState()"
                 pButton
                 icon="pi pi-replay"
                 [label]="t('new')"
@@ -49,11 +49,6 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
     </div>
   `,
 })
-export class HomeComponent implements OnInit {
-  public gameManager = inject(GameManagerService);
-  public hasPersistedState = false;
-
-  ngOnInit(): void {
-    this.hasPersistedState = this.gameManager.hasPersistedState();
-  }
+export class HomeComponent {
+  public gameStore = inject(GameStore);
 }
