@@ -10,7 +10,7 @@ import { GameState } from './models/game.model';
 
 interface GameOptions {
   countryOptions: Country[];
-  remainingCountries: Country[];
+  remainCountries: Country[];
   selectedCountry: Country;
 }
 
@@ -30,19 +30,18 @@ export class GameService {
         return countries.filter(c => c.independent && c.population > this.EASY_POPULATION);
       case 'medium':
         return countries.filter(c => c.independent && c.population > this.MEDIUM_POPULATION);
-      case 'hard':
+      default:
         return countries;
     }
   }
 
   private _getNumOptions(countries: Country[]): number {
-    const maxNumOpt = countries.length;
-    return NUM_OPTIONS < maxNumOpt ? NUM_OPTIONS : maxNumOpt;
+    return Math.min(NUM_OPTIONS, countries.length);
   }
 
-  public getNextTurn(remainingCountries: Country[], playableCountries: Country[]): GameOptions {
+  public getNextTurn(remainCountries: Country[], playableCountries: Country[]): GameOptions {
     const countryOptions: Country[] = [];
-    const selectedCountry: Country = popRandomItem(remainingCountries);
+    const selectedCountry: Country = popRandomItem(remainCountries);
 
     countryOptions.push(selectedCountry);
 
@@ -53,19 +52,18 @@ export class GameService {
       }
     }
     mixSelectedOption<Country>(countryOptions, selectedCountry);
-    return { countryOptions, selectedCountry, remainingCountries };
+    return { countryOptions, selectedCountry, remainCountries };
   }
 
   public getInitialTurn(): GameState {
     const countries = this._getPlayableCountries();
     const numOptions = this._getNumOptions(countries);
-    const remainCountries = [...countries];
-    const { countryOptions, selectedCountry, remainingCountries } = this.getNextTurn(remainCountries, countries);
+    const { countryOptions, selectedCountry, remainCountries } = this.getNextTurn([...countries], countries);
     return {
       playableCountries: countries,
-      remainCountries: remainingCountries,
-      countryOptions: countryOptions,
-      selectedCountry: selectedCountry,
+      remainCountries,
+      countryOptions,
+      selectedCountry,
       correctAnswers: 0,
       incorrectAnswers: 0,
       successRate: 0,

@@ -44,20 +44,22 @@ export const GameStore = signalStore(
         soundService.playAnswerSound(isCorrect);
         const newHistory = [{ correct: isCorrect, country: store.selectedCountry() }, ...store.answerHistory()];
         patchState(store, { answerHistory: newHistory });
+
         if (isCorrect) {
           patchState(store, { correctAnswers: store.correctAnswers() + 1 });
         } else {
           patchState(store, { incorrectAnswers: store.incorrectAnswers() + 1 });
         }
+
         if (!store.isGameFinished()) {
-          const { countryOptions, selectedCountry, remainingCountries } = cService.getNextTurn(
+          const { countryOptions, selectedCountry, remainCountries } = cService.getNextTurn(
             store.remainCountries(),
             store.playableCountries()
           );
           patchState(store, {
-            countryOptions: countryOptions,
-            selectedCountry: selectedCountry,
-            remainCountries: remainingCountries,
+            countryOptions,
+            selectedCountry,
+            remainCountries,
           });
         }
 
@@ -89,7 +91,9 @@ export const GameStore = signalStore(
           .subscribe();
       },
       onDestroy() {
-        subscriber.unsubscribe();
+        if (subscriber) {
+          subscriber.unsubscribe();
+        }
       },
     };
   })
