@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject } from '@angular/core';
-import { GameStatus } from '@core/services/game-manager/interfaces/game-status.interface';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { SecondsToTimePipe } from '@pipes/secods-to-time.pipe';
 import { TranslocoService } from '@ngneat/transloco';
+import { GameStore } from '@core/game/game.store';
 
 import { SHARE_URLS, SharePlatform } from './constants/game-summary.constants';
 
@@ -23,23 +23,23 @@ import { SHARE_URLS, SharePlatform } from './constants/game-summary.constants';
               <fm-summary-item
                 icon="star-fill"
                 color="yellow"
-                text="{{ t('points', { points: status.points }) }}"></fm-summary-item>
+                text="{{ t('points', { points: gameStore.points() }) }}"></fm-summary-item>
               <fm-summary-item
                 icon="clock"
                 color="purple"
-                text="{{ status.gameTime | secondsToTime }}"></fm-summary-item>
+                text="{{ gameStore.gameTime() | secondsToTime }}"></fm-summary-item>
               <fm-summary-item
                 icon="percentage"
                 color="green"
-                text="{{ t('successRate', { rate: status.successRate }) }}"></fm-summary-item>
+                text="{{ t('successRate', { rate: gameStore.successRate() }) }}"></fm-summary-item>
               <fm-summary-item
                 icon="check"
                 color="green"
-                text="{{ t('correctAnswers', { answers: status.correctAnswers }) }}"></fm-summary-item>
+                text="{{ t('correctAnswers', { answers: gameStore.correctAnswers() }) }}"></fm-summary-item>
               <fm-summary-item
                 icon="times"
                 color="red"
-                text="{{ t('incorrectAnswers', { answers: status.incorrectAnswers }) }}"></fm-summary-item>
+                text="{{ t('incorrectAnswers', { answers: gameStore.incorrectAnswers() }) }}"></fm-summary-item>
             </ul>
           </div>
           <div class="flex flex-wrap justify-content-center col-12 mt-3 gap-3">
@@ -48,7 +48,7 @@ import { SHARE_URLS, SharePlatform } from './constants/game-summary.constants';
               icon="pi pi-replay"
               [label]="t('restart')"
               class="col-11 md:col-5"
-              (click)="this.resetClick.emit()"></button>
+              (click)="gameStore.reset()"></button>
             <button
               pButton
               icon="pi pi-share-alt"
@@ -60,7 +60,7 @@ import { SHARE_URLS, SharePlatform } from './constants/game-summary.constants';
       </fm-card>
     </div>
     <div class="mt-5 px-2">
-      <fm-answer-history [history]="status.answerHistory"></fm-answer-history>
+      <fm-answer-history></fm-answer-history>
     </div>
     <p-dialog [header]="t('share')" [(visible)]="dialogVisible" class="m-2" *transloco="let t; read: 'summary'">
       <div class="flex flex-wrap justify-content-center col-12 mt-3 gap-3">
@@ -84,9 +84,7 @@ export class GameSummaryComponent {
   private _transloco = inject(TranslocoService);
   private _secondeToTime = inject(SecondsToTimePipe);
   public dialogVisible = false;
-
-  @Input() public status!: GameStatus;
-  @Output() resetClick: EventEmitter<void> = new EventEmitter();
+  public gameStore = inject(GameStore);
 
   public showDialog(): void {
     this.dialogVisible = true;
@@ -94,9 +92,9 @@ export class GameSummaryComponent {
 
   public share(platform: SharePlatform): void {
     const url = SHARE_URLS[platform];
-    const { points, gameTime } = this.status;
-    const time = this._secondeToTime.transform(gameTime);
-    const text = this._transloco.translate('share-text', { points, time }, 'summary');
+    const { points, gameTime } = this.gameStore;
+    const time = this._secondeToTime.transform(gameTime());
+    const text = this._transloco.translate('share-text', { points: points(), time });
     const urlWithText = `${url}${encodeURIComponent(text)}`;
     window.open(urlWithText);
   }

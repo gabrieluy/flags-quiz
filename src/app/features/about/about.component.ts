@@ -1,5 +1,4 @@
-import { GameManagerService } from '@core/services/game-manager/game-manager.service';
-import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'fm-about',
@@ -36,11 +35,4 @@ import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/cor
     </div>
   `,
 })
-export class AboutComponent implements OnInit {
-  public gameManager = inject(GameManagerService);
-  public hasPersistedState = false;
-
-  ngOnInit(): void {
-    this.hasPersistedState = this.gameManager.hasPersistedState();
-  }
-}
+export class AboutComponent {}
