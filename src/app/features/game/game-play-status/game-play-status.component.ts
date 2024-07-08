@@ -26,9 +26,9 @@ import { saveIcon } from './animations/save-icon.animation';
       </div>
       <div class="flex justify-content-center mt-2">
         <fm-flag-img
-          [hidden]="!isImgLoad"
-          [@fadeImage]="isImgLoad"
-          (imgLoad)="onImgLoad()"
+          [hidden]="!gameStore.isImgLoad()"
+          [@fadeImage]="gameStore.isImgLoad()"
+          (imgLoad)="gameStore.onImgLoad()"
           [flag]="gameStore.selectedCountry().code"
           class="h-13rem md:h-20rem">
         </fm-flag-img>
@@ -37,8 +37,8 @@ import { saveIcon } from './animations/save-icon.animation';
         <div *ngFor="let country of gameStore.countryOptions()" class="p-1 col-12 md:col-6 lg:col-4">
           <button
             pButton
-            [disabled]="!isImgLoad"
-            [@transformOpt]="isImgLoad"
+            [disabled]="!gameStore.isImgLoad()"
+            [@transformOpt]="gameStore.isImgLoad()"
             (click)="gameStore.checkSelection(country)"
             [label]="country | countryName"
             class="w-full"></button>
@@ -50,9 +50,4 @@ import { saveIcon } from './animations/save-icon.animation';
 })
 export class GamePlayStatusComponent {
   public gameStore = inject(GameStore);
-  public isImgLoad = false;
-
-  public onImgLoad(): void {
-    this.isImgLoad = true;
-  }
 }

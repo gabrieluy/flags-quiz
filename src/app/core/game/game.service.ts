@@ -69,6 +69,7 @@ export class GameService {
       successRate: 0,
       answerHistory: [],
       gameTime: 0,
+      isImgLoad: false,
       numOptions,
     };
   }

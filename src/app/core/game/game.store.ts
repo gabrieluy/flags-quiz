@@ -39,6 +39,9 @@ export const GameStore = signalStore(
       reset: () => {
         patchState(store, cService.getInitialTurn());
       },
+      onImgLoad: () => {
+        patchState(store, { isImgLoad: true });
+      },
       checkSelection: (country: Country) => {
         const isCorrect = country.code === store.selectedCountry().code;
         soundService.playAnswerSound(isCorrect);

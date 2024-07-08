@@ -13,6 +13,7 @@ export interface GameState {
   successRate: number;
   answerHistory: Answer[];
   gameTime: number;
+  isImgLoad: boolean;
 }
 
 export const gameInitialState: GameState = {
@@ -24,6 +25,7 @@ export const gameInitialState: GameState = {
   correctAnswers: 0,
   incorrectAnswers: 0,
   successRate: 0,
+  isImgLoad: false,
   answerHistory: [],
   gameTime: 0,
 };
