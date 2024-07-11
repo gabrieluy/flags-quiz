@@ -40,9 +40,9 @@ export class MultiselectPickerComponent implements OnInit {
   ngOnInit(): void {
     this.items$ = this._transloco.selectTranslation().pipe(
       map(() =>
-        this.items.map(c => ({
-          label: this._transloco.translate(c, {}, this.translationScope),
-          value: c,
+        this.items.map(item => ({
+          label: this._transloco.translate(item, {}, this.translationScope),
+          value: item,
         }))
       )
     );
